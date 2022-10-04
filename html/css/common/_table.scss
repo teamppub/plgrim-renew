@@ -1,0 +1,157 @@
+@charset "UTF-8";
+@import "../common/variable", "../common/mixin";
+
+table {
+	border-top: 2px solid #000;
+
+	th, td {
+		padding: 26px;
+		border-left: 1px solid $CLine;
+		font-size: 18px;
+		font-weight: 400;
+		text-align: center;
+		word-break: break-all;
+
+		&:first-child {
+			border-left: 0;
+		}
+
+		&.t-r {
+			text-align: right;
+		}
+
+		&.t-l {
+			text-align: left;
+		}
+
+		&.bg {
+			background-color: $CBg;
+		}
+	}
+
+	tr {
+		&.division {
+			th, td {
+				border-bottom: 1px solid #000;
+			}
+
+			th {
+				font-weight: 700;
+			}
+
+			td {
+				font-weight: 500;
+				color: #000;
+			}
+		}
+	}
+
+	thead {
+		border-bottom: 1px solid #000;
+
+		th {
+			font-weight: 700;
+		}
+	}
+
+	tbody {
+		th, td {
+			border-bottom: 1px solid $CLine;
+		}
+
+		td {
+			color: $CTsub;
+		}
+	}
+
+	[class^='ico-'] {
+		vertical-align: baseline;
+	}
+
+	.ico-circle {
+		margin-right: 18px;
+	}
+
+	.ico-stock {
+		margin-right: 8px;
+	}
+
+	.stock-up {
+		color: #fa0000;
+	}
+
+	.ico-required {
+		vertical-align: super;
+	}
+
+	.stock-down {
+		color: #015fb9;
+	}
+}
+
+.table-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: 110px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	[class^='title-wrap'] {
+		width: 100%;
+	}
+
+	.chart-box {
+		order: 1;
+		width: 492px;
+
+		&+.table-type {
+			width: calc(100% - 492px - 70px);
+			margin-right: 70px;
+		}
+	}
+
+	.scroll-wrap {
+		overflow: hidden;
+		overflow-x: auto;
+		white-space: nowrap;
+		width: 100%;
+	}
+}
+
+@include mobile {
+	table {
+		th, td {
+			padding: 16px 10px;
+			font-size: 14px;
+			vertical-align: middle;
+		}
+
+		.ico-circle {
+			margin-right: 5px;
+		}
+
+		.ico-stock {
+			margin-right: 5px;
+		}
+	}
+
+	.table-wrap {
+		margin-top: 35px;
+		margin-bottom: 70px;
+
+		.chart-box {
+			order: 0;
+			width: 100%;
+			margin-top: 20px;
+
+			&+.table-type {
+				width: 100%;
+				margin-right: 0;
+				margin-top: 50px;
+			}
+		}
+	}
+}

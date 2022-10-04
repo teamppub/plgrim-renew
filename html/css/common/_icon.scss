@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@import 
+    "../common/variable", 
+    "../common/mixin";
+
+/* svg */
+[class^="ico-"] {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-position: 50% 50%;
+    background-size: contain;
+}
+
+//background 처리
+.ico-logo {
+    width: 47px;
+    height: 42px;
+    background-image: url(../images/common/logo.png);
+    &.white {
+        background-image: url(../images/icon/logo_w.svg);
+    }
+}
+
+.ico-arr-circle {
+    width: 22px;
+    height: 16px;
+    background-image: url(../images/icon/arrow.svg);
+}
+
+
+//data url 처리(두께 변경 가능토록)
+.ico-arr {
+    position: relative;
+    width: 22px;
+    height: 16px;
+    @include svg(#fff, $url: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 477.867 477.867'%3E%3Cpath d='M238.933 0C106.974 0 0 106.974 0 238.933s106.974 238.933 238.933 238.933 238.933-106.974 238.933-238.933C477.726 107.033 370.834.141 238.933 0zm0 443.733c-113.108 0-204.8-91.692-204.8-204.8s91.692-204.8 204.8-204.8 204.8 91.692 204.8 204.8c-.122 113.058-91.742 204.678-204.8 204.8z'/%3E%3Cpath d='M370.046 141.534c-6.614-6.388-17.099-6.388-23.712 0l-158.601 158.6-56.201-56.201c-6.548-6.78-17.353-6.967-24.132-.419-6.78 6.548-6.967 17.353-.419 24.132.137.142.277.282.419.419l68.267 68.267c6.664 6.663 17.468 6.663 24.132 0l170.667-170.667c6.548-6.779 6.36-17.583-.42-24.131z'/%3E%3C/svg%3E");
+    transform: rotate(180deg);
+
+    &.lft {
+        transform: rotate(0);
+    }
+
+    &.up {
+        transform: rotate(90deg);
+    }
+
+    &.down {
+        transform: rotate(-90deg);
+    }
+
+    &.dubble {
+        @include svg(#000, $url: "data: image/svg+xml, %3Csvg width='51' height='54' viewBox='0 0 51 54' xmlns='http://www.w3.org/2000/svg' %3E%3Cg stroke='%23231916' stroke-width='4' fill='none' fill-rule='evenodd' %3E%3Cpath d='M28 53 2 27 28 1' /%3E%3Cpath d='M50 53 24 27 50 1' /%3E%3C/g%3E%3C/svg%3E%0A");
+    }
+}
