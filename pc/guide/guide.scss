@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import '../html/css/common/variable';
+@import '../css/common/variable';
 
 html,
 body {
@@ -177,6 +177,15 @@ body {
 
 .page-guide-box {
 	margin-bottom: 50px;
+	
+	p{
+		font-size: 25px;
+		line-height:1.7;
+		&.text{
+			font-size:13px;
+			color: #ff0000;
+		}
+	}
 
 	>p {
 		a {
@@ -256,18 +265,6 @@ body {
 		[class^='guide-font-box'] {
 			margin-bottom: 30px;
 			font-size: 15px;
-			&.en{
-				P{
-				}
-			}
-			p{
-				font-size: 25px;
-				line-height:1.7;
-				&.text{
-					font-size:13px;
-					color: #ff0000;
-				}
-			}
 		}
 	}
 }

@@ -23,11 +23,11 @@
 }
 
 .title-wrap2 {
-	.ko{
+	.en{
 		margin-bottom: 28px;
 		font-size: 62px;
 	}
-	.en{
+	.ko{
 		font-size: 58px;
 	}
 }
@@ -67,4 +67,26 @@
 .title-type2{
 	font-size: 24px;
 	font-weight: 500;
+}
+
+.list-info{
+	dl{
+		display: flex;
+		dt{
+			width: 347px;
+			font-size: 40px;
+			font-weight: 700;
+		}
+		dd{
+			font-size: 24px;
+			font-weight: 500;
+			line-height: 42px;
+			&+dd{
+				margin-left: 142px;
+			}
+		}
+		&+dl{
+			margin-top: 80px;
+		}
+	}
 }

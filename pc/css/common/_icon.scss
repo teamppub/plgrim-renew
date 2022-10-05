@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import "../common/variable", "../common/mixin";
 
-/* svg */
+/* svg icon */
 [class^="ico-"] {
     display: inline-block;
     width: 23px;
@@ -21,6 +21,10 @@
     &.white {
         background-image: url(../images/icon/logo_w.svg);
     }
+}
+.ico-recruit{
+    background-image: url(../images/icon/recruit.svg);
+
 }
 
 // data url 처리(색상, 크기 변경 가능토록)

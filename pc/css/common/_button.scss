@@ -18,6 +18,20 @@
 	&:nth-child(n+2) {
 		margin-left: 16px;
 	}
+	[class^='ico-'] {
+		transition: all 0.3s ease-in-out;
+	}
+	&:hover {
+		.ico-arr{
+			margin-right:-10px;
+			&.lft{
+				margin:0 0 0 -10px;
+			}
+			&.down{
+				margin:0 0 -10px 0;
+			}
+		}
+	}
 }
 
 .btn-type {
@@ -27,19 +41,6 @@
 	border-radius: 25px;
 	font-size: 0;
 	text-align:center;
-
-	[class^='ico-'] {
-		transition: all 0.3s ease-in-out;
-	}
-
-	&:hover {
-		.ico-arr{
-			margin-right:-10px;
-			&.lft{
-				margin:0 0 0 -10px;
-			}
-		}
-	}
 }
 .btn-type2 {
 	border-bottom: 1px solid $CText;

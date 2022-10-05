@@ -162,6 +162,16 @@ body {
   margin-bottom: 50px;
 }
 
+.page-guide-box p {
+  font-size: 25px;
+  line-height: 1.7;
+}
+
+.page-guide-box p.text {
+  font-size: 13px;
+  color: #ff0000;
+}
+
 .page-guide-box > p a {
   text-decoration: underline;
   color: #042253;
@@ -233,16 +243,6 @@ body {
 .page-guide-box.font [class^='guide-font-box'] {
   margin-bottom: 30px;
   font-size: 15px;
-}
-
-.page-guide-box.font [class^='guide-font-box'] p {
-  font-size: 25px;
-  line-height: 1.7;
-}
-
-.page-guide-box.font [class^='guide-font-box'] p.text {
-  font-size: 13px;
-  color: #ff0000;
 }
 
 .guide-table th {
