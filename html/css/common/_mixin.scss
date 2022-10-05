@@ -32,7 +32,7 @@
 
 //svg icon : 컬러없는 아이콘 색변경 잦을때
 @mixin svg($color: #fff, $value: null, $url: null) {
-    @if $value == null {
+    @if $value ==null {
         -webkit-mask: url($url) no-repeat 50% 50%;
         mask: url($url) no-repeat 50% 50%;
     }
@@ -67,6 +67,22 @@
 
     @else {
         #{$key}: env(safe-area-inset-#{$direction});
+    }
+}
+
+//정렬
+@mixin abs($abs:c) {
+    position: absolute;
+    @if $abs == h { //horizontal 수평
+        left: 50%;
+        transform: translateX(-50%);
+    } @else if $abs == v { //vertical 수직
+        top: 50%;
+        transform: translateY(-50%);
+    } @else if $abs == c { //center 중앙
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 

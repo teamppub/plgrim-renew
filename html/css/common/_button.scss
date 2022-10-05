@@ -3,6 +3,10 @@
 
 .btn-wrap {
 	text-align: center;
+	.more{
+		margin-top: 20px;
+		font-size: 20px;
+	}
 }
 
 [class^='btn-type'] {
@@ -17,151 +21,65 @@
 }
 
 .btn-type {
-	width: 50px;
-	height: 50px;
-	border: 2px solid #cccccc;
-	border-radius: 8px;
-	font-size: 18px;
+	width: 68px;
+	height: 68px;
+	border: 2px solid $CLine2;
+	border-radius: 25px;
+	font-size: 0;
 	text-align:center;
 
 	[class^='ico-'] {
-		margin-left: 10px;
-		margin-top: -4px;
-		background-color: #000;
+		transition: all 0.3s ease-in-out;
 	}
 
 	&:hover {
-
-		[class^='ico-'] {
+		.ico-arr{
+			margin-right:-10px;
+			&.lft{
+				margin:0 0 0 -10px;
+			}
 		}
 	}
-
 }
 .btn-type2 {
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid $CText;
 	font-size: 20px;
 	text-align:center;
-	&:hover {
+	&.v2{
+		border-bottom:2px solid $CText;
+		font-size: 24px;
+		font-weight: 700;
 	}
-
 }
 .btn-type3 {
-	width: 200px;
-	height: 80px;
-	background: #000;
-	border-radius: 40px;
-	font-size: 20px;
-	color:#fff;
-	text-align:center;
-	&:hover {
+	font-size: 30px;
+	font-weight: 700;
+	.ico-arr{
+		margin-left: 20px;
 	}
-
-}
-
-.btn-more {
-	display: inline-flex;
-	align-items: center;
-	//padding: 10px 0;
-	font-size: 17px;
-	font-weight: 500;
-	letter-spacing: 0;
-
-	.ico-more {
-		margin-left: 10px;
-		transition: .5s;
-	}
-
-	&:hover {
-		.ico-more {
-			transform: translateX(15px);
-		}
+	&.v2{
+		width: 200px;
+		height: 80px;
+		background: $CText;
+		border-radius: 40px;
+		font-size: 20px;
+		font-weight: 400;
+		color:#fff;
+		text-align:center;
 	}
 }
-
 .paging-wrap {
 	display: flex;
-	justify-content: center;
-	margin-top: 100px;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 120px;
 
 	button {
 		display: flex;
-		align-items: center;
-		justify-content: center;
-		min-width: 46px;
-		height: 46px;
-		margin: 0 5px;
-		border-radius: 50%;
-		font-size: 16px;
-		
-
-		[class^='ico-arr'] {
-			background-color: $CTsub3;
+		align-items: center;		
+		span{
+			margin: 0 30px;
+			font-size: 24px;
 		}
-	}
-
-	[class^='btn-'] {
-		border: 1px solid $CLine;
-	}
-
-	.paging-box {
-		display: flex;
-		align-items: center;
-		margin: 0 10px;
-		font-size: 18px;
-		letter-spacing: 3px;
-
-		span {
-			color: $CTsub;
-
-			strong {
-				font-weight: 500;
-			}
-		}
-
-		button {
-			font-size: 16px;
-			letter-spacing: 0;
-
-			&.active {
-				background-color: #000;
-				color: #fff;
-			}
-		}
-	}
-}
-
-.tab-type {
-	display: flex;
-
-	li {
-		margin-left: 14px;
-
-		&:first-child {
-			margin-left: 0;
-		}
-
-		a {
-			display: flex;
-			align-items: center;
-			position: relative;
-			padding: 0 5px 5px;
-			font-size: 15px;
-			font-weight: 500;
-			letter-spacing: -0.5px;
-			transition: .3s;
-		}
-		&.active {
-			a {
-				border-bottom: 2px solid #000;
-			}
-		}
-	}
-}
-
-.tab-wrap {
-	margin-top: 80px;
-
-	&:first-child {
-		margin-top: 0;
 	}
 }

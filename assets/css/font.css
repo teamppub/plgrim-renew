@@ -61,7 +61,7 @@
   font-style: normal;
   font-weight: 800;
   src: local("Pretendard-ExtraBold."),
-    url("../fonts/Pretendard-ExtraBold..woff") format("woff");
+    url("../fonts/Pretendard-ExtraBold.woff") format("woff");
 }
 
 @font-face {
