@@ -282,6 +282,148 @@ input::-webkit-search-results-decoration {
   margin: 0 auto;
 }
 
+.inner-box2 {
+  position: relative;
+  padding-left: 140px;
+}
+
+.sub {
+  padding-top: 130px;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 82px;
+  padding: 0 140px;
+  background: #fff;
+  transition: transform .3s;
+  z-index: 79;
+}
+
+.header-wrap.scroll {
+  transform: translateY(-100px);
+}
+
+.header-wrap.top {
+  background: transparent;
+}
+
+.header-wrap.top .sub-menu .list-depth1 {
+  background: none;
+}
+
+.header-wrap .logo-box h1 {
+  display: flex;
+}
+
+.header-wrap .logo-box a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.header-wrap .sub-menu {
+  flex-grow: 1;
+}
+
+.header-wrap .sub-menu .list-depth1 {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  background: #fff;
+}
+
+.header-wrap .sub-menu .list-depth1 > li {
+  padding: 0 30px;
+  text-align: center;
+}
+
+.header-wrap .sub-menu .list-depth1 > li > a {
+  font-size: 18px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.header-wrap .sub-menu .list-depth1 > li > a:hover,
+.header-wrap .sub-menu .list-depth1 > li.active > a {
+  color: #01A0E9;
+  font-weight: 600;
+}
+
+.header-wrap .side-box a {
+  display: flex;
+}
+
+.header-wrap .side-box a span {
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+.footer-wrap {
+  position: relative;
+  display: flex;
+  padding: 120px 0 30px 140px;
+  background-color: #000;
+}
+
+.footer-wrap .inner-box {
+  position: relative;
+}
+
+.footer-wrap .logo-box {
+  padding-right: 490px;
+}
+
+.footer-wrap .logo-box .ico-logo {
+  width: 60px;
+  height: 53px;
+}
+
+.footer-wrap .info-box {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: #aaa;
+  line-height: 24px;
+}
+
+.footer-wrap .info-box .info-item {
+  display: flex;
+}
+
+.footer-wrap .info-box .info-item dl dt {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.footer-wrap .info-box .info-item dl dd {
+  margin-top: 25px;
+}
+
+.footer-wrap .info-box .info-item dl dd span {
+  display: block;
+}
+
+.footer-wrap .info-box .info-item dl dd span.tel {
+  margin-top: 15px;
+}
+
+.footer-wrap .info-box .info-item dl + dl {
+  margin-left: 155px;
+}
+
+.footer-wrap .info-box .copy {
+  margin-top: 120px;
+  line-height: 70px;
+}
+
 /*
  * safe-area-inset 처리
  * $key - 넣을곳(padding-top, marin-bottom, ...)

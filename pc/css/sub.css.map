@@ -3,7 +3,7 @@
     "mappings": ";AGkDA;;;;;GAKG",
     "sources": [
         "sub.scss",
-        "sub/_company.scss",
+        "sub/_contact.scss",
         "common/_variable.scss",
         "common/_mixin.scss",
         "common/_variable.scss"
