@@ -14,12 +14,14 @@
 
 //background 처리
 .ico-logo {
-    width: 47px;
-    height: 42px;
-    background-image: url(../images/common/logo.png);
+    width: 43px;
+    height: 38px;
+    background-image: url(../images/common/logo.svg);
 
     &.white {
-        background-image: url(../images/icon/logo_w.svg);
+        width: 53px;
+        height: 48px;
+        background-image: url(../images/common/logo_w.svg);
     }
 }
 .ico-recruit{
