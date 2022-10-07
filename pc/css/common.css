@@ -599,7 +599,8 @@ input::-webkit-search-results-decoration {
 [class^='title-wrap'] .side-box {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   right: 0;
 }
 

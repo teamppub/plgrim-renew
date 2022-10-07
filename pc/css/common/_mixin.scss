@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import "../common/variable";
 
+
 //말줄임
 @mixin text-hidden($line: 1, $lineHeight: 19, $auto: null) {
     display: -webkit-box;
