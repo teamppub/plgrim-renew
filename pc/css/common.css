@@ -585,6 +585,17 @@ input::-webkit-search-results-decoration {
   height: 22px;
 }
 
+.ico-arr2 {
+  position: relative;
+  width: 10px;
+  height: 20px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.636' height='24.272' viewBox='0 0 13.636 24.272'%3E%3Cpath id='__arrow' data-name='*&lt;_arrow' d='M164.326,2536l-10.015,10.015,10.015,10.015' transform='translate(-152.811 -2533.879)' fill='none' stroke='%23000000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3C/svg%3E%0A");
+}
+
+.ico-arr2.right {
+  transform: rotate(-180deg);
+}
+
 /*
  * safe-area-inset 처리
  * $key - 넣을곳(padding-top, marin-bottom, ...)
