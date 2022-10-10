@@ -278,8 +278,12 @@ input::-webkit-search-results-decoration {
 
 .inner-box {
   position: relative;
-  width: 1400px;
+  width: 1640px;
   margin: 0 auto;
+}
+
+.inner-box.v2 {
+  width: 1400px;
 }
 
 .inner-box2 {
@@ -288,7 +292,7 @@ input::-webkit-search-results-decoration {
 }
 
 .sub {
-  padding-top: 130px;
+  padding-top: 190px;
 }
 
 .header-wrap {
@@ -646,6 +650,7 @@ input::-webkit-search-results-decoration {
 
 .title-type.v2 {
   font-size: 100px;
+  letter-spacing: 2.5px;
 }
 
 .title-type.title-line:after {

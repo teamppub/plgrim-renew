@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import "../common/variable", "../common/mixin";
-$inner-box: $inner;
+
 
 #content {
 	position: relative;
@@ -19,8 +19,11 @@ $inner-box: $inner;
 
 .inner-box {
 	position: relative;
-	width: $inner-box;
+	width: $inner;
 	margin: 0 auto;
+	&.v2{
+		width: $inner2;
+	}
 }
 
 .inner-box2 {
@@ -28,7 +31,7 @@ $inner-box: $inner;
 	padding-left: 140px;
 }
 .sub{
-	padding-top: 130px;
+	padding-top: 190px;
 }
 .header-wrap {
 	display: flex;
