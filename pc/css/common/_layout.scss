@@ -31,7 +31,11 @@
 	padding-left: 140px;
 }
 .sub{
-	padding-top: 190px;
+	padding: 130px 0 300px;
+	
+    [class^='title-wrap'] {
+        padding-left: 120px;
+    }
 }
 .header-wrap {
 	display: flex;

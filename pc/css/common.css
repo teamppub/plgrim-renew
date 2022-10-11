@@ -292,7 +292,11 @@ input::-webkit-search-results-decoration {
 }
 
 .sub {
-  padding-top: 190px;
+  padding: 130px 0 300px;
+}
+
+.sub [class^='title-wrap'] {
+  padding-left: 120px;
 }
 
 .header-wrap {
