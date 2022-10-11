@@ -4,7 +4,6 @@ var phpinc = require('php-include-html');
 var replace = require('gulp-replace');
 var setFilesGuide = ['list/*.html'];
 var setFilesPC = ['pc/html/**/*.html'];
-var testFile = ['pc/html/main/main.html'];
 
 gulp.task('pchtml', function (cb) {
   pump(
@@ -13,6 +12,8 @@ gulp.task('pchtml', function (cb) {
       replace('../layout/', '' + __dirname + '/pc/html/layout/'),
       phpinc({ verbose: true }),
       gulp.dest('build/html/pc'),
+      gulp.src('pc/css/*.css'),
+      gulp.dest('build/css'),
     ],
     cb
   );
