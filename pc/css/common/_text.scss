@@ -113,3 +113,26 @@
     margin-top: 15px;
   }
 }
+
+
+.list-info{
+	dl{
+		display: flex;
+		dt{
+			width: 347px;
+			font-size: 40px;
+			font-weight: 700;
+		}
+		dd{
+			font-size: 24px;
+			font-weight: 500;
+			line-height: 42px;
+			&+dd{
+				margin-left: 142px;
+			}
+		}
+		&+dl{
+			margin-top: 80px;
+		}
+	}
+}
