@@ -10,7 +10,7 @@ gulp.task('list', function (cb) {
   pump(
     [
       gulp.src(setFilesGuidelist),
-      replace('../', ' '),
+      replace('../', ''),
       replace('./', '' + __dirname + '/list/'),
       phpinc({ verbose: true }),
       gulp.dest('build/list'),
