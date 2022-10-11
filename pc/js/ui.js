@@ -30,7 +30,7 @@ var UI = (function () {
             }, false);
 
             // sub page == gnb active
-            var pageTitle = document.querySelector("h2");
+            var pageTitle = document.querySelector("h6");
             var currentTitle = pageTitle.innerHTML;
 
             $(".sub-menu .list-depth1 li a[name=link]").each(function() { 
