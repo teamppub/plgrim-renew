@@ -34,7 +34,8 @@
 @function svgIcon($iconName, $color:000) {
     $iconList: ( 
         arrow: "%3Csvg xmlns='http://www.w3.org/2000/svg' width='25.088' height='20.052'%3E%3Cg data-name='*&gt;' fill='none' stroke='%23#{$color}' stroke-linecap='round' stroke-width='3'%3E%3Cpath data-name='선 10' d='m23.063 10.368-21.559.054'/%3E%3Cpath data-name='선 11' d='m22.968 10.422-6.924-8.309'/%3E%3Cpath data-name='선 12' d='m22.967 10.611-7.319 7.319'/%3E%3C/g%3E%3C/svg%3E",
-        arrow2: "%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.636' height='24.272' viewBox='0 0 13.636 24.272'%3E%3Cpath id='__arrow' data-name='*&lt;_arrow' d='M164.326,2536l-10.015,10.015,10.015,10.015' transform='translate(-152.811 -2533.879)' fill='none' stroke='%23#{$color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3C/svg%3E%0A"
+        arrow2: "%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.636' height='24.272' viewBox='0 0 13.636 24.272'%3E%3Cpath id='__arrow' data-name='*&lt;_arrow' d='M164.326,2536l-10.015,10.015,10.015,10.015' transform='translate(-152.811 -2533.879)' fill='none' stroke='%23#{$color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3C/svg%3E%0A",
+        plus: "%3Csvg xmlns='http://www.w3.org/2000/svg' width='24.566' height='24.566' viewBox='0 0 24.566 24.566'%3E%3Cg id='ic__' data-name='ic_+' transform='translate(1.504 4.001)'%3E%3Cline id='선_10' data-name='선 10' x1='21.559' y2='0.054' transform='translate(0 8.255)' fill='none' stroke='%23#{$color}' stroke-linecap='round' stroke-width='3'/%3E%3Cline id='선_120' data-name='선 120' x1='21.559' y2='0.054' transform='translate(10.806 -2.497) rotate(90)' fill='none' stroke='%23000' stroke-linecap='round' stroke-width='3'/%3E%3C/g%3E%3C/svg%3E%0A"
     );
     $icon: map-get($iconList, $iconName);
     @return url("data:image/svg+xml;charset=utf8,#{$icon}");
@@ -70,4 +71,9 @@
     &.right {
         transform: rotate(-180deg);
     }
+}
+.ico-plus{
+    width: 24px;
+    height: 24px;
+    background-image: svgIcon(plus, '000000');
 }

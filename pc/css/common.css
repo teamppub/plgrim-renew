@@ -474,6 +474,7 @@ input::-webkit-search-results-decoration {
 .btn-type {
   width: 68px;
   height: 68px;
+  background-color: #fff;
   border: 2px solid #eee;
   border-radius: 25px;
   font-size: 0;
@@ -615,6 +616,12 @@ input::-webkit-search-results-decoration {
 
 .ico-arr2.right {
   transform: rotate(-180deg);
+}
+
+.ico-plus {
+  width: 24px;
+  height: 24px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24.566' height='24.566' viewBox='0 0 24.566 24.566'%3E%3Cg id='ic__' data-name='ic_+' transform='translate(1.504 4.001)'%3E%3Cline id='선_10' data-name='선 10' x1='21.559' y2='0.054' transform='translate(0 8.255)' fill='none' stroke='%23000000' stroke-linecap='round' stroke-width='3'/%3E%3Cline id='선_120' data-name='선 120' x1='21.559' y2='0.054' transform='translate(10.806 -2.497) rotate(90)' fill='none' stroke='%23000' stroke-linecap='round' stroke-width='3'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
 
 /*
