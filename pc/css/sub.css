@@ -5,12 +5,20 @@
  * $direction - 방향(top, right, bottom, left)
  * $value - 더해질 값(생략가능)
  */
+.contact .title-wrap + .inner-box {
+  border-bottom: 1px solid #ccc;
+}
+
 .contact .map-wrap .map {
   height: 850px;
   background-color: #eee;
 }
 
 .contact .list-info {
+  padding: 200px 0;
+}
+
+.contact .btn-wrap {
   padding: 200px 0 0;
 }
 /*# sourceMappingURL=sub.css.map */

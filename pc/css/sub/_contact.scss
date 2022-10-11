@@ -2,6 +2,11 @@
 @import "../common/variable", "../common/mixin";
 
 .contact{
+    .title-wrap{
+        &+.inner-box{
+            border-bottom: 1px solid $CLine;
+        }
+    }
     .map-wrap{
         .map{
             height: 850px;
@@ -9,6 +14,9 @@
         }
     }
     .list-info{
+        padding: 200px 0;
+    }
+    .btn-wrap{
         padding: 200px 0 0;
     }
 }

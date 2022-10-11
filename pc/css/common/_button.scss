@@ -7,6 +7,22 @@
 		margin-top: 20px;
 		font-size: 20px;
 	}
+	&.col{
+		display: flex;
+		.btn-inner{
+			text-align: left;
+			&+.btn-inner{
+				margin-left: 120px;
+			}
+			h3{
+				display: block;
+				margin-bottom: 40px;
+			}
+		}
+		[class^='btn-type'] {
+			margin: 0;
+		}
+	}
 }
 
 [class^='btn-type'] {
