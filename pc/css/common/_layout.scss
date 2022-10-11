@@ -21,14 +21,12 @@
 	position: relative;
 	width: $inner;
 	margin: 0 auto;
-	&.v2{
-		width: $inner2;
-	}
 }
 
 .inner-box2 {
 	position: relative;
-	padding-left: 140px;
+	width: $inner2;
+	margin: 0 auto;
 }
 .sub{
 	padding: 190px 0 300px;
@@ -36,12 +34,14 @@
     [class^='title-wrap'] {
         padding-left: 120px;
     }
-	&>.title-wrap2{
-		margin-bottom: 130px;
-		&+.title-wrap{
-			position: relative;
-			margin-bottom: -62px;
-			z-index: 10;
+	.inner-box{
+		&>.title-wrap2{
+			margin-bottom: 130px;
+			&+.title-wrap{
+				position: relative;
+				margin-bottom: -62px;
+				z-index: 10;
+			}
 		}
 	}
 }

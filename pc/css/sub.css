@@ -5,7 +5,7 @@
  * $direction - 방향(top, right, bottom, left)
  * $value - 더해질 값(생략가능)
  */
-.contact .title-wrap + .inner-box {
+.contact .inner-box {
   border-bottom: 1px solid #ccc;
 }
 

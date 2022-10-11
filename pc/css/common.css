@@ -282,13 +282,10 @@ input::-webkit-search-results-decoration {
   margin: 0 auto;
 }
 
-.inner-box.v2 {
-  width: 1400px;
-}
-
 .inner-box2 {
   position: relative;
-  padding-left: 140px;
+  width: 1400px;
+  margin: 0 auto;
 }
 
 .sub {
@@ -299,11 +296,11 @@ input::-webkit-search-results-decoration {
   padding-left: 120px;
 }
 
-.sub > .title-wrap2 {
+.sub .inner-box > .title-wrap2 {
   margin-bottom: 130px;
 }
 
-.sub > .title-wrap2 + .title-wrap {
+.sub .inner-box > .title-wrap2 + .title-wrap {
   position: relative;
   margin-bottom: -62px;
   z-index: 10;

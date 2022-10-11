@@ -2,10 +2,8 @@
 @import "../common/variable", "../common/mixin";
 
 .contact{
-    .title-wrap{
-        &+.inner-box{
-            border-bottom: 1px solid $CLine;
-        }
+    .inner-box{
+        border-bottom: 1px solid $CLine;
     }
     .map-wrap{
         .map{
