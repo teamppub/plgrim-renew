@@ -31,7 +31,7 @@
 	padding-left: 140px;
 }
 .sub{
-	padding: 130px 0 300px;
+	padding: 190px 0 300px;
 	
     [class^='title-wrap'] {
         padding-left: 120px;
@@ -47,22 +47,12 @@
 	width: 100%;
 	height: 82px;
 	padding: 0 140px;
-	background: #fff;
+	background: rgba(255,255,255,0.2);
 	transition: transform .3s;
 	z-index: 79;
 
-	&.scroll {
-		transform: translateY(-100px);
-	}
-
 	&.top {
-		background: transparent;
-
-		.sub-menu {
-			.list-depth1 {
-				background: none;
-			}
-		}
+		background: transparent
 	}
 
 	.logo-box {

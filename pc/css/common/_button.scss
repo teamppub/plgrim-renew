@@ -18,6 +18,15 @@
 	&:nth-child(n+2) {
 		margin-left: 16px;
 	}
+}
+
+.btn-type {
+	width: 68px;
+	height: 68px;
+	border: 2px solid $CLine2;
+	border-radius: 25px;
+	font-size: 0;
+	text-align:center;
 	[class^='ico-'] {
 		transition: all 0.3s ease-in-out;
 	}
@@ -32,15 +41,6 @@
 			}
 		}
 	}
-}
-
-.btn-type {
-	width: 68px;
-	height: 68px;
-	border: 2px solid $CLine2;
-	border-radius: 25px;
-	font-size: 0;
-	text-align:center;
 }
 .btn-type2 {
 	border-bottom: 1px solid $CText;
