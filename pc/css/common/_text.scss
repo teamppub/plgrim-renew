@@ -92,7 +92,7 @@
   li ~ li {
     margin-top: 15px;
   }
-  li:after {
+  & :after {
     content: '';
     position: absolute;
     left: 0px;
@@ -115,25 +115,24 @@
   }
 }
 
-
-.list-info{
-	dl{
-		display: flex;
-		dt{
-			width: 347px;
-			font-size: 40px;
-			font-weight: 700;
-		}
-		dd{
-			font-size: 24px;
-			font-weight: 500;
-			line-height: 42px;
-			&+dd{
-				margin-left: 142px;
-			}
-		}
-		&+dl{
-			margin-top: 80px;
-		}
-	}
+.list-info {
+  dl {
+    display: flex;
+    dt {
+      width: 347px;
+      font-size: 40px;
+      font-weight: 700;
+    }
+    dd {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 42px;
+      & + dd {
+        margin-left: 142px;
+      }
+    }
+    & + dl {
+      margin-top: 80px;
+    }
+  }
 }

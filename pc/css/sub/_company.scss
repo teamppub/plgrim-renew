@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@import '../common/variable', '../common/mixin';
+
+.company {
+  .common {
+    margin-bottom: 200px;
+    .title-type {
+      margin-bottom: 88px;
+    }
+  }
+  .company_info {
+    display: flex;
+    padding-left: 120px;
+    .info_title {
+      margin-right: 195px;
+      width: 405px;
+      dt {
+        font-size: 62px;
+        line-height: 92px;
+        font-weight: 700;
+      }
+    }
+    .info_conts {
+      dt {
+        margin-bottom: 20px;
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 50px;
+      }
+      dt ~ dt {
+        margin-top: 90px;
+      }
+      dd {
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 36px;
+      }
+    }
+  }
+  .history {
+    padding: 0px 120px;
+  }
+  .partner {
+    padding: 0px 120px;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0px -58px;
+      li {
+        padding: 0px 58px;
+        width: 25%;
+      }
+      li:nth-child(n + 5) {
+        margin-top: 80px;
+      }
+    }
+  }
+}
