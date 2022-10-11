@@ -36,6 +36,14 @@
     [class^='title-wrap'] {
         padding-left: 120px;
     }
+	&>.title-wrap2{
+		margin-bottom: 130px;
+		&+.title-wrap{
+			position: relative;
+			margin-bottom: -62px;
+			z-index: 10;
+		}
+	}
 }
 .header-wrap {
 	display: flex;

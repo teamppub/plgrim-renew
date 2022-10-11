@@ -299,6 +299,16 @@ input::-webkit-search-results-decoration {
   padding-left: 120px;
 }
 
+.sub > .title-wrap2 {
+  margin-bottom: 130px;
+}
+
+.sub > .title-wrap2 + .title-wrap {
+  position: relative;
+  margin-bottom: -62px;
+  z-index: 10;
+}
+
 .header-wrap {
   display: flex;
   justify-content: space-between;
