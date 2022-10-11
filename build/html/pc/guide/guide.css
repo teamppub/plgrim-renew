@@ -1,0 +1,305 @@
+html,
+body {
+  overflow: visible;
+}
+
+.page-guide-nav {
+  position: fixed;
+  z-index: 99;
+  overflow: hidden;
+  overflow-y: auto;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background: #FFF;
+  box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+}
+
+.page-guide-nav .nav-title {
+  background: #F7FAFC;
+  padding: 20px 25px;
+  border-bottom: 1px solid #DDD;
+  color: #000;
+  font-size: 20px;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.page-guide-nav .nav-title a {
+  display: flex;
+  align-items: baseline;
+}
+
+.page-guide-nav .nav-title a img {
+  display: inline-block;
+  width: 70px;
+}
+
+.page-guide-nav .nav-title span {
+  margin-left: 10px;
+  font-size: 12px;
+  color: #666;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.page-guide-nav .nav li {
+  border-bottom: 1px solid #EDEFF0;
+}
+
+.page-guide-nav .nav li a {
+  position: relative;
+  font-size: 18px;
+  color: #666;
+  display: block;
+  padding: 15px 35px 15px 25px;
+}
+
+.page-guide-nav .nav li a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 8px;
+  height: 8px;
+  border-width: 1px 1px 0 0;
+  border-style: solid;
+  border-color: #999 #999 transparent transparent;
+  transform: rotate(45deg);
+}
+
+.page-guide-nav .nav li li {
+  padding-left: 20px;
+}
+
+.page-guide-nav .nav li li a:after {
+  display: none;
+}
+
+.page-guide-nav .nav li li a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.page-guide-nav .nav li li.on a {
+  font-weight: bold;
+  padding: 10px 35px 10px 20px;
+}
+
+.page-guide-nav .nav li li.on a:hover {
+  color: #000;
+}
+
+.page-guide-nav .nav > li.on ul {
+  margin-left: 10px;
+  display: block;
+  border-left: 1px dashed #ccc;
+}
+
+.page-guide-nav .nav > li.on ul li {
+  border: 0;
+}
+
+.page-guide-nav .nav > li.on ul li a {
+  padding: 7px 0;
+  border: 0;
+  font-size: 15px;
+  font-weight: normal;
+  color: #666;
+}
+
+.page-guide-nav .nav > li.on ul li a::before {
+  content: "- -";
+  color: #ccc;
+  position: absolute;
+  left: -20px;
+  top: 10px;
+  font-size: 11px;
+}
+
+.page-guide-nav .nav > li.on > a, .page-guide-nav .nav > li.on > a:hover {
+  padding-left: 20px;
+  color: #000;
+  border-left: 5px solid #01A0E9;
+  background: #f5f6f7;
+}
+
+.page-guide-content {
+  min-width: 800px;
+  padding-left: 300px;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 200px;
+}
+
+.page-guide-title {
+  margin-bottom: 40px;
+  font-size: 34px;
+  color: #111;
+  font-weight: 700;
+}
+
+.page-guide-title:nth-of-type(n+2) {
+  margin-top: 80px;
+}
+
+.page-guide-title2 {
+  padding: 10px;
+  margin-bottom: 30px;
+  background: #f5f5f5;
+  font-size: 20px;
+  color: #111;
+  font-weight: 700;
+}
+
+.page-guide-title2:nth-of-type(n+2) {
+  margin-top: 40px;
+}
+
+.page-guide-box {
+  margin-bottom: 50px;
+}
+
+.page-guide-box p {
+  font-size: 25px;
+  line-height: 1.7;
+}
+
+.page-guide-box p.text {
+  font-size: 13px;
+  color: #ff0000;
+}
+
+.page-guide-box > p a {
+  text-decoration: underline;
+  color: #042253;
+}
+
+.page-guide-box .btn-wrap + .btn-wrap {
+  margin-top: 40px;
+}
+
+.page-guide-box.icon i {
+  margin: 5px;
+}
+
+.page-guide-box.color > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 122px;
+  height: 122px;
+  background: #000;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 100%;
+  text-align: center;
+  color: #fff;
+  line-height: 1.25;
+}
+
+.page-guide-box.color > span.CBrand {
+  background: #01A0E9;
+}
+
+.page-guide-box.color > span.CLine {
+  background: #ccc;
+  color: #000;
+}
+
+.page-guide-box.color > span.CLine2 {
+  background: #eee;
+  color: #000;
+}
+
+.page-guide-box.color > span.CText {
+  background: #000;
+}
+
+.page-guide-box.color > span.CTsub {
+  background: #666;
+}
+
+.page-guide-box.color > span.CTsub2 {
+  background: #999;
+}
+
+.page-guide-box.color > span.CTsub3 {
+  background: #aaa;
+}
+
+.page-guide-box.color > span.CBg {
+  background: #F8F8F8;
+  color: #000;
+}
+
+.page-guide-box.color > span.CBg2 {
+  background: rgba(1, 160, 233, 0.08);
+  color: #000;
+}
+
+.page-guide-box.font [class^='guide-font-box'] {
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.guide-table th {
+  background: #f5f6f7;
+}
+
+.guide-table th,
+.guide-table td {
+  padding: 15px 0;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 13px;
+  vertical-align: middle;
+  color: #000;
+}
+
+.guide-table tr.none td {
+  background: #f9f9f9;
+  height: 35px;
+}
+
+.guide-table td {
+  font-weight: 400;
+}
+
+.guide-table td.bold {
+  font-weight: 700;
+}
+
+.guide-table tr:hover td {
+  background: #f9f9f9;
+}
+
+.guide-table tr.focus td {
+  background: #ed969e17;
+}
+
+@media (max-width: 960px) {
+  .page-guide-nav {
+    position: inherit;
+    width: 100%;
+  }
+  .page-guide-nav .nav ul {
+    display: none;
+  }
+  .page-guide-content {
+    min-width: auto;
+    padding: 30px 10px;
+  }
+  .page-guide-content .guide-title2 {
+    display: none;
+  }
+  .guide-table {
+    overflow-x: auto;
+  }
+  .guide-table table {
+    min-width: 990px;
+  }
+}
+/*# sourceMappingURL=guide.css.map */

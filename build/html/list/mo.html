@@ -2,11 +2,38 @@
 <html lang="ko">
 
 <head>
-	<?php include './Users/minhyee/git/plgrim-renew/pc/html/layout/mo/guide/meta.html'?>
+	<?php include ' mo/guide/meta.html'?>
 </head>
 
 <body>
-	<?php include '/Users/minhyee/git/plgrim-renew/pc/html/layout/nav.html'?>
+	<link rel="stylesheet" type="text/css" href="../pc/guide/guide.css">
+
+<div class="page-guide-nav">
+	<h1 class="nav-title"><a href="index.html"><img src="../pc/images/common/logo.svg"> <span>2022.10</span></a></h1>
+	<ul class="nav">
+		<li class="on">
+			<a href="index.html">pc</a>
+		</li>
+        <li>
+            <a href="mo.html">mobile</a>
+        </li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		var url = window.location.pathname;
+		url = url.split("/");
+		url = url[url.length - 1];
+		$(".nav li a").each(function () {
+			if (url == $(this).attr("href")) {
+				$(this).parent("li").siblings().removeClass("on");
+				$(this).parent("li").addClass("on");
+			}
+		});
+	});
+</script>
+
 	<div class="page-guide-content">
 		<h2 class="page-guide-title" id="app">Mo</h2>
 		<div class="guide-table">
@@ -31,7 +58,7 @@
 						<td class="depth3"></td>
 						<td class="depth4"></td>
 						<td class="depth5"></td>
-						<td><a href="./Users/minhyee/git/plgrim-renew/pc/html/layout/mo/guide/index.html" target="_blank">guide.html</a></td>
+						<td><a href=" mo/guide/index.html" target="_blank">guide.html</a></td>
 						<td>sally</td>
 						<td></td>
 						<td></td>
@@ -54,7 +81,7 @@
 						<td class="depth4"></td>
 						<td class="depth5"></td>
 
-						<td><a href="./Users/minhyee/git/plgrim-renew/pc/html/layout/mo/html/main/main.html" target="_blank">main.html</a></td>
+						<td><a href=" mo/html/main/main.html" target="_blank">main.html</a></td>
 						<td>sally</td>
 						<td></td>
 						<td></td>
@@ -77,7 +104,7 @@
 						<td class="depth4"></td>
 						<td class="depth5"></td>
 
-						<td><a href="./Users/minhyee/git/plgrim-renew/pc/html/layout/mo/html/company/company.html" target="_blank">company.html</a></td>
+						<td><a href=" mo/html/company/company.html" target="_blank">company.html</a></td>
 						<td></td>
 						<td></td>
 						<td></td>

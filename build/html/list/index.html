@@ -4,31 +4,48 @@
 <head>
 	<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!-- <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0, width=device-width, viewport-fit=cover"> -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height, viewport-fit=cover">
 <title>플그림</title>
-<link rel="icon" href="../../../assets/favicon.ico">
-
 <!-- CSS -->
-<link rel="stylesheet" type="text/css" href="../../../assets/css/font.css">
-<link rel="stylesheet" type="text/css" href="../../../assets/css/swiper.min.css">
-<link rel="stylesheet" type="text/css" href="../../css/common.css">
-<link rel="stylesheet" type="text/css" href="../../css/sub.css">
-
+<link rel="stylesheet" type="text/css" href="../assets/css/font.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../pc/css/common.css">
 
 <!-- JS -->
-<script src="../../../assets/js/jquery-3.1.1.min.js"></script>
-<script src="../../../assets/js/swiper.min.js"></script>
-<script src="../../js/ui.js"></script>
-
-
+<script src="../assets/js/jquery-3.1.1.min.js"></script>
+<script src="../assets/js/swiper.min.js"></script>
 
 </head>
 
 <body>
-	<?php include '/Users/minhyee/git/plgrim-renew/pc/html/layout/nav.html'?>
+	<link rel="stylesheet" type="text/css" href="../pc/guide/guide.css">
+
+<div class="page-guide-nav">
+	<h1 class="nav-title"><a href="index.html"><img src="../pc/images/common/logo.svg"> <span>2022.10</span></a></h1>
+	<ul class="nav">
+		<li class="on">
+			<a href="index.html">pc</a>
+		</li>
+        <li>
+            <a href="mo.html">mobile</a>
+        </li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		var url = window.location.pathname;
+		url = url.split("/");
+		url = url[url.length - 1];
+		$(".nav li a").each(function () {
+			if (url == $(this).attr("href")) {
+				$(this).parent("li").siblings().removeClass("on");
+				$(this).parent("li").addClass("on");
+			}
+		});
+	});
+</script>
+
 	<div class="page-guide-content">
 		<h2 class="page-guide-title" id="app">Pc</h2>
 		<div class="guide-table">
@@ -53,7 +70,7 @@
 						<td class="depth3"></td>
 						<td class="depth4"></td>
 						<td class="depth5"></td>
-						<td><a href="./Users/minhyee/git/plgrim-renew/pc/html/layout/pc/guide/index.html" target="_blank">guide.html</a></td>
+						<td><a href=" pc/guide/index.html" target="_blank">guide.html</a></td>
 						<td>sally</td>
 						<td></td>
 						<td></td>
@@ -75,7 +92,7 @@
 						<td class="depth3"></td>
 						<td class="depth4"></td>
 						<td class="depth5"></td>
-						<td><a href="./Users/minhyee/git/plgrim-renew/pc/html/layout/pc/html/main/main.html" target="_blank">main.html</a></td>
+						<td><a href=" pc/html/main/main.html" target="_blank">main.html</a></td>
 						<td>sally</td>
 						<td></td>
 						<td></td>
@@ -97,7 +114,7 @@
 						<td class="depth3"></td>
 						<td class="depth4"></td>
 						<td class="depth5"></td>
-						<td><a href="./Users/minhyee/git/plgrim-renew/pc/html/layout/pc/html/company/company.html" target="_blank">company.html</a></td>
+						<td><a href=" pc/html/company/company.html" target="_blank">company.html</a></td>
 						<td></td>
 						<td></td>
 						<td></td>
@@ -119,7 +136,7 @@
 						<td class="depth3"></td>
 						<td class="depth4"></td>
 						<td class="depth5"></td>
-						<td><a href="./Users/minhyee/git/plgrim-renew/pc/html/layout/pc/html/work/list.html" target="_blank">list.html</a></td>
+						<td><a href=" pc/html/work/list.html" target="_blank">list.html</a></td>
 						<td></td>
 						<td></td>
 						<td></td>
@@ -130,7 +147,7 @@
 						<td class="depth3"></td>
 						<td class="depth4"></td>
 						<td class="depth5"></td>
-						<td><a href="./Users/minhyee/git/plgrim-renew/pc/html/layout/pc/html/work/detail.html" target="_blank">detail.html</a></td>
+						<td><a href=" pc/html/work/detail.html" target="_blank">detail.html</a></td>
 						<td></td>
 						<td></td>
 						<td></td>
@@ -152,7 +169,7 @@
 						<td class="depth3"></td>
 						<td class="depth4"></td>
 						<td class="depth5"></td>
-						<td><a href="./Users/minhyee/git/plgrim-renew/pc/html/layout/pc/html/product/product.html" target="_blank">product.html</a></td>
+						<td><a href=" pc/html/product/product.html" target="_blank">product.html</a></td>
 						<td></td>
 						<td></td>
 						<td></td>
@@ -174,7 +191,7 @@
 						<td class="depth3"></td>
 						<td class="depth4"></td>
 						<td class="depth5"></td>
-						<td><a href="./Users/minhyee/git/plgrim-renew/pc/html/layout/pc/html/culture/list.html" target="_blank">list.html</a></td>
+						<td><a href=" pc/html/culture/list.html" target="_blank">list.html</a></td>
 						<td></td>
 						<td></td>
 						<td></td>
@@ -185,7 +202,7 @@
 						<td class="depth3"></td>
 						<td class="depth4"></td>
 						<td class="depth5"></td>
-						<td><a href="./Users/minhyee/git/plgrim-renew/pc/html/layout/pc/html/culture/detail.html" target="_blank">detail.html</a></td>
+						<td><a href=" pc/html/culture/detail.html" target="_blank">detail.html</a></td>
 						<td></td>
 						<td></td>
 						<td></td>
@@ -207,7 +224,7 @@
 						<td class="depth3"></td>
 						<td class="depth4"></td>
 						<td class="depth5"></td>
-						<td><a href="./Users/minhyee/git/plgrim-renew/pc/html/layout/pc/html/contact/contact.html" target="_blank">contact.html</a></td>
+						<td><a href=" pc/html/contact/contact.html" target="_blank">contact.html</a></td>
 						<td></td>
 						<td></td>
 						<td></td>
@@ -229,7 +246,7 @@
 						<td class="depth3"></td>
 						<td class="depth4"></td>
 						<td class="depth5"></td>
-						<td><a href="./Users/minhyee/git/plgrim-renew/pc/html/layout/pc/html/recruit/recruit.html" target="_blank">recruit.html</a></td>
+						<td><a href=" pc/html/recruit/recruit.html" target="_blank">recruit.html</a></td>
 						<td></td>
 						<td></td>
 						<td></td>

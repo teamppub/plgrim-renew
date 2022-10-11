@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height, viewport-fit=cover">
+<title>플그림</title>
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="../assets/css/font.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../pc/css/common.css">
+
+<!-- JS -->
+<script src="../assets/js/jquery-3.1.1.min.js"></script>
+<script src="../assets/js/swiper.min.js"></script>
+
+</head>
+
+<body>
+	<link rel="stylesheet" type="text/css" href="../pc/guide/guide.css">
+
+<div class="page-guide-nav">
+	<h1 class="nav-title"><a href="index.html"><img src="../pc/images/common/logo.svg"> <span>2022.10</span></a></h1>
+	<ul class="nav">
+		<li class="on">
+			<a href="index.html">pc</a>
+		</li>
+        <li>
+            <a href="mo.html">mobile</a>
+        </li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		var url = window.location.pathname;
+		url = url.split("/");
+		url = url[url.length - 1];
+		$(".nav li a").each(function () {
+			if (url == $(this).attr("href")) {
+				$(this).parent("li").siblings().removeClass("on");
+				$(this).parent("li").addClass("on");
+			}
+		});
+	});
+</script>
+
+	<div class="page-guide-content">
+		<h2 class="page-guide-title">Button</h2>
+
+		<h3 class="page-guide-title2">btn-type</h3>
+
+		<div class="page-guide-box">
+
+			<div class="btn-wrap">
+				<a href="#" class="btn-type">
+					<i class="ico-arr lft"><span class="hidden">이전</span></i>
+				</a>
+				<a href="#" class="btn-type">
+					<i class="ico-arr"><span class="hidden">다음</span></i>
+				</a>
+			</div>
+			<div class="btn-wrap">
+				<a href="#" class="btn-type">
+					<i class="ico-plus"><span class="hidden">더보기</span></i>
+				</a>
+			</div>
+
+
+			<div class="btn-wrap">
+				<a href="#" class="btn-type2">
+					<p>목록으로 돌아가기</p>
+				</a>
+			</div>
+			<div class="btn-wrap">
+				<a href="#" class="btn-type2 v2">
+					<p>목록으로 돌아가기</p>
+				</a>
+			</div>
+
+
+			<div class="btn-wrap">
+				<a href="#" class="btn-type3">
+					<span>VIEW PROJECT LIST</span><i class="ico-arr plus"><span class="hidden">이동하기</span></i>
+				</a>
+			</div>
+			<div class="btn-wrap">
+				<a href="#" class="btn-type3 v2">
+					<span>입사지원</span><i class="ico-arr white"><span class="hidden">이동하기</span></i>
+				</a>
+			</div>
+			
+			<div class="btn-wrap">
+				<a href="#" class="btn-type">
+					<i class="ico-arr down"><span class="hidden">더보기</span></i>
+				</a>
+				<p class="more">MORE</p>
+			</div>
+
+			
+			<div class="btn-wrap col">
+				<div class="btn-inner">
+					<h3 class="title-type title-line">OUR PROJECT</h3>
+					<a href="#" class="btn-type3">
+						<span>VIEW PROJECT LIST</span><i class="ico-arr plus"><span class="hidden">이동하기</span></i>
+					</a>
+				</div>
+				<div class="btn-inner">
+					<h3 class="title-type title-line">RECRUIT</h3>
+					<a href="#" class="btn-type3">
+						<span>APPLY TO PLGRIM</span><i class="ico-arr plus"><span class="hidden">이동하기</span></i>
+					</a>
+				</div>
+			</div>
+
+		</div>
+
+		<h3 class="page-guide-title2">paging</h3>
+
+		<div class="page-guide-box">
+			<!-- paging -->
+			<div class="paging-wrap">
+				<button type="button" class="btn-prev">
+					<i class="ico-arr2"><span class="hidden">이전</span></i>
+					<span>prev</span>
+				</button>
+				<a href="#" class="btn-type2 v2">
+					<p>목록으로 돌아가기</p>
+				</a>
+				<button type="button" class="btn-next">
+					<span>next</span>
+					<i class="ico-arr2 right"><span class="hidden">다음</span></i>
+				</button>
+			</div>
+			<!-- //paging -->
+		</div>
+
+	</div>
+
+</body>
+
+</html>
