@@ -356,12 +356,6 @@ input::-webkit-search-results-decoration {
   transition: .3s;
 }
 
-.header-wrap .sub-menu .list-depth1 > li > a:hover,
-.header-wrap .sub-menu .list-depth1 > li.active > a {
-  color: #01A0E9;
-  font-weight: 600;
-}
-
 .header-wrap .side-box a {
   display: flex;
 }
