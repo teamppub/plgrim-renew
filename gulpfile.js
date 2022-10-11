@@ -10,7 +10,7 @@ gulp.task('list', function (cb) {
   pump(
     [
       gulp.src(setFilesGuidelist),
-      replace('../', ''),
+      replace('../', 'https://teamppub.github.io/plgrim-renew/build/'),
       replace('./', '' + __dirname + '/list/'),
       phpinc({ verbose: true }),
       gulp.dest('build/list'),
@@ -33,7 +33,7 @@ gulp.task('pcguide', function (cb) {
   pump(
     [
       gulp.src(setFilesGuide),
-      replace('./', '' + __dirname + '/list/'),
+      replace('./', '' + __dirname + '/pc/guide/'),
       phpinc({ verbose: true }),
       gulp.dest('build/pc/guide'),
     ],
