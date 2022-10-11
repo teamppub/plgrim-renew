@@ -6,7 +6,7 @@
 	word-break: keep-all;
 	
 	.side-box{
-		@include abs(c);
+		@include abs(v);
 		right: 0;
 	}
 	.btn-type{
