@@ -3,4 +3,17 @@
 'common/base',
 'common/mixin';
 
-$inner-box: $inner;
+
+.main-wrap{
+    .header-wrap{
+        .sub-menu{
+		    .list-depth1 {
+                >li {
+                    >a {
+                        color:#000;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -91,14 +91,12 @@
 				>a {
 					font-size: 18px;
 					font-weight: 600;
+					color: $CTsub2;
 					transition: .3s;
+					&.active{
+						color: $CText;
+					}
 				}
-
-				// &>a:hover,
-				// &.active>a {
-				// 	color: $CBrand;
-				// 	font-weight: 600;
-				// }
 			}
 		}
 	}

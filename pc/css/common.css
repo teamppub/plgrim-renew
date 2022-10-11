@@ -353,7 +353,12 @@ input::-webkit-search-results-decoration {
 .header-wrap .sub-menu .list-depth1 > li > a {
   font-size: 18px;
   font-weight: 600;
+  color: #999;
   transition: .3s;
+}
+
+.header-wrap .sub-menu .list-depth1 > li > a.active {
+  color: #000;
 }
 
 .header-wrap .side-box a {
@@ -673,6 +678,7 @@ input::-webkit-search-results-decoration {
 .title-type.v2 {
   font-size: 100px;
   letter-spacing: 2.5px;
+  text-transform: uppercase;
 }
 
 .title-type.title-line {

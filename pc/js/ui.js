@@ -28,6 +28,21 @@ var UI = (function () {
 
                 pos = st;
             }, false);
+
+            // sub page == gnb active
+            var pageTitle = document.querySelector("h2");
+            var currentTitle = pageTitle.innerHTML;
+
+            $(".sub-menu .list-depth1 li a[name=link]").each(function() { 
+                var pageItem = $(this).attr("data-index"); 
+
+                if(pageItem == currentTitle) {
+                    $(this).addClass("active")
+                } 
+                else {
+                // $(this).removeClass('active');
+                }
+            });
         },
     };
 })();

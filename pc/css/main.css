@@ -255,4 +255,7 @@ input::-webkit-search-results-decoration {
  * $direction - 방향(top, right, bottom, left)
  * $value - 더해질 값(생략가능)
  */
+.main-wrap .header-wrap .sub-menu .list-depth1 > li > a {
+  color: #000;
+}
 /*# sourceMappingURL=main.css.map */
