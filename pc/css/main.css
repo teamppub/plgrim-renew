@@ -138,18 +138,18 @@ textarea {
   color: #000;
 }
 
-input[type=text],
-input[type=submit],
-input[type=password],
-input[type=search],
-input[type=number],
-input[type=reset],
-input[type=email],
-input[type=tel],
-input[type=search],
-input[type=file],
-input[type=email],
-input[type=tel] {
+input[type="text"],
+input[type="submit"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="reset"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="file"],
+input[type="email"],
+input[type="tel"] {
   padding: 0 22px;
   height: 59px;
   line-height: 59px;
@@ -158,25 +158,25 @@ input[type=tel] {
   font-weight: 400;
 }
 
-input[type=radio],
-input[type=checkbox] {
+input[type="radio"],
+input[type="checkbox"] {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
 }
 
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button {
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input[type=text]:focus,
-input[type=password]:focus,
-input[type=tel]:focus,
-input[type=email]:focus,
-input[type=search]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="search"]:focus,
 textarea:focus {
   border-color: #000;
   background-color: #fff;
@@ -185,16 +185,6 @@ textarea:focus {
 
 input[readonly] {
   pointer-events: none;
-}
-
-::-moz-placeholder {
-  font-size: inherit;
-  color: #bcbcbc;
-}
-
-:-ms-input-placeholder {
-  font-size: inherit;
-  color: #bcbcbc;
 }
 
 ::placeholder {
@@ -218,6 +208,7 @@ button {
   cursor: pointer;
   color: inherit;
 }
+
 button:disabled {
   cursor: default;
 }
@@ -238,11 +229,6 @@ input::-webkit-search-cancel-button,
 input::-webkit-search-results-button,
 input::-webkit-search-results-decoration {
   display: none;
-}
-
-::-moz-selection {
-  background: #01A0E9;
-  color: #fff;
 }
 
 ::selection {
@@ -271,4 +257,5 @@ input::-webkit-search-results-decoration {
  */
 .main-wrap .header-wrap .sub-menu .list-depth1 > li > a {
   color: #000;
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */
