@@ -18,7 +18,45 @@
       .item-sub {
         color: #666666;
         font-size: 24px;
-        line-height: 24px;
+        line-height: 36px;
+      }
+    }
+  }
+}
+
+.culture-list-wrap {
+  .culture-item {
+    padding-bottom: 70px;
+    margin-bottom: 70px;
+    border-bottom: 1px solid #ccc;
+
+    a {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    .item-img {
+      flex: 0 0 415px;
+    }
+
+    .item-info {
+      padding-left: 80px;
+
+      .item-title {
+        margin-bottom: 30px;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 50px;
+      }
+      .item-sub {
+        @include text-hidden(2, 24);
+        margin-bottom: 20px;
+        color: #666666;
+        font-size: 16px;
+      }
+      .item-date {
+        font-size: 16px;
+        font-weight: 700;
       }
     }
   }
