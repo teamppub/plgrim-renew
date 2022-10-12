@@ -1,2 +1,25 @@
 @charset "UTF-8";
-@import "../common/variable", "../common/mixin";
+@import '../common/variable', '../common/mixin';
+
+.work-list-wrap {
+  .work-item {
+    width: 670px;
+    .item-img {
+      margin-bottom: 30px;
+    }
+
+    .item-info {
+      .item-title {
+        margin-bottom: 20px;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 44px;
+      }
+      .item-sub {
+        color: #666666;
+        font-size: 24px;
+        line-height: 24px;
+      }
+    }
+  }
+}
