@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import '../common/variable', '../common/mixin';
 
-.work-list-wrap {
+.work-item-wrap {
   .work-item {
     width: 670px;
     .item-img {
@@ -24,11 +24,24 @@
   }
 }
 
-.culture-list-wrap {
+.culture-item-wrap {
+  margin: -130px 0px;
+  padding: 200px 120px;
+  background: rgba(1, 160, 233, 0.08);
+  border-radius: 200px 0 0 0;
+
+  .page-guide-box & {
+    margin: 0px;
+  }
+
   .culture-item {
     padding-bottom: 70px;
     margin-bottom: 70px;
     border-bottom: 1px solid #ccc;
+
+    &:nth-last-child(1) {
+      margin-bottom: 0px;
+    }
 
     a {
       display: flex;
