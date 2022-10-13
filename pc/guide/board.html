@@ -12,7 +12,7 @@
 
 		<h3 class="page-guide-title2">work</h3>
 		<div class="page-guide-box">
-			<div class="work-list-wrap">
+			<div class="work-item-wrap">
 				<div class="work-item">
 					<a href="#">
 						<div class="item-img"><img src="../images/temp/@temp_work01.png" alt="이미지1"></div>
@@ -101,7 +101,7 @@
 				document.querySelectorAll(".work-item").forEach((item) => {
 					item.style.gridRowEnd = `span ${item.clientHeight + 140}`;
 				});
-				const wrap = document.querySelector(".work-list-wrap");
+				const wrap = document.querySelector(".work-item-wrap");
 				wrap.style.display = "grid";
 				wrap.style.gridTemplateColumns = "repeat(auto-fill, 670px)";
 				wrap.style.gap = "0px 60px";
@@ -112,7 +112,7 @@
 
 		<h3 class="page-guide-title2">culture</h3>
 		<div class="page-guide-box">
-			<div class="culture-list-wrap">
+			<div class="culture-item-wrap">
 				<div class="culture-item">
 					<a href="#">
 						<div class="item-img"><img src="../images/temp/@temp_culture01.png" alt="이미지1"></div>
