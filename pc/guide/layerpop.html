@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include './meta.html'?>
+</head>
+<body>
+	<?php include './nav.html'?>
+    <div class="page-guide-content">
+		<h2 class="page-guide-title">Layer PopUp</h2>
+	    
+	    <h3 class="page-guide-title2">열기/닫기 </h3>
+		<div class="page-guide-box">
+			<p>
+				selId와 st 문자열로 전달<br><br>
+
+				UI.layerPopUp({selId:'레이어팝업아이디', st:닫기(close)});<br><br>
+				
+				열기 : UI.layerPopUp({selId:'#pop-full'});<br><br>
+				
+				<a href="javascript:UI.layerPopUp({selId:'#pop-full'})">기본팝업</a>
+				<!-- <a href="javascript:UI.layerPopUp({selId:'#pop-full'})">풀팝업</a> -->
+				
+				<br><br>
+				
+				닫기 : UI.layerPopUp({selId:'#pop-full', st: 'close'});
+
+			</p>
+			
+		</div>
+	</div>
+	
+	
+	<div class="pop-full" id="pop-full">
+		<div class="pop-wrap">
+			<a href="javascript:UI.layerPopUp({selId:'#pop-full', st: 'close'})" class="pop-close btn-type">
+				<i class="ico-close"></i><span class="hidden">닫기</span>
+			</a>
+			<div class="pop-content">
+				<div class="inner-box2">
+				내용<br>
+				내용<br>
+				내용<br>
+				내용<br>
+				내용<br>
+				내용<br>
+				내용<br>
+				내용<br>
+				내용<br>
+				내용<br>
+				내용<br>
+				내용<br>
+				내용<br>
+				내용<br>
+				내용<br>
+				내용<br>
+				내용<br>
+				내용<br>
+				내용<br>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

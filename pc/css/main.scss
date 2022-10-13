@@ -3,7 +3,6 @@
 'common/base',
 'common/mixin';
 
-
 .main-wrap{
     .header-wrap{
         .sub-menu{
@@ -14,6 +13,104 @@
                     }
                 }
             }
+        }
+    }
+    .main{
+	    padding: 190px 0 300px;
+        article{
+            padding: 200px 0;
+            .title-wrap{
+                margin-bottom: 110px;
+            }
+        }
+        .visual-wrap{
+            padding: 0;
+            .swiper-navigation{
+                width: $inner2;
+                margin:0 auto 90px;
+            }
+            .visual-swiper{
+                .swiper-slide{
+                    .title-box {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: baseline;
+                        position: relative;
+                        overflow: hidden;
+                
+                        .title-motion {
+                            display: flex;
+                            align-items: baseline;
+                            justify-content: space-between;
+                            position: relative;
+                            transform: translateY(200%);
+                            transition: 1s .2s;
+                        }
+                
+                        @for $i from 1 to 10 {
+                            &:nth-child(#{$i+1}) {
+                                .title-motion {
+                                    //transition-delay: #{$i*0.2}s;
+                                }
+                            }
+                        }
+                    }
+                    &.swiper-slide-active {
+                        .title-box{
+                            .title-motion {
+                                transform: translateY(0);
+                            }
+                        }
+                    }
+                }
+                .visual-content{
+                    position: absolute;
+                    top: -46px;
+                    left: 120px;
+                    .title-type{
+                        line-height: 90px;
+                    }
+                    .title-sub{
+                        margin: 90px 0 0;
+                        font-size: 20px;
+                        line-height: 30px;
+                        letter-spacing: 2px;
+                    }
+                    .btn-type2{
+                        margin: 35px 0 0;
+                    }
+                }
+            }
+        }
+        .intro-wrap{
+            padding: 160px 0;
+            .intro-cont{
+                margin-top: 110px;
+                dl{
+                    display: flex;
+                    dt{
+                        font-size: 62px;
+                        font-weight: 700;
+                        line-height: 90px;
+                        letter-spacing: 3.1px;
+                    }
+                    dd{
+                        padding-left: 300px;
+                        p{
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 36px;
+                            letter-spacing: 2px;
+                            &+p{
+                                margin-top: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .business-wrap{
+            background-color: $CBg;
         }
     }
 }

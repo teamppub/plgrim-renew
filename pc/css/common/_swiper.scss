@@ -2,17 +2,31 @@
 @import "../common/variable", "../common/mixin";
 
 
-.swiper-button-next {
-	width: 28px;
-	height: 56px;
-	background-image: url(../images/icon/slide_arrow.svg);
-	transform: rotate(180deg);
+.swiper-navigation{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
-
-.swiper-button-prev {
-	width: 28px;
-	height: 56px;
-	background-image: url(../images/icon/slide_arrow.svg);
+.swiper-paging{
+	display: flex;
+	align-items: center;
+	font-size: 32px;
+	color: $CLine;
+	span{
+		font-size: 0;
+		display: block;
+		margin: 0 20px;
+		width: 3px;
+		height: 20px;
+		background-color: $CLine;
+		transform: rotate(27deg);
+	}
+	em{
+		&.swiper-pagination-current{
+			color: $CText;
+			font-weight: 900;
+		}
+	}
 }
 
 .swiper-button-box {
@@ -20,58 +34,13 @@
 
 	.button-next,
 	.button-prev {
+		position: relative;
 		display: inline-flex;
 		align-items: center;
-		position: relative;
-		min-width: 46px;
-		height: 46px;
-		background-color: #fff;
-		border: 1px solid $CLine;
-		border-radius: 50%;
+		cursor: pointer;
 
 		&.swiper-button-disabled {
 			opacity: 0.5;
-		}
-
-		&::before {
-			content: '';
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			width: 10px;
-			height: 10px;
-
-			margin: {
-				left: -6px;
-				top: -6px;
-			}
-
-			border-bottom: 2px solid $CTsub3;
-			border-right: 2px solid $CTsub3;
-			transform-origin: 66% 66%;
-			transform: rotate(135deg);
-		}
-	}
-
-	.button-next {
-		order: 3;
-
-		&::before {
-			transform: rotate(-45deg);
-		}
-	}
-
-	.fraction-pagination {
-		display: inline-block;
-		width: auto;
-		padding: 0 20px;
-		font-size: 18px;
-		color: $CTsub;
-		line-height: 46px;
-
-		.swiper-pagination-current {
-			color: #000;
-			font-weight: 500;
 		}
 	}
 }

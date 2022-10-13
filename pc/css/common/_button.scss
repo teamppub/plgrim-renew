@@ -39,10 +39,11 @@
 .btn-type {
 	width: 68px;
 	height: 68px;
-	border: 2px solid $CLine2;
+	border: 2px solid $CLine;
 	border-radius: 25px;
 	font-size: 0;
 	text-align:center;
+	line-height: 68px;
 	[class^='ico-'] {
 		transition: all 0.3s ease-in-out;
 	}

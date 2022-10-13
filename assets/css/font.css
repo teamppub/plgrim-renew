@@ -68,7 +68,7 @@
   font-family: "Pretendard";
   font-style: normal;
   font-weight: 900;
-  src: local("Pretendard-Light"),
+  src: local("Pretendard-Black"),
     url("../fonts/Pretendard-Black.woff") format("woff");
 }
 

@@ -5,16 +5,84 @@
 	<?php include '../layout/meta.html'?>
 	<!-- <?php include("/pc/html/layout/meta.html");?> -->
 	<link rel="stylesheet" type="text/css" href="../../css/main.css"><!-- 메인에만 노출 -->
+	<script src="../../js/main.js"></script><!-- 메인에만 노출 -->
 </head>
 
 <body>
+	<h6 class="hidden">main</h6>
 	<div id="wrap" class="main-wrap">
 		<!-- header -->
 		<?php include '../layout/header.html'?>
 		<!-- //header -->
 
 		<!--content-->
-		<main id="content" class="main" style="height:100vh">
+		<main id="content" class="main">
+			<article class="visual-wrap">
+				<div class="visual-swiper">
+					<div class="swiper-navigation">
+						<div class="swiper-paging"></div>
+						<div class="swiper-button-box">
+							<div class="btn-type button-prev"><i class="ico-arr lft"><span class="hidden">이전</span></i></div>
+							<div class="btn-type button-next"><i class="ico-arr"><span class="hidden">다음</span></i></div>
+						</div>
+					</div>
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="../../images/temp/@temp_visual_02.png"/>
+							<div class="visual-content">
+								<div class="title-type title-box">
+									<p class="title-motion">H패션몰<br/>현대 한섬패션<br/>종합몰 구축</p>
+								</div>
+								<div class="title-sub title-box">
+									<span class="title-motion">국내 최고의 브랜드와 함께 럭셔리부터 캐쥬얼까지<br/>다양한 수입 브랜드를 전개하는 H패션몰의 종합 쇼핑<br/>시스템 ux/ui개선 프로젝트</span>
+								</div>
+								<a href="#" class="btn-type2">
+									<p>프로젝트 보기</p>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="../../images/temp/@temp_visual_02.png"/>
+						</div>
+						<div class="swiper-slide">
+							<img src="../../images/temp/@temp_visual_02.png"/>
+						</div>
+						<div class="swiper-slide">
+							<img src="../../images/temp/@temp_visual_02.png"/>
+						</div>
+						<div class="swiper-slide">
+							<img src="../../images/temp/@temp_visual_02.png"/>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<article class="intro-wrap inner-box2">
+				<div class="title-wrap2">
+                    <h3 class="en">We want to create New Value to the software</h3>
+                    <h4 class="ko">플그림은 소프트웨어로 새로운 가치를 만들고자 합니다</h4>
+                </div>
+				<div class="intro-cont">
+					<dl>
+						<dt>VALUE<br/>PASSIONATE<br/>POWERFUL</dt>
+						<dd>
+							<p>플그림은 소프트웨어에 열정을 가진 전문가들의 모임입니다.<br/>PLGRIM은 디지털 예술품을 통해 아날로그 가치를 실현합니다.<br/>PLGRIM은 소프트웨어를 통해 고객 가치를 실현하고 인간의 삶을<br/>좀 더 이롭고 풍요롭게 만들고자 합니다.</p>
+							<p>플그림은 젊고 강한 기업으로 국내 주요 e-Commerce 프로젝트에 리더 및<br/>핵심 역할로 참여하여 성공적인 프로젝트를 완료해 왔습니다. 또한 온라인 유통<br/>플랫폼에 대한 다년간의 경험 및 역량을 가진 전문가들로 구성되어 있습니다.</p>
+						</dd>
+					</dl>
+				</div>
+			</article>
+
+			<article class="business-wrap">
+				<div class="inner-box2">
+					<div class="title-wrap">
+						<h3 class="title-type">01<span></span>BUSINESS</h3>
+						<a href="#" class="side-box btn-type">
+							<i class="ico-arr"><span class="hidden">이동하기</span></i>
+						</a>
+					</div>
+				</div>
+			</article>
 
 		</main>
 		<!--//content-->

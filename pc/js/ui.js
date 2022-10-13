@@ -44,6 +44,33 @@ var UI = (function () {
                 }
             });
         },
+        layerPopUp: function (pOption) {
+            /*   pOption
+             *  {
+             *  	 state : 'open'  OR  'close'
+             *  	 selId : Layer Selector
+             *  }
+             */
+            var lLayer = $(pOption.selId);
+            var dim = $(pOption.selId).find(".dim");
+
+            if (pOption.st !== "close") {
+                lLayer.addClass('active').fadeIn(300);
+                dim.show();
+                $("body").css({ overflow: "hidden" });
+            } else {
+                lLayer.removeClass('active').fadeOut(300);
+                dim.hide();
+                $("body").css({ overflow: "" });
+            }
+
+            lLayer.find(".dim, .pop-close").on("click", function (e) {
+                e.preventDefault();
+                lLayer.removeClass('active').fadeOut(300);
+                dim.hide();
+                $("body").css({ overflow: "" });
+            });
+        },
     };
 })();
 
