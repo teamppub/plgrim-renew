@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import '../common/variable', '../common/mixin';
 
-.work-item-wrap {
+.work-item-list {
   .work-item {
     width: 670px;
     .item-img {
@@ -24,7 +24,7 @@
   }
 }
 
-.culture-item-wrap {
+.culture-item-list {
   margin: -130px 0px;
   padding: 200px 120px;
   background: rgba(1, 160, 233, 0.08);
