@@ -3,9 +3,11 @@
 
 //말줄임
 @mixin text-hidden($line: 1, $lineHeight: 19, $auto: null) {
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
   display: -webkit-box;
   -webkit-line-clamp: $line;
-  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: ($lineHeight * $line) / $line + px;

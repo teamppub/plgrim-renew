@@ -8,13 +8,16 @@
 .contact .inner-box {
   border-bottom: 1px solid #ccc;
 }
+
 .contact .map-wrap .map {
   height: 850px;
   background-color: #eee;
 }
+
 .contact .list-info {
   padding: 200px 0;
 }
+
 .contact .btn-wrap {
   padding: 200px 0 0;
 }
@@ -28,51 +31,64 @@
 .company .common {
   margin-bottom: 200px;
 }
+
 .company .common .title-type {
   margin-bottom: 88px;
 }
+
 .company .company-info {
   display: flex;
   padding-left: 120px;
 }
+
 .company .company-info .info-title {
   margin-right: 195px;
   width: 405px;
 }
+
 .company .company-info .info-title dt {
   font-size: 62px;
   line-height: 92px;
   font-weight: 700;
 }
+
 .company .company-info .info-conts dt {
   margin-bottom: 20px;
   font-size: 38px;
   font-weight: 700;
   line-height: 50px;
 }
+
 .company .company-info .info-conts dt ~ dt {
   margin-top: 90px;
 }
+
 .company .company-info .info-conts dd {
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 500;
   line-height: 36px;
 }
+
 .company .history {
   padding: 0px 120px;
 }
+
 .company .partner {
   padding: 0px 120px;
 }
+
 .company .partner ul {
   display: flex;
   flex-wrap: wrap;
   margin: 0px -58px;
 }
+
 .company .partner ul li {
   padding: 0px 58px;
   width: 25%;
 }
-.company .partner ul li:nth-child(n+5) {
+
+.company .partner ul li:nth-child(n + 5) {
   margin-top: 80px;
-}/*# sourceMappingURL=sub.css.map */
+}
+/*# sourceMappingURL=sub.css.map */

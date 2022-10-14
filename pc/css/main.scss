@@ -112,5 +112,54 @@
         .business-wrap{
             background-color: $CBg;
         }
+        .work-wrap{
+
+        }
+        .culture-wrap{
+            .culture-list{
+                display: flex;
+                flex-flow: row wrap;
+                li{
+                    width: calc( 50% - 30px);
+                    margin-left: 60px;
+                    a{
+                        display: block;
+                    }
+                    .thumb{}
+                    .info{
+                        display: block;
+                        margin-top: 30px;
+                        strong{
+                            display: block;
+                            margin-bottom: 30px;
+                            font-size: 36px;
+                            line-height: 50px;
+                            font-weight: 700;
+                        }
+                        p{
+                            font-size: 16px;
+                            &.cont{
+                                color: $CTsub2;
+                                line-height: 24px;
+                                letter-spacing: 0.4px;
+                                @include text-hidden($line: 2, $lineHeight: 24, $auto: null);
+                            }
+                            &.date{
+                                margin-top: 20px;
+                                font-size: 16px;
+                                color: $CText;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    &:nth-child(n+3){
+                        margin-top: 60px;
+                    }
+                    &:nth-of-type(2n+1){
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
     }
 }
