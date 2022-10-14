@@ -96,4 +96,55 @@
 }
 .work .work-item-wrap .btn-wrap {
   margin-top: -20px;
+}
+
+/*
+ * safe-area-inset 처리
+ * $key - 넣을곳(padding-top, marin-bottom, ...)
+ * $direction - 방향(top, right, bottom, left)
+ * $value - 더해질 값(생략가능)
+ */
+.product .business-wrap {
+  padding: 210px 120px 140px;
+  margin-bottom: 200px;
+  border-radius: 20px 0px 0px 20px;
+  background: #f8f8f8;
+}
+.product .business-wrap .business-graph {
+  margin-bottom: 80px;
+}
+.product .business-wrap .business-box {
+  display: flex;
+  margin: 0px -20px;
+}
+.product .business-wrap .business-box li {
+  padding: 0px 20px;
+  width: 33.33%;
+}
+.product .business-wrap .business-box li .box-title {
+  margin: 30px 0px 20px;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 700;
+}
+.product .business-wrap .business-box li .box-sub {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  word-break: keep-all;
+  color: #666666;
+}
+.product .commerce-box h5 {
+  margin-bottom: 30px;
+  font-size: 70px;
+  font-weight: 800;
+}
+.product .commerce-box p {
+  margin-bottom: 80px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 42px;
+}
+.product .commerce-box + .commerce-box {
+  margin-top: 200px;
 }/*# sourceMappingURL=sub.css.map */
