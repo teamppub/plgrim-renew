@@ -297,6 +297,15 @@ input::-webkit-search-results-decoration {
   transition: 1s .2s;
 }
 
+.main-wrap .main .visual-wrap .visual-swiper .swiper-slide.swiper-slide-active .visual-content .title-type {
+  opacity: 1;
+}
+
+.main-wrap .main .visual-wrap .visual-swiper .swiper-slide.swiper-slide-active .visual-content .title-sub, .main-wrap .main .visual-wrap .visual-swiper .swiper-slide.swiper-slide-active .visual-content .btn-type2 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .main-wrap .main .visual-wrap .visual-swiper .swiper-slide.swiper-slide-active .title-box .title-motion {
   transform: translateY(0);
 }
@@ -309,6 +318,8 @@ input::-webkit-search-results-decoration {
 
 .main-wrap .main .visual-wrap .visual-swiper .visual-content .title-type {
   line-height: 90px;
+  opacity: 0;
+  transition: 1s 0.5s;
 }
 
 .main-wrap .main .visual-wrap .visual-swiper .visual-content .title-sub {
@@ -316,10 +327,16 @@ input::-webkit-search-results-decoration {
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 2px;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: 1s 1.2s;
 }
 
 .main-wrap .main .visual-wrap .visual-swiper .visual-content .btn-type2 {
   margin: 35px 0 0;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: 1s 1.2s;
 }
 
 .main-wrap .main .intro-wrap {

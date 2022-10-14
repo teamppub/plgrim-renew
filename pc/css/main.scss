@@ -56,6 +56,15 @@
                         }
                     }
                     &.swiper-slide-active {
+                        .visual-content{
+                            .title-type{
+                                opacity: 1;
+                            }
+                            .title-sub, .btn-type2{
+                                opacity: 1;
+                                transform: translateY(0);
+                            }
+                        }
                         .title-box{
                             .title-motion {
                                 transform: translateY(0);
@@ -69,15 +78,23 @@
                     left: 120px;
                     .title-type{
                         line-height: 90px;
+                        opacity: 0;
+                        transition: 1s 0.5s;
                     }
                     .title-sub{
                         margin: 90px 0 0;
                         font-size: 20px;
                         line-height: 30px;
                         letter-spacing: 2px;
+                        transform: translateY(30px);
+                        opacity: 0;
+                        transition: 1s 1.2s;
                     }
                     .btn-type2{
                         margin: 35px 0 0;
+                        transform: translateY(30px);
+                        opacity: 0;
+                        transition: 1s 1.2s;
                     }
                 }
             }

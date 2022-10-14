@@ -4,7 +4,7 @@ $(document).ready(function () {
 	var visualSwiper = new Swiper(".visual-swiper", {
 		loop: true,
         loopAdditionalSlides: 100,
-        slidesPerView: 1.5,
+        slidesPerView: 1.2,
         spaceBetween: 100,
         centeredSlides: true,
         pagination: {
