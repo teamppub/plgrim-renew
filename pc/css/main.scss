@@ -129,6 +129,30 @@
         .business-wrap{
             padding-bottom: 200px;
             background-color: $CBg;
+            .business-box{
+                display: flex;
+                justify-content: space-between;
+                margin: 80px 0 0;
+                li{
+                    width: 440px;
+                    margin-left: 40px;
+                    strong{
+                        display: block;
+                        margin: 30px 0 20px;
+                        font-size: 36px;
+                        line-height: 44px;
+                        font-weight: 700;
+                    }
+                    p{
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: $CTsub2;
+                    }
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                }
+            }
         }
         .work-wrap{
             .work-item-list{
