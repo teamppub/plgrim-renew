@@ -49,9 +49,9 @@ gulp.task('pcguidecss', function (cb) {
 gulp.task('assets', function (cb) {
   pump([gulp.src('assets/**'), gulp.dest('build/assets')], cb);
 });
-gulp.task('image', function (cb) {
+gulp.task('pcimage', function (cb) {
   pump([gulp.src('pc/images/**'), gulp.dest('build/pc/images')], cb);
 });
-gulp.task('js', function (cb) {
+gulp.task('pcjs', function (cb) {
   pump([gulp.src('pc/js/*.js'), gulp.dest('build/pc/js')], cb);
 });
