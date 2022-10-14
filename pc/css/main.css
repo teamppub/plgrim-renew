@@ -366,6 +366,10 @@ input::-webkit-search-results-decoration {
   background-color: #f8f8f8;
 }
 
+.main-wrap .main .culture-wrap {
+  padding-bottom: 0;
+}
+
 .main-wrap .main .culture-wrap .culture-list {
   display: flex;
   flex-flow: row wrap;
