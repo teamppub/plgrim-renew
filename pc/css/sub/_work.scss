@@ -1,0 +1,27 @@
+@charset "UTF-8";
+@import '../common/variable', '../common/mixin';
+
+.work {
+  .title-wrap2 {
+    .title-type2 {
+      margin-bottom: 24px;
+      font-size: 26px;
+      line-height: 31px;
+    }
+  }
+
+  .inner-box {
+    & > .title-wrap2 {
+      & + .title-wrap {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  .work-item-wrap {
+    padding: 0px 120px;
+    .btn-wrap {
+      margin-top: -20px;
+    }
+  }
+}

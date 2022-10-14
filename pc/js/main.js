@@ -3,7 +3,8 @@ $(document).ready(function () {
 	var prdPos = [];
 	var visualSwiper = new Swiper(".visual-swiper", {
 		loop: true,
-        slidesPerView: 1.5,
+        loopAdditionalSlides: 100,
+        slidesPerView: 1.2,
         spaceBetween: 100,
         centeredSlides: true,
         pagination: {
@@ -27,4 +28,14 @@ $(document).ready(function () {
         },
 	});
 
+    window.onload = () => {
+        document.querySelectorAll(".work-item").forEach((item) => {
+            item.style.gridRowEnd = `span ${item.clientHeight + 140}`;
+        });
+        const wrap = document.querySelector(".work-item-list");
+        wrap.style.display = "grid";
+        wrap.style.gridTemplateColumns = "repeat(2, 670px)";
+        wrap.style.gap = "0px 60px";
+        wrap.style.gridAutoRows = "1px";
+    }
 });

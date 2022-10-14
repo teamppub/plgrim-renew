@@ -54,7 +54,7 @@
   margin-top: 90px;
 }
 .company .company-info .info-conts dd {
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 500;
   line-height: 36px;
 }
@@ -75,4 +75,25 @@
 }
 .company .partner ul li:nth-child(n+5) {
   margin-top: 80px;
+}
+
+/*
+ * safe-area-inset 처리
+ * $key - 넣을곳(padding-top, marin-bottom, ...)
+ * $direction - 방향(top, right, bottom, left)
+ * $value - 더해질 값(생략가능)
+ */
+.work .title-wrap2 .title-type2 {
+  margin-bottom: 24px;
+  font-size: 26px;
+  line-height: 31px;
+}
+.work .inner-box > .title-wrap2 + .title-wrap {
+  margin-bottom: 60px;
+}
+.work .work-item-wrap {
+  padding: 0px 120px;
+}
+.work .work-item-wrap .btn-wrap {
+  margin-top: -20px;
 }/*# sourceMappingURL=sub.css.map */

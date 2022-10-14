@@ -18,7 +18,7 @@
     .main{
 	    padding: 190px 0 300px;
         article{
-            padding: 200px 0;
+            padding: 200px 0 0;
             .title-wrap{
                 margin-bottom: 110px;
             }
@@ -56,6 +56,15 @@
                         }
                     }
                     &.swiper-slide-active {
+                        .visual-content{
+                            .title-type{
+                                opacity: 1;
+                            }
+                            .title-sub, .btn-type2{
+                                opacity: 1;
+                                transform: translateY(0);
+                            }
+                        }
                         .title-box{
                             .title-motion {
                                 transform: translateY(0);
@@ -69,15 +78,23 @@
                     left: 120px;
                     .title-type{
                         line-height: 90px;
+                        opacity: 0;
+                        transition: 1s 0.5s;
                     }
                     .title-sub{
                         margin: 90px 0 0;
                         font-size: 20px;
                         line-height: 30px;
                         letter-spacing: 2px;
+                        transform: translateY(30px);
+                        opacity: 0;
+                        transition: 1s 1.2s;
                     }
                     .btn-type2{
                         margin: 35px 0 0;
+                        transform: translateY(30px);
+                        opacity: 0;
+                        transition: 1s 1.2s;
                     }
                 }
             }
@@ -110,7 +127,59 @@
             }
         }
         .business-wrap{
+            padding-bottom: 200px;
             background-color: $CBg;
+        }
+        .work-wrap{
+            .work-item-list{
+                margin-bottom: -140px;
+            }
+        }
+        .culture-wrap{
+            .culture-list{
+                display: flex;
+                flex-flow: row wrap;
+                li{
+                    width: calc( 50% - 30px);
+                    margin-left: 60px;
+                    a{
+                        display: block;
+                    }
+                    .thumb{}
+                    .info{
+                        display: block;
+                        margin-top: 30px;
+                        strong{
+                            display: block;
+                            margin-bottom: 30px;
+                            font-size: 36px;
+                            line-height: 50px;
+                            font-weight: 700;
+                        }
+                        p{
+                            font-size: 16px;
+                            &.cont{
+                                color: $CTsub2;
+                                line-height: 24px;
+                                letter-spacing: 0.4px;
+                                @include text-hidden($line: 2, $lineHeight: 24, $auto: null);
+                            }
+                            &.date{
+                                margin-top: 20px;
+                                font-size: 16px;
+                                color: $CText;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    &:nth-child(n+3){
+                        margin-top: 60px;
+                    }
+                    &:nth-of-type(2n+1){
+                        margin-left: 0;
+                    }
+                }
+            }
         }
     }
 }
