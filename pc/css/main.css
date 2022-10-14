@@ -138,18 +138,18 @@ textarea {
   color: #000;
 }
 
-input[type="text"],
-input[type="submit"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="reset"],
-input[type="email"],
-input[type="tel"],
-input[type="search"],
-input[type="file"],
-input[type="email"],
-input[type="tel"] {
+input[type=text],
+input[type=submit],
+input[type=password],
+input[type=search],
+input[type=number],
+input[type=reset],
+input[type=email],
+input[type=tel],
+input[type=search],
+input[type=file],
+input[type=email],
+input[type=tel] {
   padding: 0 22px;
   height: 59px;
   line-height: 59px;
@@ -158,25 +158,25 @@ input[type="tel"] {
   font-weight: 400;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+input[type=radio],
+input[type=checkbox] {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="tel"]:focus,
-input[type="email"]:focus,
-input[type="search"]:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=tel]:focus,
+input[type=email]:focus,
+input[type=search]:focus,
 textarea:focus {
   border-color: #000;
   background-color: #fff;
@@ -185,6 +185,11 @@ textarea:focus {
 
 input[readonly] {
   pointer-events: none;
+}
+
+::-webkit-input-placeholder {
+  font-size: inherit;
+  color: #bcbcbc;
 }
 
 ::placeholder {
@@ -208,7 +213,6 @@ button {
   cursor: pointer;
   color: inherit;
 }
-
 button:disabled {
   cursor: default;
 }
@@ -229,6 +233,11 @@ input::-webkit-search-cancel-button,
 input::-webkit-search-results-button,
 input::-webkit-search-results-decoration {
   display: none;
+}
+
+::-moz-selection {
+  background: #01A0E9;
+  color: #fff;
 }
 
 ::selection {
@@ -258,28 +267,22 @@ input::-webkit-search-results-decoration {
 .main-wrap .header-wrap .sub-menu .list-depth1 > li > a {
   color: #000;
 }
-
 .main-wrap .main {
   padding: 190px 0 300px;
 }
-
 .main-wrap .main article {
   padding: 200px 0;
 }
-
 .main-wrap .main article .title-wrap {
   margin-bottom: 110px;
 }
-
 .main-wrap .main .visual-wrap {
   padding: 0;
 }
-
 .main-wrap .main .visual-wrap .swiper-navigation {
   width: 1400px;
   margin: 0 auto 90px;
 }
-
 .main-wrap .main .visual-wrap .visual-swiper .swiper-slide .title-box {
   display: flex;
   justify-content: space-between;
@@ -287,76 +290,61 @@ input::-webkit-search-results-decoration {
   position: relative;
   overflow: hidden;
 }
-
 .main-wrap .main .visual-wrap .visual-swiper .swiper-slide .title-box .title-motion {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   position: relative;
   transform: translateY(200%);
-  transition: 1s .2s;
+  transition: 1s 0.2s;
 }
-
 .main-wrap .main .visual-wrap .visual-swiper .swiper-slide.swiper-slide-active .title-box .title-motion {
   transform: translateY(0);
 }
-
 .main-wrap .main .visual-wrap .visual-swiper .visual-content {
   position: absolute;
   top: -46px;
   left: 120px;
 }
-
 .main-wrap .main .visual-wrap .visual-swiper .visual-content .title-type {
   line-height: 90px;
 }
-
 .main-wrap .main .visual-wrap .visual-swiper .visual-content .title-sub {
   margin: 90px 0 0;
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 2px;
 }
-
 .main-wrap .main .visual-wrap .visual-swiper .visual-content .btn-type2 {
   margin: 35px 0 0;
 }
-
 .main-wrap .main .intro-wrap {
   padding: 160px 0;
 }
-
 .main-wrap .main .intro-wrap .intro-cont {
   margin-top: 110px;
 }
-
 .main-wrap .main .intro-wrap .intro-cont dl {
   display: flex;
 }
-
 .main-wrap .main .intro-wrap .intro-cont dl dt {
   font-size: 62px;
   font-weight: 700;
   line-height: 90px;
   letter-spacing: 3.1px;
 }
-
 .main-wrap .main .intro-wrap .intro-cont dl dd {
   padding-left: 300px;
 }
-
 .main-wrap .main .intro-wrap .intro-cont dl dd p {
   font-size: 20px;
   font-weight: 600;
   line-height: 36px;
   letter-spacing: 2px;
 }
-
 .main-wrap .main .intro-wrap .intro-cont dl dd p + p {
   margin-top: 40px;
 }
-
 .main-wrap .main .business-wrap {
   background-color: #F8F8F8;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
