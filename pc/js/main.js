@@ -27,4 +27,14 @@ $(document).ready(function () {
         },
 	});
 
+    window.onload = () => {
+        document.querySelectorAll(".work-item").forEach((item) => {
+            item.style.gridRowEnd = `span ${item.clientHeight + 140}`;
+        });
+        const wrap = document.querySelector(".work-item-list");
+        wrap.style.display = "grid";
+        wrap.style.gridTemplateColumns = "repeat(2, 670px)";
+        wrap.style.gap = "0px 60px";
+        wrap.style.gridAutoRows = "1px";
+    }
 });
