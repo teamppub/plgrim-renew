@@ -22,14 +22,14 @@
 <script src="../../../assets/js/jquery-3.1.1.min.js"></script>
 <script src="../../../assets/js/swiper.min.js"></script>
 <script src="../../js/ui.js"></script>
-
-
-
+	<!-- <?php include("/pc/html/layout/meta.html");?> -->
 	<link rel="stylesheet" type="text/css" href="../../css/main.css"><!-- 메인에만 노출 -->
+	<script src="../../js/main.js"></script><!-- 메인에만 노출 -->
 </head>
 
 <body>
-	<div id="wrap">
+	<h6 class="hidden">main</h6>
+	<div id="wrap" class="main-wrap">
 		<!-- header -->
 		<header class="header-wrap">
 	<div class="logo-box">
@@ -41,19 +41,19 @@
 	<div class="sub-menu">
 		<ul class="list-depth1">
 			<li>
-				<a href="#"><span>Company</span></a>
+				<a href="#" name="link" data-index="company"><span>Company</span></a>
 			</li>
 			<li>
-				<a href="#"><span>Work</span></a>
+				<a href="#" name="link" data-index="work"><span>Work</span></a>
 			</li>
 			<li>
-				<a href="#"><span>Product</span></a>
+				<a href="#" name="link" data-index="product"><span>Product</span></a>
 			</li>
 			<li>
-				<a href="#"><span>Cultrue</span></a>
+				<a href="#" name="link" data-index="culture"><span>Culture</span></a>
 			</li>
 			<li>
-				<a href="#"><span>Contact</span></a>
+				<a href="#" name="link" data-index="contact"><span>Contact</span></a>
 			</li>
 		</ul>
 	</div>
@@ -62,12 +62,272 @@
 		<a href="#"><span>Recruit</span><i class="ico-recruit"><span class="hidden">채용</span></i></a>
 	</div>
 </header>
-
 		<!-- //header -->
 
 		<!--content-->
-		<main id="content" class="main" style="height:100vh">
-			
+		<main id="content" class="main">
+			<!-- visual -->
+			<article class="visual-wrap">
+				<div class="visual-swiper">
+					<div class="swiper-navigation">
+						<div class="swiper-paging"></div>
+						<div class="swiper-button-box">
+							<div class="btn-type button-prev"><i class="ico-arr lft"><span class="hidden">이전</span></i></div>
+							<div class="btn-type button-next"><i class="ico-arr"><span class="hidden">다음</span></i></div>
+						</div>
+					</div>
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="../../images/temp/@temp_visual_02.png"/>
+							<div class="visual-content">
+								<div class="title-type title-box">
+									SSFSHOP.COM<br/>온라인플랫폼<br/>개발 / 운영
+								</div>
+								<div class="title-sub title-box">
+									에잇세컨즈, 빈폴등 삼성물산 패션 브랜드의 공식 온라인 쇼핑몰<br/>사용자의 편리한 온라인쇼핑을 위한 ux/ui개선 프로젝트
+								</div>
+								<a href="#" class="btn-type2">
+									<p>프로젝트 보기</p>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="../../images/temp/@temp_visual_02.png"/>
+							<div class="visual-content">
+								<div class="title-type title-box">
+									H패션몰<br/>현대 한섬패션<br/>종합몰 구축
+								</div>
+								<div class="title-sub title-box">
+									국내 최고의 브랜드와 함께 럭셔리부터 캐쥬얼까지<br/>다양한 수입 브랜드를 전개하는 H패션몰의 종합 쇼핑<br/>시스템 ux/ui개선 프로젝트
+								</div>
+								<a href="#" class="btn-type2">
+									<p>프로젝트 보기</p>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="../../images/temp/@temp_visual_03.png"/>
+							<div class="visual-content">
+								<div class="title-type title-box">
+									글라이드(GLYDE)<br/>온라인 플랫폼 구축
+								</div>
+								<div class="title-sub title-box">
+									플그림 Solution 기반으로 "Factory to Home"을 실현하는<br/>Direct Mobile Platform 구축.
+								</div>
+								<a href="#" class="btn-type2">
+									<p>프로젝트 보기</p>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="../../images/temp/@temp_visual_04.png"/>
+							<div class="visual-content">
+								<div class="title-type title-box">
+									현대한섬<br/>EQL 온라인편집샵<br/>구축/운영
+								</div>
+								<div class="title-sub title-box">
+									지금 가장 쿨한 패션 아이템과 스타일 컨텐츠를<br/>엄선하여 소개하는 온라인 편집숍인 EQL샵 구축/운영 프로젝트
+								</div>
+								<a href="#" class="btn-type2">
+									<p>프로젝트 보기</p>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="../../images/temp/@temp_visual_05.png"/>
+							<div class="visual-content">
+								<div class="title-type title-box">
+									F&F<br/>MLB KOREA<br/>온라인 스토어 구축
+								</div>
+								<div class="title-sub title-box">
+									스트릿 캐주얼 브랜드 MLB 공식 온라인 스토어 구축<br/>기획, 디자인 및 퍼블리싱, 개발, 검증 전 단계를 플그림 내부 조직을<br/>중심으로 완결성 있는 독립적 플랫폼 구축
+								</div>
+								<a href="#" class="btn-type2">
+									<p>프로젝트 보기</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+			<!-- //visual -->
+
+			<!-- intro -->
+			<article class="intro-wrap inner-box2">
+				<div class="title-wrap2">
+                    <h3 class="en">We want to create New Value to the software</h3>
+                    <h4 class="ko">플그림은 소프트웨어로 새로운 가치를 만들고자 합니다</h4>
+                </div>
+				<div class="intro-cont">
+					<dl>
+						<dt>VALUE<br/>PASSIONATE<br/>POWERFUL</dt>
+						<dd>
+							<p>플그림은 소프트웨어에 열정을 가진 전문가들의 모임입니다.<br/>PLGRIM은 디지털 예술품을 통해 아날로그 가치를 실현합니다.<br/>PLGRIM은 소프트웨어를 통해 고객 가치를 실현하고 인간의 삶을<br/>좀 더 이롭고 풍요롭게 만들고자 합니다.</p>
+							<p>플그림은 젊고 강한 기업으로 국내 주요 e-Commerce 프로젝트에 리더 및<br/>핵심 역할로 참여하여 성공적인 프로젝트를 완료해 왔습니다. 또한 온라인 유통<br/>플랫폼에 대한 다년간의 경험 및 역량을 가진 전문가들로 구성되어 있습니다.</p>
+						</dd>
+					</dl>
+				</div>
+			</article>
+			<!-- //intro -->
+
+			<!-- business -->
+			<article class="business-wrap">
+				<div class="inner-box2">
+					<div class="title-wrap">
+						<h3 class="title-type">01<span></span>BUSINESS</h3>
+						<a href="#" class="side-box btn-type">
+							<i class="ico-arr"><span class="hidden">이동하기</span></i>
+						</a>
+					</div>
+					<div class="business-graph"><img src="../../images/product/graph01.png" alt="gragh"></div>
+					<ul class="business-box">
+                        <li>
+                            <img src="../../images/product/business01.png" alt="business01">
+                            <strong>E-Commerce <br /> Service Building</strong>
+                            <p>안정적이고 검증된 Framework 기반하에 기업의 비즈니스에<br/>최적화된 커머스서비스를 구축합니다.</p>
+                        </li>
+                        <li>
+                            <img src="../../images/product/business02.png" alt="business02">
+                            <strong>E-Commerce <br /> Service Operations</strong>
+                            <p>풍부한 커머스 전문지식으로 고객의 요구사항을 정확하게 반영<br/>하여 비즈니스 확장을 용이하도록 커머스 운영을 실현합니다.</p>
+                        </li>
+                        <li>
+                            <img src="../../images/product/business03.png" alt="business03">
+                            <strong>E-Commerce & <br />E-Business Platform</strong>
+                            <p>인터넷, 모바일 환경에서 어플리케이션 개발 및 유지보수를<br/>효과적으로 수행하기 위한 기반인프라 및 개발패턴을 제공합니다.</p>
+                        </li>
+                    </ul>
+                </div>
+			</article>
+			<!--// business -->
+
+			<!-- work -->
+			<article class="work-wrap">
+				<div class="inner-box2">
+					<div class="title-wrap">
+						<h3 class="title-type">02<span></span>OUR PROJECT</h3>
+						<a href="#" class="side-box btn-type">
+							<i class="ico-arr"><span class="hidden">이동하기</span></i>
+						</a>
+					</div>
+
+					<div class="work-item-list">
+						<div class="work-item">
+							<a href="#">
+								<div class="item-img"><img src="../../images/temp/@temp_work01.png" alt="이미지1"></div>
+								<div class="item-info">
+									<div class="item-title">ssfshop.comM<br /> 온라인 플랫폼 개발/운영</div>
+								</div>
+							</a>
+						</div>
+						<div class="work-item">
+							<a href="#">
+								<div class="item-img"><img src="../../images/temp/@temp_work02.png" alt="이미지1"></div>
+								<div class="item-info">
+									<div class="item-title">롯데쇼핑 롯데 온라인몰 통합<br />'Lotte On'구축</div>
+								</div>
+							</a>
+						</div>
+						<div class="work-item">
+							<a href="#">
+								<div class="item-img"><img src="../../images/temp/@temp_work03.png" alt="이미지1"></div>
+								<div class="item-info">
+									<div class="item-title">현대한섬 H패션몰 구축</div>
+								</div>
+							</a>
+						</div>
+						<div class="work-item">
+							<a href="#">
+								<div class="item-img"><img src="../../images/temp/@temp_work04.png" alt="이미지1"></div>
+								<div class="item-info">
+									<div class="item-title">글라이드(GLYDE) <br /> 온라인 플랫폼 구축</div>
+								</div>
+							</a>
+						</div>
+						<div class="work-item">
+							<a href="#">
+								<div class="item-img"><img src="../../images/temp/@temp_work05.png" alt="이미지1"></div>
+								<div class="item-info">
+									<div class="item-title">DISCOVERY EXPEDI- <br />TION 온라인 스토어 구축</div>
+								</div>
+							</a>
+						</div>
+						<div class="work-item">
+							<a href="#">
+								<div class="item-img"><img src="../../images/temp/@temp_work06.png" alt="이미지1"></div>
+								<div class="item-info">
+									<div class="item-title">현대한섬 EQL <br /> 온라인 편집샵 구축/운영</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</article>
+			<!-- //work -->
+
+			<!-- culture -->
+			<article class="culture-wrap">
+				<div class="inner-box2">
+					<div class="title-wrap">
+						<h3 class="title-type">03<span></span>CULTURE</h3>
+						<a href="#" class="side-box btn-type">
+							<i class="ico-arr"><span class="hidden">이동하기</span></i>
+						</a>
+					</div>
+					<ul class="culture-list">
+						<li>
+							<a href="#">
+								<div class="thumb">
+									<img src="../../images/temp/@temp_culture01.png" alt="temp_culture" />
+								</div>
+								<div class="info">
+									<strong>플그림의 새로운 홈페이지를 소개합니다 !</strong>
+									<p class="cont">플그림의 새로운 홈페이지가 오픈했습니다! 이번 리뉴얼에서는 플그림의 그동안의 발자취와 이커머스를 중심으로 한 다양한 프로젝트 레퍼런스를 쉽게 확인할 수 있도록 간편한 이번 리뉴얼에서는 플그림의 그동안의 발자취와 이커머스를 중심으로 한 다양한 프로젝트 레퍼런스를 쉽게 확인할 수 있도록 간편한</p>
+									<p class="date">2021.01.10</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="thumb">
+									<img src="../../images/temp/@temp_culture02.png" alt="temp_culture" />
+								</div>
+								<div class="info">
+									<strong>플그림의 새로운 홈페이지를 소개합니다 !</strong>
+									<p class="cont">플그림의 새로운 홈페이지가 오픈했습니다! </p>
+									<p class="date">2021.01.10</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="thumb">
+									<img src="../../images/temp/@temp_culture03.png" alt="temp_culture" />
+								</div>
+								<div class="info">
+									<strong>현대 한섬 H패션몰이 오픈했어요</strong>
+									<p class="cont">플그림의 새로운 홈페이지가 오픈했습니다! 이번</p>
+									<p class="date">2021.01.10</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="thumb">
+									<img src="../../images/temp/@temp_culture04.png" alt="temp_culture" />
+								</div>
+								<div class="info">
+									<strong>플그림 신사옥, OPEN HOUSE PARTY</strong>
+									<p class="cont">플그림의 사옥이 새로운 장소로 이전하면서 두번째 Home coming party가 성수동 신사옥에서 열렸습니다! 각 프로젝트지에서 근무중인 임직원이 모처럼 본사에 모두 모였는데요....</p>
+									<p class="date">2021.01.10</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</article>
+			<!-- //culture -->
+
 		</main>
 		<!--//content-->
 

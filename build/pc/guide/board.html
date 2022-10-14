@@ -23,7 +23,7 @@
 
 <body>
 	<link rel="stylesheet" type="text/css" href="./guide.css">
-
+<h6 class="hidden">guide</h6>
 <div class="page-guide-nav">
 	<h1 class="nav-title"><a href="index.html"><img src="../images/common/logo.svg"> <span>2022.10</span></a></h1>
 	<ul class="nav">
@@ -34,6 +34,8 @@
 		<li><a href="icon.html">icon</a></li>
 		<li><a href="table.html">table</a></li>
 		<li><a href="board.html">board</a></li>
+		<li><a href="swiper.html">swiper</a></li>
+		<li><a href="layerpop.html">popup</a></li>
 	</ul>
 </div>
 
@@ -64,7 +66,168 @@
 
 	<div class="page-guide-content">
 		<h2 class="page-guide-title">Board</h2>
-		
+
+		<h3 class="page-guide-title2">work</h3>
+		<div class="page-guide-box">
+			<div class="work-item-list">
+				<!-- 221016 수정 || class(work-item-wrap => work-item-list) -->
+				<div class="work-item">
+					<a href="#">
+						<div class="item-img"><img src="./Users/minhyee/git/plgrim-renew/pc/guide/images/temp/@temp_work01.png" alt="이미지1"></div>
+						<div class="item-info">
+							<div class="item-title">ssfshop.comM<br /> 온라인 플랫폼 개발/운영</div>
+							<div class="item-sub"> 사용자의 편리한 쇼핑몰 이용을 위한 UI/UX 개선</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="work-item">
+					<a href="#">
+						<div class="item-img"><img src="./Users/minhyee/git/plgrim-renew/pc/guide/images/temp/@temp_work02.png" alt="이미지1"></div>
+						<div class="item-info">
+							<div class="item-title">롯데쇼핑 롯데 온라인몰 통합<br />'Lotte On'구축</div>
+							<div class="item-sub">롯데그룹내 개별 몰을 오픈마켓 기반 하나의 서비스로 통합<br /> 'Back Office 공통, 기술 공통, 채널/제휴/캠페인' 파트 수행</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="work-item">
+					<a href="#">
+						<div class="item-img"><img src="./Users/minhyee/git/plgrim-renew/pc/guide/images/temp/@temp_work03.png" alt="이미지1"></div>
+						<div class="item-info">
+							<div class="item-title">현대한섬 H패션몰 구축</div>
+							<div class="item-sub">플그림 Solution 기반으로 한섬 패션 종합몰 구축</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="work-item">
+					<a href="#">
+						<div class="item-img"><img src="./Users/minhyee/git/plgrim-renew/pc/guide/images/temp/@temp_work04.png" alt="이미지1"></div>
+						<div class="item-info">
+							<div class="item-title">글라이드(GLYDE) <br /> 온라인 플랫폼 구축</div>
+							<div class="item-sub">플그림 Solution 기반으로 'Factory to Home'을 <br /> 실현하는 Direct Mobile Platform 구축</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="work-item">
+					<a href="#">
+						<div class="item-img"><img src="./Users/minhyee/git/plgrim-renew/pc/guide/images/temp/@temp_work05.png" alt="이미지1"></div>
+						<div class="item-info">
+							<div class="item-title">DISCOVERY EXPEDI- <br />TION 온라인 스토어 구축</div>
+							<div class="item-sub">테크니컬 라이프스타일 브랜드 디스커버리익스페디션 <br /> 온라인 스토어 구축</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="work-item">
+					<a href="#">
+						<div class="item-img"><img src="./Users/minhyee/git/plgrim-renew/pc/guide/images/temp/@temp_work06.png" alt="이미지1"></div>
+						<div class="item-info">
+							<div class="item-title">현대한섬 EQL <br /> 온라인 편집샵 구축/운영</div>
+							<div class="item-sub">플그림 Solution 기반으로 밀레니얼 세대 소비자들을 <br />겨냥한 온라인 편집샵 구축</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="work-item">
+					<a href="#">
+						<div class="item-img"><img src="./Users/minhyee/git/plgrim-renew/pc/guide/images/temp/@temp_work07.png" alt="이미지1"></div>
+						<div class="item-info">
+							<div class="item-title">서울아산병원 <br />의료정보 고도화사업</div>
+							<div class="item-sub">사용자의 편리한 쇼핑몰 이용을 위한 UI/UX 개선</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="work-item">
+					<a href="#">
+						<div class="item-img"><img src="./Users/minhyee/git/plgrim-renew/pc/guide/images/temp/@temp_work08.png" alt="이미지1"></div>
+						<div class="item-info">
+							<div class="item-title">롯데시네마 VOD <br /> 사이트 구축</div>
+							<div class="item-sub">플그림 Solution 기반으로 밀레니얼 세대 소비자들을 <br />겨냥한 온라인 편집샵 구축</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- 핀터레스트 정렬 관련 스크립트 : 테스트중 -->
+		<script>
+			window.onload = () => {
+				document.querySelectorAll(".work-item").forEach((item) => {
+					item.style.gridRowEnd = `span ${item.clientHeight + 140}`;
+				});
+				const wrap = document.querySelector(".work-item-list");
+				wrap.style.display = "grid";
+				wrap.style.gridTemplateColumns = "repeat(2, 670px)";
+				wrap.style.gap = "0px 60px";
+				wrap.style.gridAutoRows = "1px";
+			}
+		</script>
+		<!-- //핀터레스트 정렬 관련 스크립트 : 테스트중 -->
+
+		<h3 class="page-guide-title2">culture</h3>
+		<div class="page-guide-box">
+			<div class="culture-item-list">
+				<!-- 221016 수정 || class(culture-item-wrap =>  culture-item-list) -->
+				<div class="culture-item">
+					<a href="#">
+						<div class="item-img"><img src="./Users/minhyee/git/plgrim-renew/pc/guide/images/temp/@temp_culture01.png" alt="이미지1"></div>
+						<div class="item-info">
+							<div class="item-title">플그림의 새로운 홈페이지를 소개합니다 !</div>
+							<div class="item-sub">
+								플그림의 새로운 홈페이지가 오픈했습니다! 이번 리뉴얼에서는 플그림의 그동안의 발자취와 이커머스를 중심으로 한 다양한 프로젝트<br />
+								레퍼런스를 쉽게 확인할 수 있도록 간편한 정보전달에 초점을 뒀습니다.
+							</div>
+							<div class="item-date">2021.04.30</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="culture-item">
+					<a href="#">
+						<div class="item-img"><img src="./Users/minhyee/git/plgrim-renew/pc/guide/images/temp/@temp_culture02.png" alt="이미지1"></div>
+						<div class="item-info">
+							<div class="item-title">하림 GLYDE 쇼핑몰이 오픈했어요</div>
+							<div class="item-sub">
+								Factory to Home을 실현하는 Glyde몰이 오픈했습니다. 플그림 솔루션 기반으로 제작된 글라이드몰. 식탁에서 즐기는 신선한 자연<br />
+								식재료의 맛과 유통과정을 뺀 정직한 가격으로 승부하는 특별한 서비스를 이용해보세요!
+							</div>
+							<div class="item-date">2021.01.25</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="culture-item">
+					<a href="#">
+						<div class="item-img"><img src="./Users/minhyee/git/plgrim-renew/pc/guide/images/temp/@temp_culture03.png" alt="이미지1"></div>
+						<div class="item-info">
+							<div class="item-title">현대한섬 H패션몰이 오픈했어요</div>
+							<div class="item-sub">
+								H패션몰 프로젝트가 마무리되어 서비스가 오픈했습니다. H패션몰은 타미힐피거, DKNY 등 해외브랜드에서 국내캐쥬얼 브랜드까지<br />
+								다양한 패션 브랜드를 판매하는 온라인 쇼핑몰입니다. 매일매일 할인되는 하루특가, 브랜드별로 신상부터 기획상품을 확인할 수 있는 H패션몰 프로젝트가 마무리되어 서비스가 오픈했습니다.
+								H패션몰은 타미힐피거, DKNY 등 해외브랜드에서 국내캐쥬얼 브랜드까지
+							</div>
+							<div class="item-date">2021.01.25</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="culture-item">
+					<a href="#">
+						<div class="item-img"><img src="./Users/minhyee/git/plgrim-renew/pc/guide/images/temp/@temp_culture04.png" alt="이미지1"></div>
+						<div class="item-info">
+							<div class="item-title">플그림 신사옥, Open House Party</div>
+							<div class="item-sub">플그림의 사옥이 새로운 장소로 이전하면서 두번째 Home coming party가 성수동 신사옥에서 열렸습니다!</div>
+							<div class="item-date">2021.01.25</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
 	</div>
 </body>
 

@@ -28,6 +28,48 @@ var UI = (function () {
 
                 pos = st;
             }, false);
+
+            // sub page == gnb active
+            var pageTitle = document.querySelector("h6");
+            var currentTitle = pageTitle.innerHTML;
+
+            $(".sub-menu .list-depth1 li a[name=link]").each(function() { 
+                var pageItem = $(this).attr("data-index"); 
+
+                if(pageItem == currentTitle) {
+                    $(this).addClass("active")
+                } 
+                else {
+                // $(this).removeClass('active');
+                }
+            });
+        },
+        layerPopUp: function (pOption) {
+            /*   pOption
+             *  {
+             *  	 state : 'open'  OR  'close'
+             *  	 selId : Layer Selector
+             *  }
+             */
+            var lLayer = $(pOption.selId);
+            var dim = $(pOption.selId).find(".dim");
+
+            if (pOption.st !== "close") {
+                lLayer.addClass('active').fadeIn(300);
+                dim.show();
+                $("body").css({ overflow: "hidden" });
+            } else {
+                lLayer.removeClass('active').fadeOut(300);
+                dim.hide();
+                $("body").css({ overflow: "" });
+            }
+
+            lLayer.find(".dim, .pop-close").on("click", function (e) {
+                e.preventDefault();
+                lLayer.removeClass('active').fadeOut(300);
+                dim.hide();
+                $("body").css({ overflow: "" });
+            });
         },
     };
 })();
