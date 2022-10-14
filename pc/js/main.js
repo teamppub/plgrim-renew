@@ -3,6 +3,7 @@ $(document).ready(function () {
 	var prdPos = [];
 	var visualSwiper = new Swiper(".visual-swiper", {
 		loop: true,
+        loopAdditionalSlides: 100,
         slidesPerView: 1.5,
         spaceBetween: 100,
         centeredSlides: true,
