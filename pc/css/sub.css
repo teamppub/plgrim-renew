@@ -8,13 +8,16 @@
 .contact .inner-box {
   border-bottom: 1px solid #ccc;
 }
+
 .contact .map-wrap .map {
   height: 850px;
   background-color: #eee;
 }
+
 .contact .list-info {
   padding: 200px 0;
 }
+
 .contact .btn-wrap {
   padding: 200px 0 0;
 }
@@ -28,52 +31,64 @@
 .company .common {
   margin-bottom: 200px;
 }
+
 .company .common .title-type {
   margin-bottom: 88px;
 }
+
 .company .company-info {
   display: flex;
   padding-left: 120px;
 }
+
 .company .company-info .info-title {
   margin-right: 195px;
   width: 405px;
 }
+
 .company .company-info .info-title dt {
   font-size: 62px;
   line-height: 92px;
   font-weight: 700;
 }
+
 .company .company-info .info-conts dt {
   margin-bottom: 20px;
   font-size: 38px;
   font-weight: 700;
   line-height: 50px;
 }
+
 .company .company-info .info-conts dt ~ dt {
   margin-top: 90px;
 }
+
 .company .company-info .info-conts dd {
   font-size: 21px;
   font-weight: 500;
   line-height: 36px;
 }
+
 .company .history {
   padding: 0px 120px;
 }
+
 .company .partner {
   padding: 0px 120px;
 }
+
 .company .partner ul {
   display: flex;
   flex-wrap: wrap;
   margin: 0px -58px;
 }
+
 .company .partner ul li {
   padding: 0px 58px;
   width: 25%;
 }
-.company .partner ul li:nth-child(n+5) {
+
+.company .partner ul li:nth-child(n + 5) {
   margin-top: 80px;
 }
 
@@ -88,60 +103,74 @@
   font-size: 26px;
   line-height: 31px;
 }
+
 .work .inner-box > .title-wrap2 + .title-wrap {
   margin-bottom: 60px;
 }
+
 .work .work-item-wrap {
   padding: 0px 120px;
 }
+
 .work .work-item-wrap .btn-wrap {
   margin-top: -20px;
 }
+
 .work .work-detail-wrap .detail-visual {
   position: relative;
   margin-bottom: 200px;
 }
+
 .work .work-detail-wrap .detail-visual .title-wrap {
   position: absolute;
   top: -40px;
   display: block;
   text-align: left;
 }
+
 .work .work-detail-wrap .detail-visual .info {
   position: absolute;
   bottom: 140px;
   left: 120px;
 }
+
 .work .work-detail-wrap .detail-visual .info dl {
   display: flex;
 }
+
 .work .work-detail-wrap .detail-visual .info dl + dl {
   margin-top: 16px;
 }
+
 .work .work-detail-wrap .detail-visual .info dl dt {
   width: 140px;
   font-size: 22px;
   font-weight: 700;
   line-height: 26px;
 }
+
 .work .work-detail-wrap .detail-visual .info dl dd {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
 }
+
 .work .work-detail-wrap .detail-visual .info dl dd a {
   text-decoration: underline;
 }
+
 .work .work-detail-wrap .detail-info {
   margin-bottom: 140px;
   padding: 0px 120px;
 }
+
 .work .work-detail-wrap .detail-info h4 {
   margin-bottom: 30px;
   font-size: 28px;
   font-weight: 700;
   line-height: 34px;
 }
+
 .work .work-detail-wrap .detail-info .text {
   font-size: 24px;
   line-height: 42px;
@@ -159,23 +188,28 @@
   border-radius: 20px 0px 0px 20px;
   background: #f8f8f8;
 }
+
 .product .business-wrap .business-graph {
   margin-bottom: 80px;
 }
+
 .product .business-wrap .business-box {
   display: flex;
   margin: 0px -20px;
 }
+
 .product .business-wrap .business-box li {
   padding: 0px 20px;
   width: 33.33%;
 }
+
 .product .business-wrap .business-box li .box-title {
   margin: 30px 0px 20px;
   font-size: 36px;
   line-height: 44px;
   font-weight: 700;
 }
+
 .product .business-wrap .business-box li .box-sub {
   font-size: 16px;
   line-height: 24px;
@@ -183,17 +217,20 @@
   word-break: keep-all;
   color: #666;
 }
+
 .product .commerce-box h5 {
   margin-bottom: 30px;
   font-size: 70px;
   font-weight: 800;
 }
+
 .product .commerce-box p {
   margin-bottom: 80px;
   font-size: 24px;
   font-weight: 500;
   line-height: 42px;
 }
+
 .product .commerce-box + .commerce-box {
   margin-top: 200px;
 }

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@import "../common/variable", "../common/mixin";
+
+
+.swiper-navigation{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.swiper-paging{
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	color: $CText;
+	span{
+		font-size: 0;
+		display: block;
+		margin: 0 10px;
+		width: 2px;
+		height: 10px;
+		background-color: $CText;
+		transform: rotate(27deg);
+	}
+	em{
+		&.swiper-pagination-current{
+			font-weight: 900;
+		}
+	}
+}
+
+.swiper-button-box {
+	display: flex;
+
+	.button-next,
+	.button-prev {
+		position: relative;
+		display: inline-flex;
+		align-items: center;
+		cursor: pointer;
+
+		&.swiper-button-disabled {
+			opacity: 0.5;
+		}
+	}
+}

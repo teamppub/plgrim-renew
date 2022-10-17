@@ -162,11 +162,6 @@ body {
   margin-bottom: 50px;
 }
 
-.page-guide-box p {
-  font-size: 25px;
-  line-height: 1.7;
-}
-
 .page-guide-box p.text {
   font-size: 13px;
   color: #ff0000;
@@ -179,6 +174,16 @@ body {
 
 .page-guide-box .btn-wrap + .btn-wrap {
   margin-top: 40px;
+}
+
+.page-guide-box.font p {
+  font-size: 25px;
+  line-height: 1.7em;
+}
+
+.page-guide-box.font p.text {
+  font-size: 13px;
+  color: #ff0000;
 }
 
 .page-guide-box.icon i {
