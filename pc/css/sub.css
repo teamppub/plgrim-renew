@@ -245,33 +245,43 @@
   margin-left: 20px;
   align-self: center;
 }
+
 .recruit .btn-wrap .btn-type {
   background: #ffffff;
 }
+
 .recruit .recruit-wrap {
   margin-bottom: 200px;
 }
-.recruit .recruit-wrap [class^=recruit-img] {
+
+.recruit .recruit-wrap [class^='recruit-img'] {
   display: flex;
 }
-.recruit .recruit-wrap [class^=recruit-img].top {
+
+.recruit .recruit-wrap [class^='recruit-img'].top {
   justify-content: space-between;
   margin-bottom: 40px;
 }
-.recruit .recruit-wrap [class^=recruit-img].bottom {
+
+.recruit .recruit-wrap [class^='recruit-img'].bottom {
   justify-content: end;
 }
-.recruit .recruit-wrap [class^=recruit-img].bottom .img-box + .img-box {
+
+.recruit .recruit-wrap [class^='recruit-img'].bottom .img-box + .img-box {
   margin-left: 40px;
 }
-.recruit .swiper .swiper-navigation {
+
+.recruit .recruit-slider .swiper-navigation {
   position: absolute;
   top: 22px;
   left: -221px;
 }
-.recruit .swiper .swiper-button-next {
+
+.recruit .recruit-slider .swiper-button-next {
   right: -221px;
 }
-.recruit .swiper .swiper-button-prev {
+
+.recruit .recruit-slider .swiper-button-prev {
   left: -221px;
-}/*# sourceMappingURL=sub.css.map */
+}
+/*# sourceMappingURL=sub.css.map */

@@ -22,7 +22,7 @@
                 <div class="title-wrap">
                     <h2 class="title-type v2">recruit</h2>
                     <div class="btn-wrap">
-                        <a href="javascript:UI.layerPopUp({selId:'#pop-full'})" class="btn-type">
+                        <a href="javascript:UI.layerPopUp({selId:'#pop-recruit'})" class="btn-type btn-pop">
                             <i class="ico-plus"><span class="hidden">더보기</span></i>
                         </a>
                     </div>
@@ -40,14 +40,14 @@
                     <div class="img-box"><img src="../../images/recruit/recruit-img05.png" alt="recruit"></div>
                 </div>
             </div>
-            <div class="pop-full" id="pop-full">
+            <div class="pop-full" id="pop-recruit">
                 <div class="pop-wrap">
-                    <a href="javascript:UI.layerPopUp({selId:'#pop-full', st: 'close'})" class="pop-close btn-type">
+                    <a href="javascript:UI.layerPopUp({selId:'#pop-recruit', st: 'close'})" class="pop-close btn-type">
                         <i class="ico-close"></i><span class="hidden">닫기</span>
                     </a>
                     <div class="pop-content">
                         <div class="inner-box2">
-                            <div class="swiper mySwiper">
+                            <div class="swiper recruit-slider">
                                 <div class="swiper-navigation">
                                     <div class="swiper-paging"></div>
                                 </div>
@@ -82,32 +82,5 @@
         <?php include '../layout/footer.html'?>
         <!-- //footer -->
     </div>
-
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            loop: true,
-            slidesPerView: 1,
-            pagination: {
-                el: '.swiper-paging',
-                type: 'fraction',
-                formatFractionCurrent: function (number) {
-                    return ('0' + number).slice(-2);
-                },
-                formatFractionTotal: function (number) {
-                    return ('0' + number).slice(-2);
-                },
-                renderFraction: function (currentClass, totalClass) {
-                    return '<em class="' + currentClass + '"></em>' +
-                        '<span> / </span>' +
-                        '<em class="' + totalClass + '"></em>';
-                }
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
 </body>
-
 </html>

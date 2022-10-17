@@ -58,12 +58,38 @@ var UI = (function () {
                 lLayer.addClass('active').fadeIn(300);
                 dim.show();
                 $("body").css({ overflow: "hidden" });
+
+                if (pOption.selId == "#pop-recruit") {
+                    var recruitSwiper = new Swiper(".recruit-slider", {
+                        loop: true,
+                        slidesPerView: 1,
+                        pagination: {
+                            el: '.swiper-paging',
+                            type: 'fraction',
+                            formatFractionCurrent: function (number) {
+                                return ('0' + number).slice(-2);
+                            },
+                            formatFractionTotal: function (number) {
+                                return ('0' + number).slice(-2);
+                            },
+                            renderFraction: function (currentClass, totalClass) {
+                                return '<em class="' + currentClass + '"></em>' +
+                                    '<span> / </span>' +
+                                    '<em class="' + totalClass + '"></em>';
+                            }
+                        },
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                    });
+                }
+        
             } else {
                 lLayer.removeClass('active').fadeOut(300);
                 dim.hide();
                 $("body").css({ overflow: "" });
             }
-
             lLayer.find(".dim, .pop-close").on("click", function (e) {
                 e.preventDefault();
                 lLayer.removeClass('active').fadeOut(300);
