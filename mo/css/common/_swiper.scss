@@ -10,20 +10,19 @@
 .swiper-paging{
 	display: flex;
 	align-items: center;
-	font-size: 32px;
-	color: $CLine;
+	font-size: 14px;
+	color: $CText;
 	span{
 		font-size: 0;
 		display: block;
-		margin: 0 20px;
-		width: 3px;
-		height: 20px;
-		background-color: $CLine;
+		margin: 0 10px;
+		width: 2px;
+		height: 10px;
+		background-color: $CText;
 		transform: rotate(27deg);
 	}
 	em{
 		&.swiper-pagination-current{
-			color: $CText;
 			font-weight: 900;
 		}
 	}

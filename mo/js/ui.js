@@ -5,6 +5,8 @@ var UI = (function () {
         },
         element: {
             header: '.header-wrap',
+            gnbBtn: '.btn-gnb',
+            gnbWrap: '.gnb-wrap'
         },
         event: function () {
             var lThiz = this.element;
@@ -28,6 +30,14 @@ var UI = (function () {
 
                 pos = st;
             }, false);
+
+            
+			$(lThiz.gnbBtn).on('click', function() {
+				$(this).find(".icon-menu").toggleClass("open");
+				$("body").toggleClass("fixed")
+				$(lThiz.gnbWrap).toggleClass('active');
+				// gnbBtn.toggleClass("active");
+			});
 
             // sub page == gnb active
             var pageTitle = document.querySelector("h6");
