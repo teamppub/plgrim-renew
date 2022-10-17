@@ -2,6 +2,7 @@
 @import '../common/variable', '../common/mixin';
 
 .work {
+  //work list
   .title-wrap2 {
     .title-type2 {
       margin-bottom: 24px;
@@ -22,6 +23,63 @@
     padding: 0px 120px;
     .btn-wrap {
       margin-top: -20px;
+    }
+  }
+
+  //work detail
+  .work-detail-wrap {
+    .detail-visual {
+      position: relative;
+      margin-bottom: 200px;
+      .title-wrap {
+        position: absolute;
+        top: -40px;
+        display: block;
+        text-align: left;
+      }
+
+      .info {
+        position: absolute;
+        bottom: 140px;
+        left: 120px;
+
+        dl {
+          display: flex;
+          & + dl {
+            margin-top: 16px;
+          }
+          dt {
+            width: 140px;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 26px;
+          }
+          dd {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 26px;
+
+            a {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    .detail-info {
+      margin-bottom: 140px;
+      padding: 0px 120px;
+      h4 {
+        margin-bottom: 30px;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 34px;
+      }
+      .text {
+        font-size: 24px;
+        line-height: 42px;
+      }
     }
   }
 }
