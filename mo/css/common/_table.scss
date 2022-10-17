@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@import '../common/variable', '../common/mixin';
+
+.table-wrap {
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #cccccc;
+  th {
+    padding: 45px 0px 42px;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: left;
+    border-bottom: 1px solid #cccccc;
+  }
+  th:first-child {
+    padding-left: 120px;
+  }
+  tr {
+    td {
+      padding-bottom: 90px;
+      line-height: 46px;
+      font-size: 26px;
+      font-weight: 400;
+    }
+    td:first-child {
+      padding-left: 120px;
+      font-weight: 600;
+    }
+  }
+  tr:first-child td {
+    padding-top: 85px;
+  }
+}

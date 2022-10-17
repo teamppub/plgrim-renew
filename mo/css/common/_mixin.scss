@@ -1,0 +1,93 @@
+@charset "UTF-8";
+@import '../common/variable';
+
+//말줄임
+@mixin text-hidden($line: 1, $lineHeight: 19, $auto: null) {
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: ($lineHeight * $line) / $line + px;
+  //word-break: break-all;
+  white-space: initial;
+  @if $auto ==auto {
+    //영역 자동
+    max-height: $lineHeight * $line + px;
+  } @else {
+    //처음부터 영역잡히게
+    height: $lineHeight * $line + px;
+  }
+}
+
+@mixin text-hidden-one() {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+//svg icon : 컬러없는 아이콘 색변경 잦을때
+@mixin svg($color: #fff, $value: null, $url: null) {
+  @if $value ==null {
+    -webkit-mask: url($url) no-repeat 50% 50%;
+    mask: url($url) no-repeat 50% 50%;
+  } @else {
+    -webkit-mask: url(../images/icon/#{$value}.svg) no-repeat 50% 50%;
+    mask: url(../images/icon/#{$value}.svg) no-repeat 50% 50%;
+  }
+
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  background-color: $color;
+}
+
+// 노치 대응 기기 안전영역 환경변수 : safe-area
+/*
+ * safe-area-inset 처리
+ * $key - 넣을곳(padding-top, marin-bottom, ...)
+ * $direction - 방향(top, right, bottom, left)
+ * $value - 더해질 값(생략가능)
+ */
+@mixin safe($key, $direction, $value: 0) {
+  #{$key}: $value;
+
+  @if ($value > 0) {
+    #{$key}: calc(#{$value} + env(safe-area-inset-#{$direction}));
+  } @else if ($value < 0) {
+    #{$key}: calc((#{-$value} + env(safe-area-inset-#{$direction})) * -1);
+  } @else {
+    #{$key}: env(safe-area-inset-#{$direction});
+  }
+}
+
+//정렬
+@mixin abs($abs: c) {
+  position: absolute;
+  @if $abs == h {
+    //horizontal 수평
+    left: 50%;
+    transform: translateX(-50%);
+  } @else if $abs == v {
+    //vertical 수직
+    top: 50%;
+    transform: translateY(-50%);
+  } @else if $abs == c {
+    //center 중앙
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@mixin hidden {
+  position: absolute;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
