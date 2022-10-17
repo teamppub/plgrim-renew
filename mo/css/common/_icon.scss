@@ -14,13 +14,13 @@
 
 //background 처리
 .ico-logo {
-    width: 43px;
-    height: 38px;
+    width: 36px;
+    height: 32px;
     background-image: url(../images/common/logo.svg);
 
     &.white {
-        width: 53px;
-        height: 48px;
+        width: 30px;
+        height: 27px;
         background-image: url(../images/common/logo_w.svg);
     }
 }
@@ -28,7 +28,6 @@
     width: 26px;
     height: 26px;
     background-image: url(../images/icon/recruit.svg);
-
 }
 
 // data url 처리(색상, 크기 변경 가능토록)
