@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@import '../common/variable', '../common/mixin';
+
+.recruit{
+    .btn-wrap {
+        margin-left: 20px;
+        align-self: center;
+        .btn-type{
+            background: #ffffff;
+        }
+    }
+    .recruit-wrap {
+        margin-bottom: 200px;
+        [class^='recruit-img'] {
+            display: flex;
+            &.top {
+                justify-content: space-between;
+                margin-bottom: 40px;
+            }
+            &.bottom {
+                justify-content: end;
+                .img-box + .img-box {
+                    margin-left: 40px;
+                }
+            }
+        }
+    }
+    .swiper{
+        .swiper-navigation{
+            position: absolute;
+            top: 22px;
+            left: -221px;
+        }
+        .swiper-button-next{
+            right: -221px;
+        }
+        .swiper-button-prev{
+            left: -221px;
+        }
+    }
+}
+

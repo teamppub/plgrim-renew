@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <?php include '../layout/meta.html'?>
+</head>
+
+<body>
+    <h6 class="hidden">recruit</h6>
+    <div id="wrap">
+        <!-- header -->
+        <?php include '../layout/header.html'?>
+        <!-- //header -->
+
+        <!--content-->
+        <section id="content" class="sub recruit">
+            <div class="inner-box">
+                <div class="title-wrap2">
+                    <h3 class="en">Welcome !</h3>
+                    <h4 class="ko"> 플그림은 열정과 긍정의 에너지가 <br /> 넘치는 인재를 언제든 환영합니다.</h4>
+                </div>
+                <div class="title-wrap">
+                    <h2 class="title-type v2">recruit</h2>
+                    <div class="btn-wrap">
+                        <a href="javascript:UI.layerPopUp({selId:'#pop-full'})" class="btn-type">
+                            <i class="ico-plus"><span class="hidden">더보기</span></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="recruit-wrap">
+                <div class="recruit-img top inner-box">
+                    <div class="img-box"><img src="../../images/recruit/recruit-img01.png" alt="recruit"></div>
+                    <div class="img-box"><img src="../../images/recruit/recruit-img02.png" alt="recruit"></div>
+
+                </div>
+                <div class="recruit-img bottom">
+                    <div class="img-box"><img src="../../images/recruit/recruit-img03.png" alt="recruit"></div>
+                    <div class="img-box"><img src="../../images/recruit/recruit-img04.png" alt="recruit"></div>
+                    <div class="img-box"><img src="../../images/recruit/recruit-img05.png" alt="recruit"></div>
+                </div>
+            </div>
+            <div class="pop-full" id="pop-full">
+                <div class="pop-wrap">
+                    <a href="javascript:UI.layerPopUp({selId:'#pop-full', st: 'close'})" class="pop-close btn-type">
+                        <i class="ico-close"></i><span class="hidden">닫기</span>
+                    </a>
+                    <div class="pop-content">
+                        <div class="inner-box2">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-navigation">
+                                    <div class="swiper-paging"></div>
+                                </div>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="../../images/recruit/gallery_layer_img01.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../images/recruit/gallery_layer_img01.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../images/recruit/gallery_layer_img01.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../images/recruit/gallery_layer_img01.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../images/recruit/gallery_layer_img01.png" />
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--//content-->
+
+        <!-- footer -->
+        <?php include '../layout/footer.html'?>
+        <!-- //footer -->
+    </div>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-paging',
+                type: 'fraction',
+                formatFractionCurrent: function (number) {
+                    return ('0' + number).slice(-2);
+                },
+                formatFractionTotal: function (number) {
+                    return ('0' + number).slice(-2);
+                },
+                renderFraction: function (currentClass, totalClass) {
+                    return '<em class="' + currentClass + '"></em>' +
+                        '<span> / </span>' +
+                        '<em class="' + totalClass + '"></em>';
+                }
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>

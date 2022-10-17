@@ -196,4 +196,45 @@
 }
 .product .commerce-box + .commerce-box {
   margin-top: 200px;
+}
+
+/*
+ * safe-area-inset 처리
+ * $key - 넣을곳(padding-top, marin-bottom, ...)
+ * $direction - 방향(top, right, bottom, left)
+ * $value - 더해질 값(생략가능)
+ */
+.recruit .btn-wrap {
+  margin-left: 20px;
+  align-self: center;
+}
+.recruit .btn-wrap .btn-type {
+  background: #ffffff;
+}
+.recruit .recruit-wrap {
+  margin-bottom: 200px;
+}
+.recruit .recruit-wrap [class^=recruit-img] {
+  display: flex;
+}
+.recruit .recruit-wrap [class^=recruit-img].top {
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.recruit .recruit-wrap [class^=recruit-img].bottom {
+  justify-content: end;
+}
+.recruit .recruit-wrap [class^=recruit-img].bottom .img-box + .img-box {
+  margin-left: 40px;
+}
+.recruit .swiper .swiper-navigation {
+  position: absolute;
+  top: 22px;
+  left: -221px;
+}
+.recruit .swiper .swiper-button-next {
+  right: -221px;
+}
+.recruit .swiper .swiper-button-prev {
+  left: -221px;
 }/*# sourceMappingURL=sub.css.map */
