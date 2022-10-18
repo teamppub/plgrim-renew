@@ -21,6 +21,11 @@
             padding: 200px 0 0;
             .title-wrap{
                 margin-bottom: 110px;    
+                opacity: 0;
+                transition: .5s;
+                &.started {
+                    opacity: 1;
+                }
             }
         }
         .visual-wrap{
@@ -103,7 +108,6 @@
             padding: 160px 0;
             .title-wrap2{                
                 h3{
-
                     transform: translateY(100px);
                     opacity: 0;
                     transition: .5s;
@@ -112,14 +116,12 @@
                         opacity: 1;
                     }
                 }
-    
             }
             .intro-cont{
                 margin-top: 110px;       
                 transform: translateY(100px);
                 opacity: 0;
                 transition: .5s;
-    
                 &.started {
                     transform: translateY(0);
                     opacity: 1;
@@ -155,9 +157,23 @@
                 display: flex;
                 justify-content: space-between;
                 margin: 80px 0 0;
+                &.started {
+                    li {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
                 li{
                     width: 440px;
                     margin-left: 40px;
+                    transform: translateY(100px);
+                    opacity: 0;
+                    transition: .5s;
+                    @for $i from 1 to 4 {
+                        &:nth-child(#{$i}) {
+                            transition-delay: #{$i*0.4}s;
+                        }
+                    }
                     strong{
                         display: block;
                         margin: 30px 0 20px;
