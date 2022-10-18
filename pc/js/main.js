@@ -33,29 +33,4 @@ $(document).ready(function () {
       prevEl: '.swiper-button-box .button-prev',
     },
   });
-
-  if (matchMedia('screen and (min-width: 1640px)').matches) {
-    //1640보다 크면
-    window.onload = () => {
-      document.querySelectorAll('.work-item').forEach(item => {
-        item.style.gridRowEnd = `span ${item.clientHeight + 140}`;
-      });
-      const wrap = document.querySelector('.work-item-list');
-      wrap.style.display = 'grid';
-      wrap.style.gridTemplateColumns = 'repeat(2, 670px)';
-      wrap.style.gap = '0px 60px';
-      wrap.style.gridAutoRows = '1px';
-    };
-  } else {
-    window.onload = () => {
-      document.querySelectorAll('.work-item').forEach(item => {
-        item.style.gridRowEnd = `span ${item.clientHeight + 70}`;
-      });
-      const wrap = document.querySelector('.work-item-list');
-      wrap.style.display = 'grid';
-      wrap.style.gridTemplateColumns = 'repeat(2, 570px)';
-      wrap.style.gap = '0px 60px';
-      wrap.style.gridAutoRows = '1px';
-    };
-  }
 });
