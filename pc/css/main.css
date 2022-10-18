@@ -343,8 +343,27 @@ input::-webkit-search-results-decoration {
   padding: 160px 0;
 }
 
+.main-wrap .main .intro-wrap .title-wrap2 h3 {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: .5s;
+}
+
+.main-wrap .main .intro-wrap .title-wrap2 h3.started {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 .main-wrap .main .intro-wrap .intro-cont {
   margin-top: 110px;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: .5s;
+}
+
+.main-wrap .main .intro-wrap .intro-cont.started {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .main-wrap .main .intro-wrap .intro-cont dl {

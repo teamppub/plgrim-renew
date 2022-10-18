@@ -20,7 +20,7 @@
         article{
             padding: 200px 0 0;
             .title-wrap{
-                margin-bottom: 110px;
+                margin-bottom: 110px;    
             }
         }
         .visual-wrap{
@@ -101,8 +101,29 @@
         }
         .intro-wrap{
             padding: 160px 0;
+            .title-wrap2{                
+                h3{
+
+                    transform: translateY(100px);
+                    opacity: 0;
+                    transition: .5s;
+                    &.started {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+    
+            }
             .intro-cont{
-                margin-top: 110px;
+                margin-top: 110px;       
+                transform: translateY(100px);
+                opacity: 0;
+                transition: .5s;
+    
+                &.started {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
                 dl{
                     display: flex;
                     dt{
