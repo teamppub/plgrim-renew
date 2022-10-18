@@ -425,6 +425,19 @@ input::-webkit-search-results-decoration {
   display: block;
 }
 
+.main-wrap .main .culture-wrap .culture-list li .thumb {
+  overflow: hidden;
+  border-radius: 28px;
+}
+
+.main-wrap .main .culture-wrap .culture-list li .thumb img {
+  transition: all 0.5s;
+}
+
+.main-wrap .main .culture-wrap .culture-list li .thumb img:hover {
+  transform: scale(1.1);
+}
+
 .main-wrap .main .culture-wrap .culture-list li .info {
   display: block;
   margin-top: 30px;

@@ -5,7 +5,15 @@
   .work-item {
     width: 670px;
     .item-img {
+      overflow: hidden;
       margin-bottom: 30px;
+      border-radius: 18px;
+      img{
+          transition: all 0.5s;
+          &:hover{
+              transform: scale(1.1);
+          }
+      }
     }
 
     .item-info {

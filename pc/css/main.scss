@@ -169,7 +169,17 @@
                     a{
                         display: block;
                     }
-                    .thumb{}
+                    .thumb{
+                        overflow: hidden;
+                        border-radius: 28px;
+                        img{
+                            transition: all 0.5s;
+                            &:hover{
+                                transform: scale(1.1);
+                            }
+                        }
+
+                    }
                     .info{
                         display: block;
                         margin-top: 30px;
