@@ -138,18 +138,18 @@ textarea {
   color: #000;
 }
 
-input[type="text"],
-input[type="submit"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="reset"],
-input[type="email"],
-input[type="tel"],
-input[type="search"],
-input[type="file"],
-input[type="email"],
-input[type="tel"] {
+input[type=text],
+input[type=submit],
+input[type=password],
+input[type=search],
+input[type=number],
+input[type=reset],
+input[type=email],
+input[type=tel],
+input[type=search],
+input[type=file],
+input[type=email],
+input[type=tel] {
   padding: 0 22px;
   height: 59px;
   line-height: 59px;
@@ -158,25 +158,25 @@ input[type="tel"] {
   font-weight: 400;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+input[type=radio],
+input[type=checkbox] {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="tel"]:focus,
-input[type="email"]:focus,
-input[type="search"]:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=tel]:focus,
+input[type=email]:focus,
+input[type=search]:focus,
 textarea:focus {
   border-color: #000;
   background-color: #fff;
@@ -462,6 +462,12 @@ input::-webkit-search-results-decoration {
   color: rgba(153, 153, 153, 0.5);
 }
 
+#btn-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
 /*
  * safe-area-inset 처리
  * $key - 넣을곳(padding-top, marin-bottom, ...)
@@ -594,6 +600,10 @@ input::-webkit-search-results-decoration {
   font-size: 13px;
 }
 
+.paging-wrap .btn-type2 {
+  margin-left: 0;
+}
+
 /*
  * safe-area-inset 처리
  * $key - 넣을곳(padding-top, marin-bottom, ...)
@@ -718,7 +728,7 @@ input::-webkit-search-results-decoration {
 
 .title-wrap2 .ko {
   font-size: 24px;
-  letter-spacing: 1.2px;
+  letter-spacing: 0.6px;
   line-height: 32px;
 }
 
