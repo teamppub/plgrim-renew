@@ -1,9 +1,17 @@
 @charset "UTF-8";
+<<<<<<< Updated upstream
 /*
  * safe-area-inset 처리
  * $key - 넣을곳(padding-top, marin-bottom, ...)
  * $direction - 방향(top, right, bottom, left)
  * $value - 더해질 값(생략가능)
+=======
+/*
+ * safe-area-inset 처리
+ * $key - 넣을곳(padding-top, marin-bottom, ...)
+ * $direction - 방향(top, right, bottom, left)
+ * $value - 더해질 값(생략가능)
+>>>>>>> Stashed changes
  */
 * {
   margin: 0;
@@ -138,6 +146,7 @@ textarea {
   color: #000;
 }
 
+<<<<<<< Updated upstream
 input[type="text"],
 input[type="submit"],
 input[type="password"],
@@ -150,6 +159,20 @@ input[type="search"],
 input[type="file"],
 input[type="email"],
 input[type="tel"] {
+=======
+input[type=text],
+input[type=submit],
+input[type=password],
+input[type=search],
+input[type=number],
+input[type=reset],
+input[type=email],
+input[type=tel],
+input[type=search],
+input[type=file],
+input[type=email],
+input[type=tel] {
+>>>>>>> Stashed changes
   padding: 0 22px;
   height: 59px;
   line-height: 59px;
@@ -158,25 +181,43 @@ input[type="tel"] {
   font-weight: 400;
 }
 
+<<<<<<< Updated upstream
 input[type="radio"],
 input[type="checkbox"] {
+=======
+input[type=radio],
+input[type=checkbox] {
+>>>>>>> Stashed changes
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
 }
 
+<<<<<<< Updated upstream
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
+=======
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+>>>>>>> Stashed changes
   -webkit-appearance: none;
   margin: 0;
 }
 
+<<<<<<< Updated upstream
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="tel"]:focus,
 input[type="email"]:focus,
 input[type="search"]:focus,
+=======
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=tel]:focus,
+input[type=email]:focus,
+input[type=search]:focus,
+>>>>>>> Stashed changes
 textarea:focus {
   border-color: #000;
   background-color: #fff;
@@ -187,6 +228,19 @@ input[readonly] {
   pointer-events: none;
 }
 
+<<<<<<< Updated upstream
+=======
+::-moz-placeholder {
+  font-size: inherit;
+  color: #bcbcbc;
+}
+
+:-ms-input-placeholder {
+  font-size: inherit;
+  color: #bcbcbc;
+}
+
+>>>>>>> Stashed changes
 ::placeholder {
   font-size: inherit;
   color: #bcbcbc;
@@ -208,7 +262,10 @@ button {
   cursor: pointer;
   color: inherit;
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 button:disabled {
   cursor: default;
 }
@@ -231,6 +288,14 @@ input::-webkit-search-results-decoration {
   display: none;
 }
 
+<<<<<<< Updated upstream
+=======
+::-moz-selection {
+  background: #01A0E9;
+  color: #fff;
+}
+
+>>>>>>> Stashed changes
 ::selection {
   background: #01A0E9;
   color: #fff;
@@ -249,15 +314,24 @@ input::-webkit-search-results-decoration {
   background: #303030;
 }
 
+<<<<<<< Updated upstream
 /*
  * safe-area-inset 처리
  * $key - 넣을곳(padding-top, marin-bottom, ...)
  * $direction - 방향(top, right, bottom, left)
  * $value - 더해질 값(생략가능)
+=======
+/*
+ * safe-area-inset 처리
+ * $key - 넣을곳(padding-top, marin-bottom, ...)
+ * $direction - 방향(top, right, bottom, left)
+ * $value - 더해질 값(생략가능)
+>>>>>>> Stashed changes
  */
 .main-wrap .header-wrap .sub-menu .list-depth1 > li > a {
   color: #000;
 }
+<<<<<<< Updated upstream
 
 .main-wrap .main {
   padding: 190px 0 300px;
@@ -275,11 +349,28 @@ input::-webkit-search-results-decoration {
   padding: 0;
 }
 
+=======
+.main-wrap .main {
+  padding: 190px 0 300px;
+}
+.main-wrap .main article {
+  padding: 200px 0 0;
+}
+.main-wrap .main article .title-wrap {
+  margin-bottom: 110px;
+}
+.main-wrap .main .visual-wrap {
+  padding: 0;
+}
+>>>>>>> Stashed changes
 .main-wrap .main .visual-wrap .swiper-navigation {
   width: 1400px;
   margin: 0 auto 90px;
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .main-wrap .main .visual-wrap .visual-swiper .swiper-slide .title-box {
   display: flex;
   justify-content: space-between;
@@ -287,13 +378,17 @@ input::-webkit-search-results-decoration {
   position: relative;
   overflow: hidden;
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .main-wrap .main .visual-wrap .visual-swiper .swiper-slide .title-box .title-motion {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   position: relative;
   transform: translateY(200%);
+<<<<<<< Updated upstream
   transition: 1s .2s;
 }
 
@@ -301,27 +396,46 @@ input::-webkit-search-results-decoration {
   opacity: 1;
 }
 
+=======
+  transition: 1s 0.2s;
+}
+.main-wrap .main .visual-wrap .visual-swiper .swiper-slide.swiper-slide-active .visual-content .title-type {
+  opacity: 1;
+}
+>>>>>>> Stashed changes
 .main-wrap .main .visual-wrap .visual-swiper .swiper-slide.swiper-slide-active .visual-content .title-sub, .main-wrap .main .visual-wrap .visual-swiper .swiper-slide.swiper-slide-active .visual-content .btn-type2 {
   opacity: 1;
   transform: translateY(0);
 }
+<<<<<<< Updated upstream
 
 .main-wrap .main .visual-wrap .visual-swiper .swiper-slide.swiper-slide-active .title-box .title-motion {
   transform: translateY(0);
 }
 
+=======
+.main-wrap .main .visual-wrap .visual-swiper .swiper-slide.swiper-slide-active .title-box .title-motion {
+  transform: translateY(0);
+}
+>>>>>>> Stashed changes
 .main-wrap .main .visual-wrap .visual-swiper .visual-content {
   position: absolute;
   top: -46px;
   left: 120px;
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .main-wrap .main .visual-wrap .visual-swiper .visual-content .title-type {
   line-height: 90px;
   opacity: 0;
   transition: 1s 0.5s;
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .main-wrap .main .visual-wrap .visual-swiper .visual-content .title-sub {
   margin: 90px 0 0;
   font-size: 20px;
@@ -331,13 +445,17 @@ input::-webkit-search-results-decoration {
   opacity: 0;
   transition: 1s 1.2s;
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .main-wrap .main .visual-wrap .visual-swiper .visual-content .btn-type2 {
   margin: 35px 0 0;
   transform: translateY(30px);
   opacity: 0;
   transition: 1s 1.2s;
 }
+<<<<<<< Updated upstream
 
 .main-wrap .main .intro-wrap {
   padding: 160px 0;
@@ -351,44 +469,76 @@ input::-webkit-search-results-decoration {
   display: flex;
 }
 
+=======
+.main-wrap .main .intro-wrap {
+  padding: 160px 0;
+}
+.main-wrap .main .intro-wrap .intro-cont {
+  margin-top: 110px;
+}
+.main-wrap .main .intro-wrap .intro-cont dl {
+  display: flex;
+}
+>>>>>>> Stashed changes
 .main-wrap .main .intro-wrap .intro-cont dl dt {
   font-size: 62px;
   font-weight: 700;
   line-height: 90px;
   letter-spacing: 3.1px;
 }
+<<<<<<< Updated upstream
 
 .main-wrap .main .intro-wrap .intro-cont dl dd {
   padding-left: 300px;
 }
 
+=======
+.main-wrap .main .intro-wrap .intro-cont dl dd {
+  padding-left: 300px;
+}
+>>>>>>> Stashed changes
 .main-wrap .main .intro-wrap .intro-cont dl dd p {
   font-size: 20px;
   font-weight: 600;
   line-height: 36px;
   letter-spacing: 2px;
 }
+<<<<<<< Updated upstream
 
 .main-wrap .main .intro-wrap .intro-cont dl dd p + p {
   margin-top: 40px;
 }
 
+=======
+.main-wrap .main .intro-wrap .intro-cont dl dd p + p {
+  margin-top: 40px;
+}
+>>>>>>> Stashed changes
 .main-wrap .main .business-wrap {
   padding-bottom: 200px;
   background-color: #F8F8F8;
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .main-wrap .main .business-wrap .business-box {
   display: flex;
   justify-content: space-between;
   margin: 80px 0 0;
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .main-wrap .main .business-wrap .business-box li {
   width: 440px;
   margin-left: 40px;
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .main-wrap .main .business-wrap .business-box li strong {
   display: block;
   margin: 30px 0 20px;
@@ -396,12 +546,16 @@ input::-webkit-search-results-decoration {
   line-height: 44px;
   font-weight: 700;
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .main-wrap .main .business-wrap .business-box li p {
   font-size: 16px;
   line-height: 24px;
   color: #999;
 }
+<<<<<<< Updated upstream
 
 .main-wrap .main .business-wrap .business-box li:first-child {
   margin-left: 0;
@@ -411,10 +565,19 @@ input::-webkit-search-results-decoration {
   margin-bottom: -140px;
 }
 
+=======
+.main-wrap .main .business-wrap .business-box li:first-child {
+  margin-left: 0;
+}
+.main-wrap .main .work-wrap .work-item-list {
+  margin-bottom: -140px;
+}
+>>>>>>> Stashed changes
 .main-wrap .main .culture-wrap .culture-list {
   display: flex;
   flex-flow: row wrap;
 }
+<<<<<<< Updated upstream
 
 .main-wrap .main .culture-wrap .culture-list li {
   width: calc( 50% - 30px);
@@ -425,17 +588,30 @@ input::-webkit-search-results-decoration {
   display: block;
 }
 
+=======
+.main-wrap .main .culture-wrap .culture-list li {
+  width: calc(50% - 30px);
+  margin-left: 60px;
+}
+.main-wrap .main .culture-wrap .culture-list li a {
+  display: block;
+}
+>>>>>>> Stashed changes
 .main-wrap .main .culture-wrap .culture-list li .info {
   display: block;
   margin-top: 30px;
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .main-wrap .main .culture-wrap .culture-list li .info strong {
   display: block;
   margin-bottom: 30px;
   font-size: 36px;
   line-height: 50px;
   font-weight: 700;
+<<<<<<< Updated upstream
   /* autoprefixer: off */
   -webkit-box-orient: vertical;
   /* autoprefixer: on */
@@ -452,6 +628,12 @@ input::-webkit-search-results-decoration {
   font-size: 16px;
 }
 
+=======
+}
+.main-wrap .main .culture-wrap .culture-list li .info p {
+  font-size: 16px;
+}
+>>>>>>> Stashed changes
 .main-wrap .main .culture-wrap .culture-list li .info p.cont {
   color: #999;
   line-height: 24px;
@@ -467,13 +649,17 @@ input::-webkit-search-results-decoration {
   white-space: initial;
   height: 48px;
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .main-wrap .main .culture-wrap .culture-list li .info p.date {
   margin-top: 20px;
   font-size: 16px;
   color: #000;
   font-weight: 700;
 }
+<<<<<<< Updated upstream
 
 .main-wrap .main .culture-wrap .culture-list li:nth-child(n+3) {
   margin-top: 60px;
@@ -498,3 +684,11 @@ input::-webkit-search-results-decoration {
   }
 }
 /*# sourceMappingURL=main.css.map */
+=======
+.main-wrap .main .culture-wrap .culture-list li:nth-child(n+3) {
+  margin-top: 60px;
+}
+.main-wrap .main .culture-wrap .culture-list li:nth-of-type(2n+1) {
+  margin-left: 0;
+}/*# sourceMappingURL=main.css.map */
+>>>>>>> Stashed changes

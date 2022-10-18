@@ -270,8 +270,15 @@
   width: 15px;
   height: 30px;
 }
-.recruit .recruit-list.v2 {
+.recruit .recruit-talent {
+  padding: 55px 350px 160px;
+  margin-bottom: 200px;
+  background: #F8F8F8;
+}
+.recruit .recruit-talent ul {
+  margin-top: 60px;
   display: flex;
+<<<<<<< Updated upstream
   justify-content: space-between;
 }
 
@@ -316,4 +323,41 @@
 }
 .culture .culture-detail-wrap .btn-wrap {
   text-align: left;
+=======
+}
+.recruit .recruit-talent ul li {
+  width: 25%;
+  padding: 0px 30px;
+}
+.recruit .recruit-talent ul li .title {
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 36px;
+  color: #01A0E9;
+  font-weight: 800;
+}
+.recruit .recruit-talent ul li .title span {
+  display: block;
+  font-size: 21px;
+}
+.recruit .recruit-talent ul li .txt {
+  font-size: 20px;
+  line-height: 32px;
+}
+.recruit .recruit-wrap {
+  width: 1400px;
+  margin: 0 auto;
+}
+.recruit .recruit-box h5 {
+  margin-bottom: 80px;
+  padding-bottom: 70px;
+  border-bottom: 1px solid #000000;
+  font-size: 62px;
+  font-weight: 800;
+}
+.recruit .recruit-box .sub-wrap h6 {
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-weight: 700;
+>>>>>>> Stashed changes
 }/*# sourceMappingURL=sub.css.map */

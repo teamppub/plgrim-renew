@@ -419,6 +419,7 @@ input::-webkit-search-results-decoration {
   line-height: 70px;
 }
 
+<<<<<<< Updated upstream
 @media all and (min-width: 768px) and (max-width: 1640px) {
   .inner-box {
     width: 1400px;
@@ -430,6 +431,8 @@ input::-webkit-search-results-decoration {
     padding-right: 350px;
   }
 }
+=======
+>>>>>>> Stashed changes
 /*
  * safe-area-inset 처리
  * $key - 넣을곳(padding-top, marin-bottom, ...)
@@ -693,6 +696,12 @@ input::-webkit-search-results-decoration {
   display: flex;
   justify-content: space-between;
 }
+<<<<<<< Updated upstream
+=======
+.recruit-list.v2 span {
+  max-width: 795px;
+}
+>>>>>>> Stashed changes
 .recruit-list .all-list li {
   display: flex;
   position: relative;
@@ -702,7 +711,10 @@ input::-webkit-search-results-decoration {
   font-size: 20px;
   line-height: 32px;
   letter-spacing: 1px;
+<<<<<<< Updated upstream
   max-width: 795px;
+=======
+>>>>>>> Stashed changes
 }
 .recruit-list .all-list li .part {
   min-width: 270px;
@@ -876,11 +888,14 @@ input::-webkit-search-results-decoration {
   font-weight: 700;
 }
 
+<<<<<<< Updated upstream
 @media all and (min-width: 768px) and (max-width: 1640px) {
   .work-item-list .work-item {
     width: 570px;
   }
 }
+=======
+>>>>>>> Stashed changes
 /*
  * safe-area-inset 처리
  * $key - 넣을곳(padding-top, marin-bottom, ...)

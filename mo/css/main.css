@@ -1,9 +1,17 @@
 @charset "UTF-8";
+<<<<<<< Updated upstream
 /*
  * safe-area-inset 처리
  * $key - 넣을곳(padding-top, marin-bottom, ...)
  * $direction - 방향(top, right, bottom, left)
  * $value - 더해질 값(생략가능)
+=======
+/*
+ * safe-area-inset 처리
+ * $key - 넣을곳(padding-top, marin-bottom, ...)
+ * $direction - 방향(top, right, bottom, left)
+ * $value - 더해질 값(생략가능)
+>>>>>>> Stashed changes
  */
 * {
   margin: 0;
@@ -187,6 +195,19 @@ input[readonly] {
   pointer-events: none;
 }
 
+<<<<<<< Updated upstream
+=======
+::-moz-placeholder {
+  font-size: inherit;
+  color: #bcbcbc;
+}
+
+:-ms-input-placeholder {
+  font-size: inherit;
+  color: #bcbcbc;
+}
+
+>>>>>>> Stashed changes
 ::placeholder {
   font-size: inherit;
   color: #bcbcbc;
@@ -208,7 +229,10 @@ button {
   cursor: pointer;
   color: inherit;
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 button:disabled {
   cursor: default;
 }
@@ -231,6 +255,14 @@ input::-webkit-search-results-decoration {
   display: none;
 }
 
+<<<<<<< Updated upstream
+=======
+::-moz-selection {
+  background: #01A0E9;
+  color: #fff;
+}
+
+>>>>>>> Stashed changes
 ::selection {
   background: #01A0E9;
   color: #fff;
@@ -249,6 +281,7 @@ input::-webkit-search-results-decoration {
   background: #303030;
 }
 
+<<<<<<< Updated upstream
 /*
  * safe-area-inset 처리
  * $key - 넣을곳(padding-top, marin-bottom, ...)
@@ -256,3 +289,11 @@ input::-webkit-search-results-decoration {
  * $value - 더해질 값(생략가능)
  */
 /*# sourceMappingURL=main.css.map */
+=======
+/*
+ * safe-area-inset 처리
+ * $key - 넣을곳(padding-top, marin-bottom, ...)
+ * $direction - 방향(top, right, bottom, left)
+ * $value - 더해질 값(생략가능)
+ *//*# sourceMappingURL=main.css.map */
+>>>>>>> Stashed changes
