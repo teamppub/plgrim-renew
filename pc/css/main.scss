@@ -179,6 +179,7 @@
                             font-size: 36px;
                             line-height: 50px;
                             font-weight: 700;
+                            @include text-hidden($line: 1, $lineHeight: 50, $auto: null);
                         }
                         p{
                             font-size: 16px;
@@ -201,6 +202,42 @@
                     }
                     &:nth-of-type(2n+1){
                         margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include pc-inner {
+    .main-wrap{
+        .main{
+            .visual-wrap{
+                .swiper-navigation{
+                    width: 1200px;
+                }
+            }
+            .intro-wrap{
+                .title-wrap2{
+                    .en, .ko{
+                        letter-spacing: -1.2px;
+                    }
+                }
+                .intro-cont{
+                    dl{
+                        dd{
+                            padding-left: 100px;
+                        }
+                    }
+                }
+            }
+            .business-wrap{
+                .business-box{
+                    li{
+                        p{
+                            letter-spacing: -0.5px;
+                        }
                     }
                 }
             }

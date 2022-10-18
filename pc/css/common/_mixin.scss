@@ -91,3 +91,10 @@
   overflow: hidden;
   visibility: hidden;
 }
+
+//pc
+@mixin pc-inner {
+  @media all and (min-width:768px) and (max-width:1640px) {
+      @content;
+  }
+}

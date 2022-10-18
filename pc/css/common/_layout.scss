@@ -162,3 +162,18 @@
     }
   }
 }
+
+
+@include pc-inner {
+  .inner-box{
+    width: 1400px;
+  }
+  .inner-box2{
+    width: 1200px;
+  }
+  .footer-wrap {
+    .logo-box {
+      padding-right: 350px;
+    }
+  }
+}

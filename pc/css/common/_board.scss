@@ -74,3 +74,13 @@
     }
   }
 }
+
+
+
+@include pc-inner {
+  .work-item-list {
+    .work-item {
+      width: 600px;
+    }
+  }
+}

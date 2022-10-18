@@ -56,3 +56,13 @@
     }
   }
 }
+
+@include pc-inner {
+  .company {
+    .company-info {
+      .info-title{
+        margin-right: 120px;
+      }
+    }
+  }
+}
