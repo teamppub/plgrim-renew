@@ -468,6 +468,10 @@ input::-webkit-search-results-decoration {
   right: 30px;
 }
 
+#btn-top.up {
+  opacity: 0;
+}
+
 /*
  * safe-area-inset 처리
  * $key - 넣을곳(padding-top, marin-bottom, ...)
@@ -513,27 +517,12 @@ input::-webkit-search-results-decoration {
 .btn-type {
   width: 32px;
   height: 32px;
+  background-color: #fff;
   border: 2px solid #ccc;
   border-radius: 10px;
   font-size: 0;
   text-align: center;
   line-height: 32px;
-}
-
-.btn-type [class^='ico-'] {
-  transition: all 0.3s ease-in-out;
-}
-
-.btn-type:hover .ico-arr {
-  margin-right: -10px;
-}
-
-.btn-type:hover .ico-arr.lft {
-  margin: 0 0 0 -10px;
-}
-
-.btn-type:hover .ico-arr.down {
-  margin: 0 0 -10px 0;
 }
 
 .btn-type.btn-up {

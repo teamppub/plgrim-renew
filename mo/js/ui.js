@@ -16,6 +16,7 @@ var UI = (function () {
             //layout
             if (pos === 0) {
                 $(lThiz.header).addClass('top');
+                $(lThiz.top).addClass('up');
             }
 
             window.addEventListener('scroll', function (event) {
@@ -23,8 +24,10 @@ var UI = (function () {
 
                 if (pos < st) {
                     $(lThiz.header).removeClass('top');
+                    $(lThiz.top).removeClass('up');
                 } else if (st === 0) {
                     $(lThiz.header).addClass('top');
+                    $(lThiz.top).addClass('up');
                 } else {
                     $(lThiz.header).removeClass('top');
                 }
