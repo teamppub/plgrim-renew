@@ -240,8 +240,8 @@
 }
 .recruit .swiper .swiper-navigation {
   position: absolute;
-  top: 22px;
-  left: -221px;
+  top: -30px;
+  left: -50px;
 }
 .recruit .swiper .swiper-navigation .swiper-paging {
   font-size: 20px;
@@ -252,16 +252,20 @@
 .recruit .swiper .swiper-button-box .button-next {
   position: absolute;
   top: 50%;
-  right: -221px;
+  right: -50px;
   cursor: pointer;
 }
 .recruit .swiper .swiper-button-box .button-prev {
   position: absolute;
   top: 50%;
-  left: -221px;
+  left: -50px;
   cursor: pointer;
 }
 .recruit .swiper .swiper-button-box .ico-arr2 {
   width: 15px;
   height: 30px;
+}
+.recruit .recruit-list.v2 {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=sub.css.map */

@@ -41,8 +41,8 @@
     .swiper {
         .swiper-navigation {
             position: absolute;
-            top: 22px;
-            left: -221px;
+            top: -30px;
+            left: -50px;
             .swiper-paging {
                 font-size: 20px;
             }
@@ -54,19 +54,25 @@
             .button-next {
                 position: absolute;
                 top: 50%;
-                right: -221px;
+                right: -50px;
                 cursor: pointer;
             }
             .button-prev {
                 position: absolute;
                 top: 50%;
-                left: -221px;
+                left: -50px;
                 cursor: pointer;
             }
             .ico-arr2 {
                 width: 15px;
                 height: 30px;
             }
+        }
+    }
+    .recruit-list {
+        &.v2 {
+            display: flex;
+            justify-content: space-between;
         }
     }
 }
