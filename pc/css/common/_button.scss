@@ -1,103 +1,106 @@
 @charset "UTF-8";
-@import "../common/variable", "../common/mixin";
+@import '../common/variable', '../common/mixin';
 
 .btn-wrap {
-	text-align: center;
-	.more{
-		margin-top: 20px;
-		font-size: 20px;
-	}
-	&.col{
-		display: flex;
-		.btn-inner{
-			text-align: left;
-			&+.btn-inner{
-				margin-left: 120px;
-			}
-			h3{
-				display: block;
-				margin-bottom: 40px;
-			}
-		}
-		[class^='btn-type'] {
-			margin: 0;
-		}
-	}
+  text-align: center;
+  .more {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  &.col {
+    display: flex;
+    .btn-inner {
+      text-align: left;
+      & + .btn-inner {
+        margin-left: 120px;
+      }
+      h3 {
+        display: block;
+        margin-bottom: 40px;
+      }
+    }
+    [class^='btn-type'] {
+      margin: 0;
+    }
+  }
 }
 
 [class^='btn-type'] {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	transition: .3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
 
-	&:nth-child(n+2) {
-		margin-left: 16px;
-	}
+  &:nth-child(n + 2) {
+    margin-left: 16px;
+  }
 }
 
 .btn-type {
-	width: 68px;
-	height: 68px;
-	border: 2px solid $CLine;
-	border-radius: 25px;
-	font-size: 0;
-	text-align:center;
-	line-height: 68px;
-	[class^='ico-'] {
-		transition: all 0.3s ease-in-out;
-	}
-	&:hover {
-		.ico-arr{
-			margin-right:-10px;
-			&.lft{
-				margin:0 0 0 -10px;
-			}
-			&.down{
-				margin:0 0 -10px 0;
-			}
-		}
-	}
+  width: 68px;
+  height: 68px;
+  border: 2px solid $CLine;
+  border-radius: 25px;
+  font-size: 0;
+  text-align: center;
+  line-height: 68px;
+  [class^='ico-'] {
+    transition: all 0.3s ease-in-out;
+  }
+  &:hover {
+    .ico-arr {
+      margin-right: -10px;
+      &.lft {
+        margin: 0 0 0 -10px;
+      }
+      &.down {
+        margin: 0 0 -10px 0;
+      }
+    }
+  }
 }
 .btn-type2 {
-	border-bottom: 1px solid $CText;
-	font-size: 20px;
-	text-align:center;
-	&.v2{
-		border-bottom:2px solid $CText;
-		font-size: 24px;
-		font-weight: 700;
-	}
+  border-bottom: 1px solid $CText;
+  font-size: 20px;
+  text-align: center;
+  &.v2 {
+    border-bottom: 2px solid $CText;
+    font-size: 24px;
+    font-weight: 700;
+  }
 }
 .btn-type3 {
-	font-size: 30px;
-	font-weight: 700;
-	.ico-arr{
-		margin-left: 20px;
-	}
-	&.v2{
-		width: 200px;
-		height: 80px;
-		background: $CText;
-		border-radius: 40px;
-		font-size: 20px;
-		font-weight: 400;
-		color:#fff;
-		text-align:center;
-	}
+  font-size: 30px;
+  font-weight: 700;
+  .ico-arr {
+    margin-left: 20px;
+  }
+  &.v2 {
+    width: 200px;
+    height: 80px;
+    background: $CText;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+  }
 }
 .paging-wrap {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 120px;
 
-	button {
-		display: flex;
-		align-items: center;		
-		span{
-			margin: 0 30px;
-			font-size: 24px;
-		}
-	}
+  button {
+    display: flex;
+    align-items: center;
+    span {
+      margin: 0 30px;
+      font-size: 24px;
+    }
+  }
+  .btn-type2 {
+    margin-left: 0px;
+  }
 }
