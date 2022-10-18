@@ -1,0 +1,52 @@
+.culture {
+  .culture-detail-wrap {
+    margin: -130px 0px 0px;
+    padding: 180px 120px 200px;
+    background: rgba(1, 160, 233, 0.08);
+    border-radius: 200px 0 0 0;
+
+    .detail-header {
+      position: relative;
+      margin-bottom: 80px;
+      h3 {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 50px;
+      }
+      .date {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+
+    .detail-info {
+      .img-wrap {
+        display: flex;
+        margin: 0px -16px 50px;
+
+        &.type2 img {
+          flex: 0 0 50%;
+          width: 50%;
+        }
+
+        img {
+          padding: 0px 16px;
+        }
+      }
+
+      p {
+        margin-bottom: 80px;
+        color: #666666;
+        font-size: 24px;
+        line-height: 37px;
+      }
+    }
+
+    .btn-wrap {
+      text-align: left;
+    }
+  }
+}
