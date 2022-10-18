@@ -73,9 +73,6 @@
     &.v2 {
         display: flex;
         justify-content: space-between;
-        span {
-            max-width: 795px;
-        }
     }
     .all-list {
         li {
@@ -86,6 +83,7 @@
                 font-size: 20px;
                 line-height: 32px;
                 letter-spacing: 1px;
+                max-width: 795px;
             }
             .part {
                 min-width: 270px;

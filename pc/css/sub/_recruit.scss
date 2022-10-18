@@ -69,54 +69,10 @@
             }
         }
     }
-    .recruit-talent {
-        padding: 55px 350px 160px;
-        margin-bottom: 200px;
-        background: $CBg;
-        ul {
-            margin-top: 60px;
+    .recruit-list {
+        &.v2 {
             display: flex;
-            li {
-                width: 25%;
-                padding: 0px 30px;
-                .title {
-                    margin-bottom: 20px;
-                    font-size: 30px;
-                    line-height: 36px;
-                    color: $CBrand;
-                    font-weight: 800;
-                    span {
-                        display: block;
-                        font-size: 21px;
-                    }
-                }
-                .txt {
-                    font-size: 20px;
-                    line-height: 32px;
-                }
-            }
-        }
-    }
-    .recruit-wrap {
-        width: 1400px;
-        margin: 0 auto;
-    }
-    .recruit-box {
-        h5 {
-            margin-bottom: 80px;
-            padding-bottom: 70px;
-            border-bottom: 1px solid #000000;
-            font-size: 62px;
-            font-weight: 800;
-        }
-        .sub-wrap {
-            h6 {
-                margin-bottom: 50px;
-                font-size: 36px;
-                font-weight: 700;
-            }
-            &.recruit-list {
-            }
+            justify-content: space-between;
         }
     }
 }
