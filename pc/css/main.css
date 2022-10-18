@@ -368,6 +368,7 @@ input::-webkit-search-results-decoration {
 
 .main-wrap .main .intro-wrap .intro-cont dl {
   display: flex;
+  justify-content: space-between;
 }
 
 .main-wrap .main .intro-wrap .intro-cont dl dt {
@@ -375,10 +376,6 @@ input::-webkit-search-results-decoration {
   font-weight: 700;
   line-height: 90px;
   letter-spacing: 3.1px;
-}
-
-.main-wrap .main .intro-wrap .intro-cont dl dd {
-  padding-left: 300px;
 }
 
 .main-wrap .main .intro-wrap .intro-cont dl dd p {
@@ -521,9 +518,6 @@ input::-webkit-search-results-decoration {
   }
   .main-wrap .main .intro-wrap .title-wrap2 .en, .main-wrap .main .intro-wrap .title-wrap2 .ko {
     letter-spacing: -1.2px;
-  }
-  .main-wrap .main .intro-wrap .intro-cont dl dd {
-    padding-left: 100px;
   }
   .main-wrap .main .business-wrap .business-box li p {
     letter-spacing: -0.5px;

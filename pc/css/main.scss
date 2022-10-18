@@ -126,6 +126,7 @@
                 }
                 dl{
                     display: flex;
+                    justify-content: space-between;
                     dt{
                         font-size: 62px;
                         font-weight: 700;
@@ -133,7 +134,7 @@
                         letter-spacing: 3.1px;
                     }
                     dd{
-                        padding-left: 300px;
+                        // padding-left: 300px;
                         p{
                             font-size: 20px;
                             font-weight: 600;
@@ -258,7 +259,7 @@
                 .intro-cont{
                     dl{
                         dd{
-                            padding-left: 100px;
+                            // padding-left: 100px;
                         }
                     }
                 }
