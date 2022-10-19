@@ -73,17 +73,25 @@
     &.v2 {
         display: flex;
         justify-content: space-between;
+        span {
+            max-width: 795px;
+        }
     }
     .all-list {
         li {
             display: flex;
             position: relative;
             padding-left: 30px;
+            &.recru-btn {
+                justify-content: space-between;
+            }
             span {
                 font-size: 20px;
                 line-height: 32px;
                 letter-spacing: 1px;
-                max-width: 795px;
+                a {
+                    text-decoration: underline;
+                }
             }
             .part {
                 min-width: 270px;
