@@ -36,10 +36,10 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  top: 30px;
+  top: 0;
   left: 0;
   width: 100%;
-  padding: 0 30px;
+  padding: 30px 30px;
   background: rgba(255, 255, 255, 0.8);
   transition: transform 0.3s;
   z-index: 79;
@@ -144,7 +144,7 @@
             &.active{
             }
             &+li{
-              margin-top:40px;
+              margin-top:30px;
             }
           }
           &+ul{

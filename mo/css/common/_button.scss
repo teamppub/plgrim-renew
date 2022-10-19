@@ -8,6 +8,10 @@
 			margin-left: 16px;
 		}
 	}
+	.more{
+		margin-top: 10px;
+		font-size: 12px;
+	}
 	&.v2{
 		text-align: left;
 		h3{
@@ -34,12 +38,14 @@
 	height: 32px;
 	background-color: #fff;
 	border: 2px solid $CLine;
-	border-radius: 10px;
+	border-radius: 12px;
 	font-size: 0;
 	text-align:center;
 	line-height: 32px;
 	&.btn-up{
-		border-radius: 5px;
+		width: 34px;
+		height: 34px;
+		border-radius: 4px;
 	}
 	&.v2{
 		width: 34px;

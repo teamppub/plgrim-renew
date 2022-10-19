@@ -299,10 +299,10 @@ input::-webkit-search-results-decoration {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  top: 30px;
+  top: 0;
   left: 0;
   width: 100%;
-  padding: 0 30px;
+  padding: 30px 30px;
   background: rgba(255, 255, 255, 0.8);
   transition: transform 0.3s;
   z-index: 79;
@@ -413,7 +413,7 @@ input::-webkit-search-results-decoration {
 }
 
 .header-wrap .gnb-wrap .gnb-inner .gnb-list ul li + li {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .header-wrap .gnb-wrap .gnb-inner .gnb-list ul + ul {
@@ -486,6 +486,11 @@ input::-webkit-search-results-decoration {
   margin-left: 16px;
 }
 
+.btn-wrap .more {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
 .btn-wrap.v2 {
   text-align: left;
 }
@@ -514,14 +519,16 @@ input::-webkit-search-results-decoration {
   height: 32px;
   background-color: #fff;
   border: 2px solid #ccc;
-  border-radius: 10px;
+  border-radius: 12px;
   font-size: 0;
   text-align: center;
   line-height: 32px;
 }
 
 .btn-type.btn-up {
-  border-radius: 5px;
+  width: 34px;
+  height: 34px;
+  border-radius: 4px;
 }
 
 .btn-type.v2 {
@@ -602,14 +609,12 @@ input::-webkit-search-results-decoration {
 }
 
 .ico-logo {
-  width: 36px;
-  height: 32px;
+  width: 33px;
+  height: 30px;
   background-image: url(../images/common/logo.svg);
 }
 
 .ico-logo.white {
-  width: 30px;
-  height: 27px;
   background-image: url(../images/common/logo_w.svg);
 }
 
@@ -654,7 +659,7 @@ input::-webkit-search-results-decoration {
 
 .ico-arr2 {
   position: relative;
-  width: 4px;
+  width: 5px;
   height: 9px;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.364' height='12.152' viewBox='0 0 7.364 12.152'%3E%3Cg id='ic__' data-name='ic_&lt;' transform='translate(1.414 1.414)'%3E%3Cg id='그룹_29' data-name='그룹 29'%3E%3Cline id='선_11' data-name='선 11' y1='4.535' x2='4.535' fill='none' stroke='%23000000' stroke-linecap='round' stroke-width='2'/%3E%3Cline id='선_12' data-name='선 12' x2='4.529' y2='4.529' transform='translate(0.006 4.795)' fill='none' stroke='%23000000' stroke-linecap='round' stroke-width='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
 }
@@ -663,10 +668,16 @@ input::-webkit-search-results-decoration {
   transform: rotate(-180deg);
 }
 
+.ico-plus {
+  width: 13px;
+  height: 13px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14.381' height='14.381' viewBox='0 0 14.381 14.381'%3E%3Cg id='_ico_X' data-name='*ico_X' transform='translate(2.533 10.6) rotate(-45)'%3E%3Cg id='_IC__' data-name='*IC_+' transform='translate(-0.114 0.321)'%3E%3Cline id='선_139' data-name='선 139' y1='1' x2='12' transform='translate(2.344 -4.357) rotate(50)' fill='none' stroke='%23000000' stroke-linecap='round' stroke-width='2'/%3E%3Cline id='선_257' data-name='선 257' x2='12' y2='1' transform='translate(10.058 -3.714) rotate(130)' fill='none' stroke='%23000000' stroke-linecap='round' stroke-width='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
 .ico-close {
   width: 8px;
   height: 10px;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.521' height='12.877' viewBox='0 0 11.521 12.877'%3E%3Cg id='그룹_98' data-name='그룹 98' transform='translate(0.057 5.557)'%3E%3Cg id='그룹_137' data-name='그룹 137' transform='translate(-0.114 0.321)'%3E%3Cline id='선_139' data-name='선 139' y1='1' x2='12' transform='translate(2.344 -4.357) rotate(50)' fill='none' stroke='%23000000' stroke-linecap='round' stroke-width='2'/%3E%3Cline id='선_257' data-name='선 257' x2='12' y2='1' transform='translate(10.058 -3.714) rotate(130)' fill='none' stroke='%23000000' stroke-linecap='round' stroke-width='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.521' height='12.877' viewBox='0 0 11.521 12.877'%3E%3Cg id='_ico_X' data-name='*ico_X' transform='translate(0.057 5.557)'%3E%3Cg id='그룹_137' data-name='그룹 137' transform='translate(-0.114 0.321)'%3E%3Cline id='선_139' data-name='선 139' y1='1' x2='12' transform='translate(2.344 -4.357) rotate(50)' fill='none' stroke='%23000000' stroke-linecap='round' stroke-width='2'/%3E%3Cline id='선_257' data-name='선 257' x2='12' y2='1' transform='translate(10.058 -3.714) rotate(130)' fill='none' stroke='%23000000' stroke-linecap='round' stroke-width='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
 }
 
 /*
