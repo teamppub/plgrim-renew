@@ -736,17 +736,28 @@ input::-webkit-search-results-decoration {
   justify-content: space-between;
 }
 
+.recruit-list.v2 span {
+  max-width: 795px;
+}
+
 .recruit-list .all-list li {
   display: flex;
   position: relative;
   padding-left: 30px;
 }
 
+.recruit-list .all-list li.recru-btn {
+  justify-content: space-between;
+}
+
 .recruit-list .all-list li span {
   font-size: 20px;
   line-height: 32px;
   letter-spacing: 1px;
-  max-width: 795px;
+}
+
+.recruit-list .all-list li span a {
+  text-decoration: underline;
 }
 
 .recruit-list .all-list li .part {
