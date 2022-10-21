@@ -408,6 +408,7 @@
   position: absolute;
   top: 60px;
   left: 40px;
+  z-index: 10;
 }
 
 #pop-recruit .pop-wrap .pop-content .recruit-slider .swiper-navigation .swiper-paging {
@@ -423,6 +424,7 @@
 #pop-recruit .pop-wrap .pop-content .recruit-slider .swiper-slide img {
   width: auto;
   height: 100%;
+  max-width: 1200px;
 }
 
 #pop-recruit .pop-wrap .pop-content .recruit-slider .swiper-button-box .button-next {
