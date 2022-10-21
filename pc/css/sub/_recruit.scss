@@ -38,37 +38,6 @@
             }
         }
     }
-    .swiper {
-        .swiper-navigation {
-            position: absolute;
-            top: 22px;
-            left: -15%;
-            .swiper-paging {
-                font-size: 20px;
-            }
-        }
-        .swiper-slide {
-            align-self: center;
-        }
-        .swiper-button-box {
-            .button-next {
-                position: absolute;
-                top: 50%;
-                right: -15%;
-                cursor: pointer;
-            }
-            .button-prev {
-                position: absolute;
-                top: 50%;
-                left: -15%;
-                cursor: pointer;
-            }
-            .ico-arr2 {
-                width: 15px;
-                height: 30px;
-            }
-        }
-    }
     .recruit-talent {
         padding: 55px 350px 160px;
         margin-bottom: 200px;
@@ -157,5 +126,56 @@
     }
     .recruit-box + .recruit-box {
         margin-top: 200px;
+    }
+}
+#pop-recruit{
+    .pop-wrap{
+        .pop-content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            height: 100%;
+            .recruit-slider {
+                width:1200px;
+                margin:0 auto;
+                .swiper-navigation {
+                    position: absolute;
+                    top: 60px;
+                    left: 40px;
+                    .swiper-paging {
+                        font-size: 20px;
+                    }
+                }
+                .swiper-slide {
+                    align-self: center;
+                    max-height:680px;
+                    text-align:center;
+                    img{
+                        width: auto;
+                        height: 100%;
+                    }
+                }
+                .swiper-button-box {
+                    .button-next {
+                        position: absolute;
+                        top: 50%;
+                        right: 40px;
+                        cursor: pointer;
+                    }
+                    .button-prev {
+                        position: absolute;
+                        top: 50%;
+                        left: 40px;
+                        cursor: pointer;
+                    }
+                    .ico-arr2 {
+                        width: 15px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
     }
 }

@@ -291,39 +291,6 @@
   margin-left: 40px;
 }
 
-.recruit .swiper .swiper-navigation {
-  position: absolute;
-  top: 22px;
-  left: -15%;
-}
-
-.recruit .swiper .swiper-navigation .swiper-paging {
-  font-size: 20px;
-}
-
-.recruit .swiper .swiper-slide {
-  align-self: center;
-}
-
-.recruit .swiper .swiper-button-box .button-next {
-  position: absolute;
-  top: 50%;
-  right: -15%;
-  cursor: pointer;
-}
-
-.recruit .swiper .swiper-button-box .button-prev {
-  position: absolute;
-  top: 50%;
-  left: -15%;
-  cursor: pointer;
-}
-
-.recruit .swiper .swiper-button-box .ico-arr2 {
-  width: 15px;
-  height: 30px;
-}
-
 .recruit .recruit-talent {
   padding: 55px 350px 160px;
   margin-bottom: 200px;
@@ -421,6 +388,60 @@
 
 .recruit .recruit-box + .recruit-box {
   margin-top: 200px;
+}
+
+#pop-recruit .pop-wrap .pop-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
+}
+
+#pop-recruit .pop-wrap .pop-content .recruit-slider {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#pop-recruit .pop-wrap .pop-content .recruit-slider .swiper-navigation {
+  position: absolute;
+  top: 60px;
+  left: 40px;
+}
+
+#pop-recruit .pop-wrap .pop-content .recruit-slider .swiper-navigation .swiper-paging {
+  font-size: 20px;
+}
+
+#pop-recruit .pop-wrap .pop-content .recruit-slider .swiper-slide {
+  align-self: center;
+  max-height: 680px;
+  text-align: center;
+}
+
+#pop-recruit .pop-wrap .pop-content .recruit-slider .swiper-slide img {
+  width: auto;
+  height: 100%;
+}
+
+#pop-recruit .pop-wrap .pop-content .recruit-slider .swiper-button-box .button-next {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  cursor: pointer;
+}
+
+#pop-recruit .pop-wrap .pop-content .recruit-slider .swiper-button-box .button-prev {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  cursor: pointer;
+}
+
+#pop-recruit .pop-wrap .pop-content .recruit-slider .swiper-button-box .ico-arr2 {
+  width: 15px;
+  height: 30px;
 }
 
 .culture .culture-detail-wrap {
