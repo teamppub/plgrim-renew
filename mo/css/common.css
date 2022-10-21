@@ -767,42 +767,30 @@ input::-webkit-search-results-decoration {
   font-weight: 400;
 }
 
-.recruit-list {
-  display: flex;
-  justify-content: space-between;
+.recruit-list p {
+  margin-top: 25px;
+  font-size: 12px;
 }
 
 .all-list li {
   display: flex;
   position: relative;
-  padding-left: 30px;
 }
 
 .all-list li span {
-  font-size: 20px;
-  line-height: 32px;
-  letter-spacing: 1px;
-  max-width: 795px;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.3px;
 }
 
 .all-list li .part {
-  min-width: 270px;
-  font-weight: 600;
+  min-width: 80px;
+  font-weight: 700;
+  letter-spacing: -0.6px;
 }
 
 .all-list li ~ li {
-  margin-top: 15px;
-}
-
-.all-list :after {
-  content: '';
-  position: absolute;
-  left: 0px;
-  top: 14px;
-  background: #000000;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
+  margin-top: 25px;
 }
 
 .common-list {
@@ -879,6 +867,25 @@ input::-webkit-search-results-decoration {
   font-weight: 900;
 }
 
+.swiper-pagination {
+  position: relative;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  margin-left: 15px;
+  background-color: #fff;
+  border: 2px solid #000;
+  opacity: 1;
+}
+
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #000;
+}
+
+.swiper-pagination .swiper-pagination-bullet:first-child {
+  margin-left: 0;
+}
+
 .swiper-button-box {
   display: flex;
 }
@@ -902,32 +909,39 @@ input::-webkit-search-results-decoration {
  * $direction - 방향(top, right, bottom, left)
  * $value - 더해질 값(생략가능)
  */
+.work-item-list {
+  padding-top: 40px;
+}
+
 .work-item-list .work-item {
-  width: 670px;
+  position: relative;
 }
 
 .work-item-list .work-item .item-img {
-  margin-bottom: 30px;
+  margin-top: -15px;
 }
 
-.work-item-list .work-item .item-info .item-title {
-  margin-bottom: 20px;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 44px;
-}
-
-.work-item-list .work-item .item-info .item-sub {
-  color: #666666;
+.work-item-list .work-item .item-title {
+  position: relative;
   font-size: 24px;
-  line-height: 36px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.work-item-list .work-item .item-sub {
+  margin: 20px 0 0 10px;
+  font-size: 12px;
+  color: #666;
+  line-height: 16px;
+}
+
+.work-item-list .work-item + .work-item {
+  margin-top: 60px;
 }
 
 .culture-item-list {
-  margin: -130px 0px;
-  padding: 200px 120px;
+  padding: 55px 30px;
   background: rgba(1, 160, 233, 0.08);
-  border-radius: 200px 0 0 0;
 }
 
 .page-guide-box .culture-item-list {
@@ -935,9 +949,7 @@ input::-webkit-search-results-decoration {
 }
 
 .culture-item-list .culture-item {
-  padding-bottom: 70px;
-  margin-bottom: 70px;
-  border-bottom: 1px solid #ccc;
+  margin-bottom: 60px;
 }
 
 .culture-item-list .culture-item:nth-last-child(1) {
@@ -945,23 +957,18 @@ input::-webkit-search-results-decoration {
 }
 
 .culture-item-list .culture-item a {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.culture-item-list .culture-item .item-img {
-  flex: 0 0 415px;
+  display: block;
 }
 
 .culture-item-list .culture-item .item-info {
-  padding-left: 80px;
+  padding-top: 20px;
 }
 
 .culture-item-list .culture-item .item-info .item-title {
-  margin-bottom: 30px;
-  font-size: 36px;
+  margin-bottom: 10px;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 50px;
+  line-height: 25px;
 }
 
 .culture-item-list .culture-item .item-info .item-sub {
@@ -972,17 +979,17 @@ input::-webkit-search-results-decoration {
   -webkit-line-clamp: 2;
   overflow: hidden;
   text-overflow: ellipsis;
-  line-height: 24px;
+  line-height: 16px;
   white-space: initial;
-  height: 48px;
-  margin-bottom: 20px;
-  color: #666666;
-  font-size: 16px;
+  height: 32px;
+  margin-bottom: 10px;
+  color: #666;
+  font-size: 12px;
 }
 
 .culture-item-list .culture-item .item-info .item-date {
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 /*
@@ -992,36 +999,38 @@ input::-webkit-search-results-decoration {
  * $value - 더해질 값(생략가능)
  */
 .table-wrap {
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #cccccc;
+  border-top: 2px solid #000000;
 }
 
 .table-wrap th {
-  padding: 45px 0px 42px;
-  font-size: 24px;
+  padding: 20px 0;
+  font-size: 12px;
   font-weight: 500;
   text-align: left;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 2px solid #eee;
+  letter-spacing: -0.3px;
 }
 
 .table-wrap th:first-child {
-  padding-left: 120px;
+  padding-left: 10px;
 }
 
 .table-wrap tr td {
-  padding-bottom: 90px;
-  line-height: 46px;
-  font-size: 26px;
+  padding: 0 10px 50px 0;
+  line-height: 22px;
+  font-size: 12px;
   font-weight: 400;
+  letter-spacing: -0.6px;
 }
 
 .table-wrap tr td:first-child {
-  padding-left: 120px;
+  padding: 0 0 0 10px;
   font-weight: 600;
+  letter-spacing: -0.3px;
 }
 
 .table-wrap tr:first-child td {
-  padding-top: 85px;
+  padding-top: 40px;
 }
 
 /*

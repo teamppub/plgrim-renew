@@ -15,10 +15,9 @@
 	<?php include './nav.html'?>
 	<div class="page-guide-content">
 		<h2 class="page-guide-title">Swiper</h2>
-		<h3 class="page-guide-title2">center</h3>
+		<h3 class="page-guide-title2">paging - counter</h3>
 
 		<div class="page-guide-box">
-			
             <!-- Swiper -->
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
@@ -46,6 +45,33 @@
                     </div> -->
                 </div>
             </div>
+        </div>
+        
+		<h3 class="page-guide-title2">paging - dot</h3>
+		<div class="page-guide-box">
+            <!-- Swiper -->
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        1
+                    </div>
+                    <div class="swiper-slide">
+                       2
+                    </div>
+                    <div class="swiper-slide">
+                        3
+                    </div>
+                    <div class="swiper-slide">
+                        4
+                    </div>
+                    <div class="swiper-slide">
+                        5
+                    </div>
+                </div>
+                <div class="swiper-navigation">
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
 		</div>
 	</div>
     <script>
@@ -67,6 +93,18 @@
                         '<span> / </span>' +
                         '<em class="' + totalClass + '"></em>';
                 }
+            },
+            // navigation: {
+            //     nextEl: ".swiper-button-box .button-next",
+            //     prevEl: ".swiper-button-box .button-prev",
+            // },
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            loop: true, 
+            slidesPerView: 1,
+            // spaceBetween: 100,
+            pagination: {
+                el: ".swiper-pagination",
             },
             // navigation: {
             //     nextEl: ".swiper-button-box .button-next",

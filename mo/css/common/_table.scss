@@ -2,31 +2,34 @@
 @import '../common/variable', '../common/mixin';
 
 .table-wrap {
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #cccccc;
+  border-top: 2px solid #000000;
+  // border-bottom: 2px solid $CLine;
   th {
-    padding: 45px 0px 42px;
-    font-size: 24px;
+    padding: 20px 0;
+    font-size: 12px;
     font-weight: 500;
     text-align: left;
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 2px solid $CLine2;
+    letter-spacing: -0.3px;
   }
   th:first-child {
-    padding-left: 120px;
+    padding-left: 10px;
   }
   tr {
     td {
-      padding-bottom: 90px;
-      line-height: 46px;
-      font-size: 26px;
+      padding:0 10px 50px 0;
+      line-height: 22px;
+      font-size: 12px;
       font-weight: 400;
+      letter-spacing: -0.6px;
     }
     td:first-child {
-      padding-left: 120px;
+      padding: 0 0 0 10px;
       font-weight: 600;
+      letter-spacing: -0.3px;
     }
   }
   tr:first-child td {
-    padding-top: 85px;
+    padding-top: 40px;
   }
 }

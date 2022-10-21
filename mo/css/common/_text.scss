@@ -75,38 +75,30 @@
 }
 
 .recruit-list {
-  display: flex;
-  justify-content: space-between;
+  p{
+    margin-top: 25px;
+    font-size: 12px;
+  }
 }
 
 .all-list {
   li {
     display: flex;
     position: relative;
-    padding-left: 30px;
     span {
-      font-size: 20px;
-      line-height: 32px;
-      letter-spacing: 1px;
-      max-width: 795px;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: -0.3px;
+      // max-width: 795px;
     }
     .part {
-      min-width: 270px;
-      font-weight: 600;
+      min-width: 80px;
+      font-weight: 700;
+      letter-spacing: -0.6px;
     }
   }
   li ~ li {
-    margin-top: 15px;
-  }
-  & :after {
-    content: '';
-    position: absolute;
-    left: 0px;
-    top: 14px;
-    background: #000000;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
+    margin-top: 25px;
   }
 }
 
