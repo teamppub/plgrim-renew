@@ -1,0 +1,143 @@
+@charset "UTF-8";
+@import '../common/variable', '../common/mixin';
+
+[class^='title-wrap'] {
+  position: relative;
+  word-break: keep-all;
+
+  .side-box {
+    @include abs(v);
+    right: 0;
+  }
+  .btn-type {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.title-wrap {
+  display: flex;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.title-wrap2 {
+  .en {
+    margin-top: 15px;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+  }
+  .ko {
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    line-height: 32px;
+  }
+}
+.title-type {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 800;
+  &.v2 {
+    font-size: 38px;
+    text-transform: uppercase;
+  }
+  &.title-line {
+    font-size: 24px;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #000;
+      border-radius: 10px;
+    }
+  }
+  span {
+    display: block;
+    margin: 0 10px;
+    width: 2px;
+    height: 16px;
+    background-color: #000;
+    transform: rotate(27deg);
+  }
+  & + .title-type2 {
+    margin-top: 30px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+}
+
+.recruit-list {
+  p{
+    margin-top: 25px;
+    font-size: 12px;
+  }
+}
+
+.all-list {
+  li {
+    display: flex;
+    position: relative;
+    span {
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: -0.3px;
+      // max-width: 795px;
+    }
+    .part {
+      min-width: 80px;
+      font-weight: 700;
+      letter-spacing: -0.6px;
+    }
+  }
+  li ~ li {
+    margin-top: 25px;
+  }
+}
+
+.common-list {
+  align-self: center;
+  li {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  li + li {
+    margin-top: 15px;
+  }
+}
+
+.list-info {
+  dl {
+    dt {
+      margin-bottom: 15px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    dd {
+      p{
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        &+p{
+          margin-top: 10px;
+        }
+      }
+      dl{
+        display: flex;
+      }
+      & + dd {
+        margin-left: 30px;
+      }
+    }
+    & + dl {
+      margin-top: 40px;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<?php include './meta.html'?>
+    <style>
+        .swiper-slide{
+            height: 200px;
+            background:#ccc;
+        }
+    </style>
+</head>
+
+<body>
+	<?php include './nav.html'?>
+	<div class="page-guide-content">
+		<h2 class="page-guide-title">Swiper</h2>
+		<h3 class="page-guide-title2">paging - counter</h3>
+
+		<div class="page-guide-box">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        1
+                    </div>
+                    <div class="swiper-slide">
+                       2
+                    </div>
+                    <div class="swiper-slide">
+                        3
+                    </div>
+                    <div class="swiper-slide">
+                        4
+                    </div>
+                    <div class="swiper-slide">
+                        5
+                    </div>
+                </div>
+                <div class="swiper-navigation">
+                    <div class="swiper-paging"></div>
+                    <!-- <div class="swiper-button-box">
+                        <div class="btn-type button-prev"><i class="ico-arr lft"><span class="hidden">이전</span></i></div>
+                        <div class="btn-type button-next"><i class="ico-arr"><span class="hidden">다음</span></i></div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        
+		<h3 class="page-guide-title2">paging - dot</h3>
+		<div class="page-guide-box">
+            <!-- Swiper -->
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        1
+                    </div>
+                    <div class="swiper-slide">
+                       2
+                    </div>
+                    <div class="swiper-slide">
+                        3
+                    </div>
+                    <div class="swiper-slide">
+                        4
+                    </div>
+                    <div class="swiper-slide">
+                        5
+                    </div>
+                </div>
+                <div class="swiper-navigation">
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+		</div>
+	</div>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true, 
+            slidesPerView: 1,
+            // spaceBetween: 100,
+            pagination: {
+                el: '.swiper-paging',
+                type: 'fraction',
+                formatFractionCurrent: function (number) {
+                    return ('0' + number).slice(-2);
+                },
+                formatFractionTotal: function (number) {
+                    return ('0' + number).slice(-2);
+                },
+                renderFraction: function (currentClass, totalClass) {
+                    return '<em class="' + currentClass + '"></em>' +
+                        '<span> / </span>' +
+                        '<em class="' + totalClass + '"></em>';
+                }
+            },
+            // navigation: {
+            //     nextEl: ".swiper-button-box .button-next",
+            //     prevEl: ".swiper-button-box .button-prev",
+            // },
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            loop: true, 
+            slidesPerView: 1,
+            // spaceBetween: 100,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            // navigation: {
+            //     nextEl: ".swiper-button-box .button-next",
+            //     prevEl: ".swiper-button-box .button-prev",
+            // },
+        });
+      </script>
+</body>
+
+</html>

@@ -2,138 +2,146 @@
 @import '../common/variable', '../common/mixin';
 
 [class^='title-wrap'] {
-  position: relative;
-  word-break: keep-all;
+    position: relative;
+    word-break: keep-all;
 
-  .side-box {
-    @include abs(v);
-    right: 0;
-  }
-  .btn-type {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
+    .side-box {
+        @include abs(v);
+        right: 0;
+    }
+    .btn-type {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .title-wrap {
-  display: flex;
-  margin-bottom: 60px;
-  text-align: center;
+    display: flex;
+    margin-bottom: 60px;
+    text-align: center;
 }
 
 .title-wrap2 {
-  .en {
-    margin-bottom: 28px;
-    font-size: 62px;
-  }
-  .ko {
-    font-size: 58px;
-  }
+    .en {
+        margin-bottom: 28px;
+        font-size: 62px;
+    }
+    .ko {
+        font-size: 58px;
+    }
 }
 .title-type {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  font-size: 70px;
-  font-weight: 800;
-  letter-spacing: 1.75px;
-  &.v2 {
-    font-size: 100px;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-  }
-  &.title-line {
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 6px;
-      background-color: #000;
-      border-radius: 10px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-size: 70px;
+    font-weight: 800;
+    letter-spacing: 1.75px;
+    &.v2 {
+        font-size: 100px;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
     }
-  }
-  span {
-    display: block;
-    margin: 0 50px;
-    width: 5px;
-    height: 52px;
-    background-color: #000;
-    transform: rotate(27deg);
-  }
-  & + .title-type2 {
-    margin-top: 30px;
-    font-size: 24px;
-  }
+    &.title-line {
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background-color: #000;
+            border-radius: 10px;
+        }
+    }
+    span {
+        display: block;
+        margin: 0 50px;
+        width: 5px;
+        height: 52px;
+        background-color: #000;
+        transform: rotate(27deg);
+    }
+    & + .title-type2 {
+        margin-top: 30px;
+        font-size: 24px;
+    }
 }
 
 .recruit-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.all-list {
-  li {
-    display: flex;
-    position: relative;
-    padding-left: 30px;
-    span {
-      font-size: 20px;
-      line-height: 32px;
-      letter-spacing: 1px;
-      max-width: 795px;
+    &.v2 {
+        display: flex;
+        justify-content: space-between;
+        span {
+            max-width: 795px;
+        }
     }
-    .part {
-      min-width: 270px;
-      font-weight: 600;
+    .all-list {
+        li {
+            display: flex;
+            position: relative;
+            padding-left: 30px;
+            &.recru-btn {
+                justify-content: space-between;
+            }
+            span {
+                font-size: 20px;
+                line-height: 32px;
+                letter-spacing: 1px;
+                a {
+                    text-decoration: underline;
+                }
+            }
+            .part {
+                min-width: 270px;
+                font-weight: 600;
+            }
+        }
+        li ~ li {
+            margin-top: 15px;
+        }
+        & :after {
+            content: '';
+            position: absolute;
+            left: 0px;
+            top: 14px;
+            background: #000000;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+        }
     }
-  }
-  li ~ li {
-    margin-top: 15px;
-  }
-  & :after {
-    content: '';
-    position: absolute;
-    left: 0px;
-    top: 14px;
-    background: #000000;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-  }
-}
-
-.common-list {
-  align-self: center;
-  li {
-    font-size: 20px;
-    line-height: 32px;
-  }
-  li + li {
-    margin-top: 15px;
-  }
+    .common-list {
+        align-self: center;
+        li {
+            font-size: 20px;
+            line-height: 32px;
+        }
+        li + li {
+            margin-top: 15px;
+        }
+    }
 }
 
 .list-info {
-  dl {
-    display: flex;
-    dt {
-      width: 347px;
-      font-size: 40px;
-      font-weight: 700;
+    dl {
+        display: flex;
+        dt {
+            width: 347px;
+            font-size: 40px;
+            font-weight: 700;
+        }
+        dd {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 42px;
+            & + dd {
+                margin-left: 142px;
+            }
+        }
+        & + dl {
+            margin-top: 80px;
+        }
     }
-    dd {
-      font-size: 24px;
-      font-weight: 500;
-      line-height: 42px;
-      & + dd {
-        margin-left: 142px;
-      }
-    }
-    & + dl {
-      margin-top: 80px;
-    }
-  }
 }

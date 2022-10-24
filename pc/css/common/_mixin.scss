@@ -13,7 +13,6 @@
   line-height: ($lineHeight * $line) / $line + px;
   //word-break: break-all;
   white-space: initial;
-
   @if $auto ==auto {
     //영역 자동
     max-height: $lineHeight * $line + px;
@@ -91,4 +90,11 @@
   line-height: 0;
   overflow: hidden;
   visibility: hidden;
+}
+
+//pc
+@mixin pc-inner {
+  @media all and (min-width:768px) and (max-width:1640px) {
+      @content;
+  }
 }

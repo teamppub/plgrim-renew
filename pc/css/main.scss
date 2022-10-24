@@ -20,7 +20,12 @@
         article{
             padding: 200px 0 0;
             .title-wrap{
-                margin-bottom: 110px;
+                margin-bottom: 110px;    
+                opacity: 0;
+                transition: .5s;
+                &.started {
+                    opacity: 1;
+                }
             }
         }
         .visual-wrap{
@@ -101,10 +106,29 @@
         }
         .intro-wrap{
             padding: 160px 0;
+            .title-wrap2{                
+                h3{
+                    transform: translateY(100px);
+                    opacity: 0;
+                    transition: .5s;
+                    &.started {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+            }
             .intro-cont{
-                margin-top: 110px;
+                margin-top: 110px;       
+                transform: translateY(100px);
+                opacity: 0;
+                transition: .5s;
+                &.started {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
                 dl{
                     display: flex;
+                    justify-content: space-between;
                     dt{
                         font-size: 62px;
                         font-weight: 700;
@@ -112,7 +136,7 @@
                         letter-spacing: 3.1px;
                     }
                     dd{
-                        padding-left: 300px;
+                        // padding-left: 300px;
                         p{
                             font-size: 20px;
                             font-weight: 600;
@@ -133,9 +157,23 @@
                 display: flex;
                 justify-content: space-between;
                 margin: 80px 0 0;
+                &.started {
+                    li {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
                 li{
                     width: 440px;
                     margin-left: 40px;
+                    transform: translateY(100px);
+                    opacity: 0;
+                    transition: .5s;
+                    @for $i from 1 to 4 {
+                        &:nth-child(#{$i}) {
+                            transition-delay: #{$i*0.4}s;
+                        }
+                    }
                     strong{
                         display: block;
                         margin: 30px 0 20px;
@@ -169,7 +207,17 @@
                     a{
                         display: block;
                     }
-                    .thumb{}
+                    .thumb{
+                        overflow: hidden;
+                        border-radius: 28px;
+                        img{
+                            transition: all 0.5s;
+                            &:hover{
+                                transform: scale(1.1);
+                            }
+                        }
+
+                    }
                     .info{
                         display: block;
                         margin-top: 30px;
@@ -179,6 +227,7 @@
                             font-size: 36px;
                             line-height: 50px;
                             font-weight: 700;
+                            @include text-hidden($line: 1, $lineHeight: 50, $auto: null);
                         }
                         p{
                             font-size: 16px;
@@ -201,6 +250,42 @@
                     }
                     &:nth-of-type(2n+1){
                         margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include pc-inner {
+    .main-wrap{
+        .main{
+            .visual-wrap{
+                .swiper-navigation{
+                    width: 1200px;
+                }
+            }
+            .intro-wrap{
+                .title-wrap2{
+                    .en, .ko{
+                        letter-spacing: -1.2px;
+                    }
+                }
+                .intro-cont{
+                    dl{
+                        dd{
+                            // padding-left: 100px;
+                        }
+                    }
+                }
+            }
+            .business-wrap{
+                .business-box{
+                    li{
+                        p{
+                            letter-spacing: -0.5px;
+                        }
                     }
                 }
             }
