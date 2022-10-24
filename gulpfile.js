@@ -55,3 +55,21 @@ gulp.task('pcimage', function (cb) {
 gulp.task('pcjs', function (cb) {
   pump([gulp.src('pc/js/*.js'), gulp.dest('build/pc/js')], cb);
 });
+
+//걸프 자동화
+gulp.task(
+  'default',
+  gulp.series([
+    'list',
+    'pchtml',
+    'pcguide',
+    'pccss',
+    'pcguidecss',
+    'assets',
+    'pcimage',
+    'pcjs',
+  ]),
+  () => {
+    gutil.log('Gulp is running');
+  }
+);
