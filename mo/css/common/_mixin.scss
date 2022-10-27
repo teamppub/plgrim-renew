@@ -91,3 +91,16 @@
   overflow: hidden;
   visibility: hidden;
 }
+
+
+//vw 계산법
+//ex==> font-size: get-vw(20px)
+
+$vw-viewport: 360;
+@function get-vw($size){
+  $vw-context: $vw-viewport * 0.01 * 1px;
+  @return $size / $vw-context * 1vw;
+  @return $size * 2; 
+  @return $size;
+}
+
