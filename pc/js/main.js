@@ -1,6 +1,4 @@
 $(document).ready(function () {
-	//product
-	var prdPos = [];
 	var visualSwiper = new Swiper('.visual-swiper', {
 		autoplay: {
 			delay: 3000,
