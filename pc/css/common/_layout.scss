@@ -29,17 +29,30 @@
 }
 .sub {
   padding: 190px 0 300px;
-
   [class^='title-wrap'] {
     padding-left: 120px;
   }
   .inner-box {
     & > .title-wrap2 {
-      margin-bottom: 130px;
+      margin-bottom: 130px; 
+      // transform: translateY(100px);
+      opacity: 0;
+      transition: .5s;
+      &.started {
+        transform: translateY(0px);
+        opacity: 1;
+      }
       & + .title-wrap {
         position: relative;
         margin-bottom: -62px;
-        z-index: 10;
+        transform: translateY(100px);
+        transition: .5s .4s;
+        opacity: 0;
+        z-index: 10; 
+        &.started {
+          transform: translateY(0px);
+          opacity: 1;
+        }
       }
     }
   }
@@ -174,6 +187,18 @@
   .footer-wrap {
     .logo-box {
       padding-right: 350px;
+    }
+  }
+}
+
+@media all and (min-width:768px) and (max-width:1200px) {
+  .header-wrap{
+    padding: 0 50px;
+  }
+  .footer-wrap{
+    padding-left: 50px;
+    .logo-box {
+      padding-right:150px;
     }
   }
 }
