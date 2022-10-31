@@ -5,7 +5,7 @@ var UI = (function () {
       setTimeout( function(){
         UI.workList();
         document.querySelector( ".work-item-list " ).style.opacity = 1;
-      },100)
+      },100) 
     },
     element: {
       header: '.header-wrap',
