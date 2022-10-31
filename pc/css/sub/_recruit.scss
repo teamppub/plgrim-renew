@@ -39,9 +39,10 @@
         }
     }
     .recruit-talent {
-        padding: 55px 350px 160px;
-        margin-bottom: 200px;
-        background: $CBg;
+        position: relative;
+        padding-bottom:160px;
+        margin: 0 auto 200px;
+        width: 1220px;
         ul {
             margin-top: 60px;
             display: flex;
@@ -64,6 +65,16 @@
                     line-height: 32px;
                 }
             }
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: -350px;
+            right: -350px;        
+            bottom: 0px;
+            background: $CBg;
+            z-index: -1;
         }
     }
     .recruit-wrap {

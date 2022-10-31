@@ -2,17 +2,18 @@
 @import '../common/variable', '../common/mixin';
 
 .work-item-list {
+  opacity: 0;
   .work-item {
     width: 670px;
     .item-img {
       overflow: hidden;
       margin-bottom: 30px;
       border-radius: 18px;
-      img{
-          transition: all 0.5s;
-          &:hover{
-              transform: scale(1.1);
-          }
+      img {
+        transition: all 0.5s;
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
 
@@ -33,8 +34,8 @@
 }
 
 .culture-item-list {
-  margin: -130px 0px;
-  padding: 200px 120px;
+  margin: -130px 0px 0px;
+  padding: 200px 120px 70px;
   background: rgba(1, 160, 233, 0.08);
   border-radius: 200px 0 0 0;
 
@@ -48,7 +49,9 @@
     border-bottom: 1px solid #ccc;
 
     &:nth-last-child(1) {
+      padding-bottom: 0px;
       margin-bottom: 0px;
+      border-bottom: none;
     }
 
     a {

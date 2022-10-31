@@ -36,6 +36,7 @@
             }
             .visual-swiper{
                 .swiper-slide{
+                    width:1640px !important;
                     .title-box {
                         display: flex;
                         justify-content: space-between;
@@ -264,6 +265,11 @@
             .visual-wrap{
                 .swiper-navigation{
                     width: 1200px;
+                }
+                .visual-swiper{
+                    .swiper-slide{
+                        width:1440px !important
+                    }
                 }
             }
             .intro-wrap{
