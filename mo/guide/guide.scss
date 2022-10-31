@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import '../css/common/variable';
+@import '../css/common/_mixin';
 
 html,
 body {
@@ -151,8 +152,10 @@ body {
 }
 
 .page-guide-title {
-	margin-bottom: 40px;
-	font-size: 34px;
+	// margin-bottom: 40px;
+	margin-bottom:  get-vw(20px);
+	// font-size: 34px; 
+	font-size:  get-vw(34px);
 	color: #111;
 	font-weight: 700;
 
