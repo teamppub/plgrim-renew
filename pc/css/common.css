@@ -837,9 +837,6 @@ input::-webkit-search-results-decoration {
  * $direction - 방향(top, right, bottom, left)
  * $value - 더해질 값(생략가능)
  */
-.work-item-list {
-  opacity: 0;
-}
 .work-item-list .work-item {
   width: 670px;
 }
@@ -946,6 +943,9 @@ input::-webkit-search-results-decoration {
 .table-wrap th:first-child {
   padding-left: 120px;
 }
+.table-wrap tr:first-child td {
+  padding-top: 85px;
+}
 .table-wrap tr td {
   padding-bottom: 90px;
   line-height: 46px;
@@ -956,6 +956,7 @@ input::-webkit-search-results-decoration {
   padding-left: 120px;
   font-weight: 600;
 }
+
 .table-wrap tr:first-child td {
   padding-top: 85px;
 }
