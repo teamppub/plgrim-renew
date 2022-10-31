@@ -957,6 +957,10 @@ input::-webkit-search-results-decoration {
   font-weight: 600;
 }
 
+.table-wrap tr:first-child td {
+  padding-top: 85px;
+}
+
 /*
  * safe-area-inset 처리
  * $key - 넣을곳(padding-top, marin-bottom, ...)

@@ -2,7 +2,10 @@ var UI = (function () {
   return {
     init: function () {
       this.event();
-      this.workList();
+      setTimeout( function(){
+        UI.workList();
+        document.querySelector( ".work-item-list " ).style.opacity = 1;
+      },100) 
     },
     element: {
       header: '.header-wrap',
@@ -107,9 +110,11 @@ var UI = (function () {
       });
     },
     workList: function () {
+     
       if (matchMedia('screen and (min-width: 1640px)').matches) {
         //   1640보다 크면
         document.querySelectorAll('.work-item').forEach(item => {
+          var elem = document.querySelectorAll('.work-item');
           item.style.gridRowEnd = `span ${item.clientHeight + 140}`;
         });
         const wrap = document.querySelector('.work-item-list');
@@ -127,6 +132,8 @@ var UI = (function () {
         wrap.style.gap = '0px 60px';
         wrap.style.gridAutoRows = '1px';
       }
+
+
     },
   };
 })();
