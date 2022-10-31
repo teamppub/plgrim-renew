@@ -204,9 +204,29 @@
   margin: 0px -20px;
 }
 
+.product .business-wrap .business-box.started li {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 .product .business-wrap .business-box li {
   padding: 0px 20px;
   width: 33.33%;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: .5s;
+}
+
+.product .business-wrap .business-box li:nth-child(1) {
+  transition-delay: 0.4s;
+}
+
+.product .business-wrap .business-box li:nth-child(2) {
+  transition-delay: 0.8s;
+}
+
+.product .business-wrap .business-box li:nth-child(3) {
+  transition-delay: 1.2s;
 }
 
 .product .business-wrap .business-box li .box-title {
@@ -292,9 +312,10 @@
 }
 
 .recruit .recruit-talent {
-  padding: 55px 350px 160px;
-  margin-bottom: 200px;
-  background: #F8F8F8;
+  position: relative;
+  padding-bottom: 160px;
+  margin: 0 auto 200px;
+  width: 1220px;
 }
 
 .recruit .recruit-talent ul {
@@ -323,6 +344,17 @@
 .recruit .recruit-talent ul li .txt {
   font-size: 20px;
   line-height: 32px;
+}
+
+.recruit .recruit-talent::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: -350px;
+  right: -350px;
+  bottom: 0px;
+  background: #F8F8F8;
+  z-index: -1;
 }
 
 .recruit .recruit-wrap {
@@ -444,6 +476,10 @@
 #pop-recruit .pop-wrap .pop-content .recruit-slider .swiper-button-box .ico-arr2 {
   width: 15px;
   height: 30px;
+}
+
+.culture .culture-item-wrap .btn-wrap {
+  margin-top: 120px;
 }
 
 .culture .culture-detail-wrap {

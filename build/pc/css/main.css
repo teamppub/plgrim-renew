@@ -286,6 +286,10 @@ input::-webkit-search-results-decoration {
   margin: 0 auto 90px;
 }
 
+.main-wrap .main .visual-wrap .visual-swiper .swiper-slide {
+  width: 1640px !important;
+}
+
 .main-wrap .main .visual-wrap .visual-swiper .swiper-slide .title-box {
   display: flex;
   justify-content: space-between;
@@ -541,6 +545,9 @@ input::-webkit-search-results-decoration {
 @media all and (min-width: 768px) and (max-width: 1640px) {
   .main-wrap .main .visual-wrap .swiper-navigation {
     width: 1200px;
+  }
+  .main-wrap .main .visual-wrap .visual-swiper .swiper-slide {
+    width: 1440px !important;
   }
   .main-wrap .main .intro-wrap .title-wrap2 .en, .main-wrap .main .intro-wrap .title-wrap2 .ko {
     letter-spacing: -1.2px;
