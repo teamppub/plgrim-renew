@@ -310,8 +310,7 @@ input::-webkit-search-results-decoration {
 .sub .inner-box > .title-wrap2 + .title-wrap {
   position: relative;
   margin-bottom: -62px;
-  transform: translateY(100px);
-  transition: .5s .4s;
+  transition: .7s .4s;
   opacity: 0;
   z-index: 10;
 }
