@@ -396,7 +396,7 @@
   width: 200px;
   line-height: 80px;
   border: 4px solid #000000;
-  border-radius: 40px;
+  border-radius: 80px;
 }
 
 .recruit .recruit-box .sub-wrap .process-box ul li::after {
