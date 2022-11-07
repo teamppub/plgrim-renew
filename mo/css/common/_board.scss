@@ -2,33 +2,33 @@
 @import '../common/variable', '../common/mixin';
 
 .work-item-list {
-  padding-top: 40px;
+  padding-top: vw(40px);
   .work-item {
     position: relative;
     .item-img {
-      margin-top: -15px;
+      margin-top: vw(-15px);
     }
 
     .item-title {
       position: relative;
-      font-size: 24px;
+      font-size: vw(24px);
       font-weight: 700;
-      line-height: 32px;
+      line-height: vw(32px);
     }
     .item-sub {
-      margin: 20px 0 0 10px;
-      font-size: 12px;
+      margin: vw(20px 0 0 10px);
+      font-size: vw(12px);
       color: $CTsub;
-      line-height: 16px;
+      line-height: vw(16px);
     }
     &+.work-item{
-      margin-top: 60px;
+      margin-top: vw(60px);
     }
   }
 }
 
 .culture-item-list {
-  padding: 55px 30px;
+  padding: vw(55px 30px);
   background: $CBg2;
 
   .page-guide-box & {
@@ -36,7 +36,7 @@
   }
 
   .culture-item {
-    margin-bottom: 60px;
+    margin-bottom: vw(60px);
 
     &:nth-last-child(1) {
       margin-bottom: 0px;
@@ -51,21 +51,21 @@
     }
 
     .item-info {
-      padding-top: 20px;
+      padding-top: vw(20px);
       .item-title {
-        margin-bottom: 10px;
-        font-size: 18px;
+        margin-bottom: vw(10px);
+        font-size: vw(18px);
         font-weight: 700;
-        line-height: 25px;
+        line-height: vw(25px);
       }
       .item-sub {
         @include text-hidden(2, 16);
-        margin-bottom: 10px;
+        margin-bottom: vw(10px);
         color: $CTsub;
-        font-size: 12px;
+        font-size: vw(12px);
       }
       .item-date {
-        font-size: 12px;
+        font-size: vw(12px);
         font-weight: 600;
       }
     }

@@ -23,13 +23,13 @@
 		background-color: #fff;
 		.pop-close {
 			position: absolute;
-			top: 30px;
-			right: 30px;
+			top: vw(30px);
+			right: vw(30px);
 			z-index: 10;
 		}
 
 		.pop-content {
-			padding: 30px 20px;
+			padding: vw(30px 20px);
 		}
 	}
 }
