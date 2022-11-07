@@ -9,11 +9,10 @@
   height: 50vw;
   background-color: #eee;
 }
-
 .contact .list-info {
-  padding: 8.33333vw 0;
-  margin-bottom: 13.88889vw;
-  border-bottom: 0.13889vw solid #ccc;
+  padding: 8.3333333333vw 0;
+  margin-bottom: 13.8888888889vw;
+  border-bottom: 0.1388888889vw solid #ccc;
 }
 
 /*
@@ -33,5 +32,4 @@
  * $key - 넣을곳(padding-top, marin-bottom, ...)
  * $direction - 방향(top, right, bottom, left)
  * $value - 더해질 값(생략가능)
- */
-/*# sourceMappingURL=sub.css.map */
+ *//*# sourceMappingURL=sub.css.map */

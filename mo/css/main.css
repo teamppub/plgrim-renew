@@ -187,6 +187,11 @@ input[readonly] {
   pointer-events: none;
 }
 
+::-webkit-input-placeholder {
+  font-size: inherit;
+  color: #bcbcbc;
+}
+
 ::placeholder {
   font-size: inherit;
   color: #bcbcbc;
@@ -208,7 +213,6 @@ button {
   cursor: pointer;
   color: inherit;
 }
-
 button:disabled {
   cursor: default;
 }
@@ -229,6 +233,11 @@ input::-webkit-search-cancel-button,
 input::-webkit-search-results-button,
 input::-webkit-search-results-decoration {
   display: none;
+}
+
+::-moz-selection {
+  background: #01A0E9;
+  color: #fff;
 }
 
 ::selection {
@@ -254,5 +263,4 @@ input::-webkit-search-results-decoration {
  * $key - 넣을곳(padding-top, marin-bottom, ...)
  * $direction - 방향(top, right, bottom, left)
  * $value - 더해질 값(생략가능)
- */
-/*# sourceMappingURL=main.css.map */
+ *//*# sourceMappingURL=main.css.map */
