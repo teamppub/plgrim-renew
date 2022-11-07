@@ -27,6 +27,16 @@
 }
 .sub {
   padding: vw(100px 0 120px);
+  .inner-box2 {
+    & > .title-wrap2 {
+      margin-bottom: vw(40px);
+      & + .title-wrap {
+        position: relative;
+        margin-bottom: vw(-25px);
+        z-index: 10; 
+      }
+    }
+  }
 }
 .main {
   padding: vw(100px 0 120px);

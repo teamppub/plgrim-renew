@@ -5,6 +5,17 @@
  * $direction - 방향(top, right, bottom, left)
  * $value - 더해질 값(생략가능)
  */
+.contact .map-wrap .map {
+  height: 50vw;
+  background-color: #eee;
+}
+
+.contact .list-info {
+  padding: 8.33333vw 0;
+  margin-bottom: 13.88889vw;
+  border-bottom: 0.13889vw solid #ccc;
+}
+
 /*
  * safe-area-inset 처리
  * $key - 넣을곳(padding-top, marin-bottom, ...)

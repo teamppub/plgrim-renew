@@ -1,2 +1,16 @@
 @charset "UTF-8";
 @import "../common/variable", "../common/mixin";
+
+.contact{
+    .map-wrap{
+        .map{
+            height: vw(360px);
+            background-color: $CLine2;
+        }
+    }
+    .list-info{
+        padding: vw(60px 0);
+        margin-bottom: vw(100px);
+        border-bottom: vw(1px) solid $CLine;
+    }
+}
