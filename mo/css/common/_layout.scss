@@ -18,18 +18,18 @@
 
 .inner-box {
   position: relative;
-  padding: 0 30px;
+  padding: vw(0 30px);
 }
 
 .inner-box2 {
   position: relative;
-  padding-left: 30px;
+  padding-left: vw(30px);
 }
 .sub {
-  padding: 100px 0 120px;
+  padding: vw(100px 0 120px);
 }
 .main {
-  padding: 100px 0 120px;
+  padding: vw(100px 0 120px);
 }
 .header-wrap {
   display: flex;
@@ -39,7 +39,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 30px 30px;
+  padding: vw(30px 30px);
   background: rgba(255, 255, 255, 0.8);
   transition: transform 0.3s;
   z-index: 79;
@@ -64,44 +64,44 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 34px;
-    height: 34px;
-		border-radius: 4px;
-		border: 2px solid $CText;
+    width: vw(34px);
+    height: vw(34px);
+		border-radius: vw(4px);
+		border: vw(2px) solid $CText;
     z-index: 45;
     /* css */
     .icon-menu{
       position: relative;
-      width: 10px;
-      height: 7px;
+      width: vw(10px);
+      height: vw(7px);
       display: flex;
       flex-flow: column nowrap;
       justify-content: space-between;
       z-index: 99;
       .line{
         display: block;
-        width: 10px;
-        height: 2px;
+        width: vw(10px);
+        height: vw(2px);
         background-color:#000;
         transition: .4s;
         &:nth-child(2){
-          width: 8px;
+          width: vw(8px);
         }
       }
       &.open{
         .line{
-          width: 14px;
-          height:2px;
+          width: vw(14px);
+          height: vw(2px);
           background-color:#000;
           &:nth-child(1){
-            transform: rotate(-45deg) translate(-3px,1px);
+            transform: rotate(-45deg) translate(vw(-3px,1px));
           }
           // &:nth-child(2){
           //   display:none;
           // }
           &:nth-child(2){
             // width: 10px;
-            transform: rotate(45deg) translate(-2px,-1px);
+            transform: rotate(45deg) translate(vw(-2px,-1px));
           }
         }
       }
@@ -123,7 +123,7 @@
 		background: #fff;
 		.gnb-inner {
       width: 100%;
-      padding:0 30px;
+      padding: vw(0 30px);
       .gnb-list {
         overflow: hidden;
         overflow-y: auto;
@@ -135,22 +135,22 @@
               display: flex;
               align-items: center;
               width: 100%;
-              font-size: 30px;
+              font-size: vw(30px);
               font-weight: 800;
               .ico-recruit{
-                margin-left: 12px;
+                margin-left: vw(12px);
               }
             }
             &.active{
             }
             &+li{
-              margin-top:30px;
+              margin-top:vw(30px);
             }
           }
           &+ul{
-            margin-top: 40px;
-            padding-top: 40px;
-            border-top: 2px solid $CText;
+            margin-top: vw(40px);
+            padding-top: vw(40px);
+            border-top: vw(2px) solid $CText;
           }
         }
       }
@@ -163,35 +163,35 @@
 
 .footer-wrap {
   position: relative;
-  padding: 60px 30px;
+  padding: vw(60px 30px);
   background-color: #000;
   .info-box {
-    margin-top: 60px;
-    font-size: 12px;
+    margin-top: vw(60px);
+    font-size: vw(12px);
     color: $CTsub3;
-    line-height: 18px;
+    line-height: vw(18px);
     .info-item {
       dl {
         dt {
-          font-size: 14px;
+          font-size: vw(14px);
           font-weight: 700;
           color: #fff;
         }
         dd {
-          margin-top: 10px;
+          margin-top: vw(10px);
           p{
             &+p{
-              margin-top: 8px;
+              margin-top: vw(8px);
             }
           }
         }
         & + dl {
-          margin-top: 40px;
+          margin-top: vw(40px);
         }
       }
     }
     .copy {
-      margin-top: 60px;
+      margin-top: vw(60px);
       color:rgba($color: #999, $alpha: 0.5)
     }
   }
@@ -199,8 +199,8 @@
 
 #btn-top{
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: vw(30px);
+  right: vw(30px);
   &.up{
     opacity: 0;
   }
