@@ -98,7 +98,7 @@
 //ex==> font-size: vw(20px);
 // margin : vw( 20px 10px 30px 40px );
 
-$viewport: 360px !default;
+$viewport: 720px !default;
 $vw-callback: false !default;
 $vw-px-only: false !default;
 
@@ -127,9 +127,9 @@ $vw-px-only: false !default;
 
 	@each $value in $values {
 		@if type-of($value) == "number" and unit($value) == "vw" and $to == "px" {
-			$result: append($result, ($value / ($viewport *2 )) * 100 * 1vw, $separator);
+			$result: append($result, ( ($value*2) / $viewport ) * 100 * 1vw, $separator);
 		} @else if type-of($value) == "number" and unit($value) == "px" and $to == "vw" {
-			$result: append($result, ($value / ($viewport *2 )) * 100 * 1vw, $separator);
+			$result: append($result, ( ($value*2) / $viewport ) * 100 * 1vw, $separator);
 		} @else if type-of($value) == "list" {
 			$value-separator: vw-separator($value);
 			$value: vw-convert($to, $value...);
