@@ -188,12 +188,7 @@ input[readonly] {
   pointer-events: none;
 }
 
-::-moz-placeholder {
-  font-size: inherit;
-  color: #bcbcbc;
-}
-
-:-ms-input-placeholder {
+::-webkit-input-placeholder {
   font-size: inherit;
   color: #bcbcbc;
 }
@@ -519,6 +514,7 @@ input::-webkit-search-results-decoration {
 .btn-type.v2 {
   width: 9.4444444444vw;
   height: 9.4444444444vw;
+  background-color: #fff;
   border-radius: 1.1111111111vw;
   border: 0.5555555556vw solid #000;
 }
