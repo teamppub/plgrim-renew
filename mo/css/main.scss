@@ -16,72 +16,71 @@
        .visual-swiper{
             position: relative;
             .swiper-slide{
-                padding-top: vw(100px);
+                padding-top: vw(50px);
                 .visual-title{
                     position: absolute;
                     top: 0;
                     left: 0;
                 }
                 .visual-content{
-                    margin-top: vw(40px);
+                    margin-top: vw(20px);
                     .title-sub{
-                        margin-bottom: vw(20px);
-                        font-size: vw(24px);
-                        line-height: vw(36px);
+                        margin-bottom: vw(10px);
+                        line-height: vw(18px);
                     }
                 }
             }
             .swiper-navigation{
                 position: absolute;
-                top: vw(825px);
-                left: vw(40px);
+                top: vw(415px);
+                left: vw(20px);
                 z-index: 20;
             }
        }
     }
     .intro-wrap{
         margin-left: vw(10px);
-        padding: vw(120px 0 120px 20px);
+        padding: vw(60px 0 60px 20px);
         background-color: $CBg;
         .title-wrap2{
             .ko{
-                font-size: vw(44px);
-                line-height: vw(68px)
+                font-size: vw(22px);
+                line-height: vw(34px)
             }
         }
         .intro-cont{
-            margin-top: vw(60px);
+            margin-top: vw(30px);
             p{
-                font-size: vw(24px);
-                line-height: vw(36px);
+                font-size: vw(12px);
+                line-height: vw(18px);
                 &+p{
-                    margin-top: vw(60px);
+                    margin-top: vw(30px);
                 }
             }
         }
     }
     .business-wrap{
         margin-left: vw(10px);
-        padding: vw(120px 0 120px 40px);
+        padding: vw(60px 0 60px 20px);
         background-color: $CBg;
         .title-wrap{
-            margin-right: vw(60px);
+            margin-right: vw(30px);
         }
         .business-graph{
-            padding-right: vw(60px);
+            padding-right: vw(30px);
         }
         .business-box{
-            margin-top: vw(80px);
+            margin-top: vw(40px);
             li{
                 strong{
                     display: block;
-                    font-size: vw(32px);
-                    line-height: vw(48px);
+                    font-size: vw(16px);
+                    line-height: vw(24px);
                 }
                 p{
-                    margin-top: vw(20px);
-                    font-size: vw(24px);
-                    line-height: vw(32px);
+                    margin-top: vw(10px);
+                    font-size: vw(12px);
+                    line-height: vw(16px);
                     color:$CTsub;
                 }
             }
