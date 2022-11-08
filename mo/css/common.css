@@ -678,7 +678,7 @@ input::-webkit-search-results-decoration {
 
 .title-wrap {
   display: flex;
-  margin-bottom: 16.6666666667vw;
+  margin-bottom: 8.3333333333vw;
   text-align: center;
 }
 
@@ -818,6 +818,9 @@ input::-webkit-search-results-decoration {
   transform: rotate(27deg);
 }
 .swiper-paging em.swiper-pagination-current {
+  font-weight: 900;
+}
+.swiper-paging em.current-count {
   font-weight: 900;
 }
 
