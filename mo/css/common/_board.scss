@@ -2,24 +2,26 @@
 @import '../common/variable', '../common/mixin';
 
 .work-item-list {
-  padding-top: vw(88px);
-
   .work-item {
     position: relative;
 
+    & ~ .work-item {
+      margin-top: vw(74px);
+    }
+
     .item-title {
-      position: absolute;
-      top: vw(-45px);
+      position: relative;
       font-size: vw(24px);
       font-weight: 700;
       line-height: vw(32px);
     }
+    .item-img {
+      margin-top: vw(-15px);
+    }
+
     .item-sub {
       margin: vw(20px 0 0 10px);
       color: $CTsub;
-    }
-    & ~ .work-item {
-      margin-top: vw(120px);
     }
   }
 }
@@ -41,10 +43,6 @@
 
     a {
       display: block;
-    }
-
-    .item-img {
-      // flex: 0 0 415px;
     }
 
     .item-info {

@@ -8,6 +8,7 @@
       & > .title-wrap2 {
         & + .title-wrap {
           margin-bottom: vw(0);
+          padding-bottom: vw(40px);
         }
       }
     }
@@ -15,12 +16,12 @@
 
   .title-wrap2 {
     .ko {
-      margin-bottom: vw(30px);
+      margin-bottom: vw(15px);
 
       &.v2 {
         margin-bottom: 0px;
-        font-size: vw(24px);
-        line-height: vw(36px);
+        font-size: vw(12px);
+        line-height: vw(18px);
       }
     }
   }
