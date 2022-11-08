@@ -188,7 +188,12 @@ input[readonly] {
   pointer-events: none;
 }
 
-::-webkit-input-placeholder {
+::-moz-placeholder {
+  font-size: inherit;
+  color: #bcbcbc;
+}
+
+:-ms-input-placeholder {
   font-size: inherit;
   color: #bcbcbc;
 }
@@ -849,19 +854,21 @@ input::-webkit-search-results-decoration {
 .work-item-list .work-item {
   position: relative;
 }
+.work-item-list .work-item ~ .work-item {
+  margin-top: 33.3333333333vw;
+}
 .work-item-list .work-item .item-title {
-  position: absolute;
-  top: -12.5vw;
+  position: relative;
   font-size: 6.6666666667vw;
   font-weight: 700;
   line-height: 8.8888888889vw;
 }
+.work-item-list .work-item .item-img {
+  margin-top: -4.1666666667vw;
+}
 .work-item-list .work-item .item-sub {
   margin: 5.5555555556vw 0 0 2.7777777778vw;
   color: #666;
-}
-.work-item-list .work-item ~ .work-item {
-  margin-top: 33.3333333333vw;
 }
 
 .culture-item-list {
