@@ -121,10 +121,10 @@
       font-weight: 700;
     }
     dd {
+      font-weight: 500;
+      font-size: vw(12px);
+      line-height: vw(18px);
       p{
-        font-weight: 500;
-        font-size: vw(12px);
-        line-height: vw(18px);
         &+p{
           margin-top: vw(10px);
         }

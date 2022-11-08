@@ -767,7 +767,7 @@ input::-webkit-search-results-decoration {
   font-size: 2.5vw;
   font-weight: 700;
 }
-.list-info dl dd p {
+.list-info dl dd {
   font-weight: 500;
   font-size: 1.6666666667vw;
   line-height: 2.5vw;
