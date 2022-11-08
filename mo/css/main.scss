@@ -2,3 +2,76 @@
 @import 'common/variable',
 'common/base',
 'common/mixin';
+
+
+.main{  
+    article{
+        margin: vw(60px 0 0);
+        &:first-child{
+            margin-top: 0;
+        }
+    }
+    .visual-wrap{
+        position: relative;
+       .visual-swiper{
+            position: relative;
+            .swiper-slide{
+                padding-top: vw(100px);
+                .visual-title{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .visual-content{
+                    margin-top: vw(40px);
+                    .title-sub{
+                        margin-bottom: vw(20px);
+                        font-size: vw(24px);
+                        line-height: vw(36px);
+                    }
+                }
+            }
+            .swiper-navigation{
+                position: absolute;
+                bottom: vw(230px);
+                left: vw(40px);
+                z-index: 20;
+            }
+       }
+    }
+    .intro-wrap{
+        margin-left: vw(10px);
+        padding: vw(120px 0 120px 20px);
+        background-color: $CBg;
+        .title-wrap2{
+            .ko{
+                font-size: vw(44px);
+                line-height: vw(68px)
+            }
+        }
+        .intro-cont{
+            margin-top: vw(60px);
+            p{
+                font-size: vw(24px);
+                line-height: vw(36px);
+                &+p{
+                    margin-top: vw(60px);
+                }
+            }
+        }
+    }
+    .business-wrap{
+        margin-left: vw(10px);
+        padding: vw(120px 0 120px 40px);
+        background-color: $CBg;
+        .title-wrap{
+            margin-right: vw(60px);
+        }
+        .business-graph{
+            padding-right: vw(60px);
+        }
+        .business-box{
+
+        }
+    }
+}

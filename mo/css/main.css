@@ -263,4 +263,68 @@ input::-webkit-search-results-decoration {
  * $key - 넣을곳(padding-top, marin-bottom, ...)
  * $direction - 방향(top, right, bottom, left)
  * $value - 더해질 값(생략가능)
- *//*# sourceMappingURL=main.css.map */
+ */
+.main article {
+  margin: 8.3333333333vw 0 0;
+}
+.main article:first-child {
+  margin-top: 0;
+}
+.main .visual-wrap {
+  position: relative;
+}
+.main .visual-wrap .visual-swiper {
+  position: relative;
+}
+.main .visual-wrap .visual-swiper .swiper-slide {
+  padding-top: 13.8888888889vw;
+}
+.main .visual-wrap .visual-swiper .swiper-slide .visual-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main .visual-wrap .visual-swiper .swiper-slide .visual-content {
+  margin-top: 5.5555555556vw;
+}
+.main .visual-wrap .visual-swiper .swiper-slide .visual-content .title-sub {
+  margin-bottom: 2.7777777778vw;
+  font-size: 3.3333333333vw;
+  line-height: 5vw;
+}
+.main .visual-wrap .visual-swiper .swiper-navigation {
+  position: absolute;
+  bottom: 31.9444444444vw;
+  left: 5.5555555556vw;
+  z-index: 20;
+}
+.main .intro-wrap {
+  margin-left: 1.3888888889vw;
+  padding: 16.6666666667vw 0 16.6666666667vw 2.7777777778vw;
+  background-color: #F8F8F8;
+}
+.main .intro-wrap .title-wrap2 .ko {
+  font-size: 6.1111111111vw;
+  line-height: 9.4444444444vw;
+}
+.main .intro-wrap .intro-cont {
+  margin-top: 8.3333333333vw;
+}
+.main .intro-wrap .intro-cont p {
+  font-size: 3.3333333333vw;
+  line-height: 5vw;
+}
+.main .intro-wrap .intro-cont p + p {
+  margin-top: 8.3333333333vw;
+}
+.main .business-wrap {
+  margin-left: 1.3888888889vw;
+  padding: 16.6666666667vw 0 16.6666666667vw 5.5555555556vw;
+  background-color: #F8F8F8;
+}
+.main .business-wrap .title-wrap {
+  margin-right: 8.3333333333vw;
+}
+.main .business-wrap .business-graph {
+  padding-right: 8.3333333333vw;
+}/*# sourceMappingURL=main.css.map */
