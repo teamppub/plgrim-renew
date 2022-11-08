@@ -1,2 +1,27 @@
 @charset "UTF-8";
 @import '../common/variable', '../common/mixin';
+
+.work {
+  //work list
+  &.sub {
+    .inner-box2 {
+      & > .title-wrap2 {
+        & + .title-wrap {
+          margin-bottom: vw(0);
+        }
+      }
+    }
+  }
+
+  .title-wrap2 {
+    .ko {
+      margin-bottom: vw(30px);
+
+      &.v2 {
+        margin-bottom: 0px;
+        font-size: vw(24px);
+        line-height: vw(36px);
+      }
+    }
+  }
+}

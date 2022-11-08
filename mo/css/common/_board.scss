@@ -2,15 +2,14 @@
 @import '../common/variable', '../common/mixin';
 
 .work-item-list {
-  padding-top: vw(80px);
+  padding-top: vw(176px);
+
   .work-item {
     position: relative;
-    .item-img {
-      margin-top: vw(-30px);
-    }
 
     .item-title {
-      position: relative;
+      position: absolute;
+      top: vw(-90px);
       font-size: vw(48px);
       font-weight: 700;
       line-height: vw(64px);
@@ -21,8 +20,8 @@
       color: $CTsub;
       line-height: vw(32px);
     }
-    &+.work-item{
-      margin-top: vw(120px);
+    & ~ .work-item {
+      margin-top: vw(240px);
     }
   }
 }
