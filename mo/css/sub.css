@@ -29,6 +29,7 @@
  */
 .work.sub .inner-box2 > .title-wrap2 + .title-wrap {
   margin-bottom: 0;
+  padding-bottom: 11.1111111111vw;
 }
 .work .title-wrap2 .ko {
   margin-bottom: 4.1666666667vw;

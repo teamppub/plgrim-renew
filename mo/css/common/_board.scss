@@ -2,13 +2,11 @@
 @import '../common/variable', '../common/mixin';
 
 .work-item-list {
-  padding-top: vw(88px);
-
   .work-item {
     position: relative;
 
     & ~ .work-item {
-      margin-top: vw(120px);
+      margin-top: vw(74px);
     }
 
     .item-title {

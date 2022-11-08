@@ -847,14 +847,11 @@ input::-webkit-search-results-decoration {
  * $direction - 방향(top, right, bottom, left)
  * $value - 더해질 값(생략가능)
  */
-.work-item-list {
-  padding-top: 24.4444444444vw;
-}
 .work-item-list .work-item {
   position: relative;
 }
 .work-item-list .work-item ~ .work-item {
-  margin-top: 33.3333333333vw;
+  margin-top: 20.5555555556vw;
 }
 .work-item-list .work-item .item-title {
   position: relative;
