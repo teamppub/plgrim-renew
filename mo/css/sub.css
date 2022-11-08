@@ -27,6 +27,18 @@
  * $direction - 방향(top, right, bottom, left)
  * $value - 더해질 값(생략가능)
  */
+.work.sub .inner-box2 > .title-wrap2 + .title-wrap {
+  margin-bottom: 0;
+}
+.work .title-wrap2 .ko {
+  margin-bottom: 4.1666666667vw;
+}
+.work .title-wrap2 .ko.v2 {
+  margin-bottom: 0px;
+  font-size: 3.3333333333vw;
+  line-height: 5vw;
+}
+
 /*
  * safe-area-inset 처리
  * $key - 넣을곳(padding-top, marin-bottom, ...)

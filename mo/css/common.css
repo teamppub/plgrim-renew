@@ -187,7 +187,12 @@ input[readonly] {
   pointer-events: none;
 }
 
-::-webkit-input-placeholder {
+::-moz-placeholder {
+  font-size: inherit;
+  color: #bcbcbc;
+}
+
+:-ms-input-placeholder {
   font-size: inherit;
   color: #bcbcbc;
 }
@@ -857,16 +862,14 @@ input::-webkit-search-results-decoration {
  * $value - 더해질 값(생략가능)
  */
 .work-item-list {
-  padding-top: 11.1111111111vw;
+  padding-top: 24.4444444444vw;
 }
 .work-item-list .work-item {
   position: relative;
 }
-.work-item-list .work-item .item-img {
-  margin-top: -4.1666666667vw;
-}
 .work-item-list .work-item .item-title {
-  position: relative;
+  position: absolute;
+  top: -12.5vw;
   font-size: 6.6666666667vw;
   font-weight: 700;
   line-height: 8.8888888889vw;
@@ -877,8 +880,8 @@ input::-webkit-search-results-decoration {
   color: #666;
   line-height: 4.4444444444vw;
 }
-.work-item-list .work-item + .work-item {
-  margin-top: 16.6666666667vw;
+.work-item-list .work-item ~ .work-item {
+  margin-top: 33.3333333333vw;
 }
 
 .culture-item-list {
