@@ -18,28 +18,28 @@
 
 .inner-box {
   position: relative;
-  padding: vw(0 60px);
+  padding: vw(0 30px);
 }
 
 .inner-box2 {
   position: relative;
-  padding-left: vw(60px);
+  padding-left: vw(30px);
 }
 .sub {
-  padding: vw(200px 0 240px);
+  padding: vw(100px 0 120px);
   .inner-box2 {
     & > .title-wrap2 {
-      margin-bottom: vw(80px);
+      margin-bottom: vw(40px);
       & + .title-wrap {
         position: relative;
-        margin-bottom: vw(-42px);
+        margin-bottom: vw(-21px);
         z-index: 10; 
       }
     }
   }
 }
 .main {
-  padding: vw(200px 0 240px);
+  padding: vw(100px 0 120px);
 }
 .header-wrap {
   display: flex;
@@ -49,7 +49,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: vw(60px 60px);
+  padding: vw(30px 30px);
   background: rgba(255, 255, 255, 0.8);
   transition: transform 0.3s;
   z-index: 79;
@@ -74,44 +74,44 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: vw(68px);
-    height: vw(68px);
-		border-radius: vw(8px);
-		border: vw(4px) solid $CText;
+    width: vw(34px);
+    height: vw(34px);
+		border-radius: vw(4px);
+		border: vw(2px) solid $CText;
     z-index: 45;
     /* css */
     .icon-menu{
       position: relative;
-      width: vw(20px);
-      height: vw(14px);
+      width: vw(10px);
+      height: vw(7px);
       display: flex;
       flex-flow: column nowrap;
       justify-content: space-between;
       z-index: 99;
       .line{
         display: block;
-        width: vw(20px);
-        height: vw(4px);
+        width: vw(10px);
+        height: vw(2px);
         background-color:#000;
         transition: .4s;
         &:nth-child(2){
-          width: vw(16px);
+          width: vw(8px);
         }
       }
       &.open{
         .line{
-          width: vw(28px);
-          height: vw(4px);
+          width: vw(14px);
+          height: vw(2px);
           background-color:#000;
           &:nth-child(1){
-            transform: rotate(-45deg) translate(vw(-6px,2px));
+            transform: rotate(-45deg) translate(vw(-3px,1px));
           }
           // &:nth-child(2){
           //   display:none;
           // }
           &:nth-child(2){
             // width: 10px;
-            transform: rotate(45deg) translate(vw(-4px,-2px));
+            transform: rotate(45deg) translate(vw(-2px,-1px));
           }
         }
       }
@@ -133,7 +133,7 @@
 		background: #fff;
 		.gnb-inner {
       width: 100%;
-      padding: vw(0 60px);
+      padding: vw(0 30px);
       .gnb-list {
         overflow: hidden;
         overflow-y: auto;
@@ -145,22 +145,22 @@
               display: flex;
               align-items: center;
               width: 100%;
-              font-size: vw(60px);
+              font-size: vw(30px);
               font-weight: 800;
               .ico-recruit{
-                margin-left: vw(24px);
+                margin-left: vw(12px);
               }
             }
             &.active{
             }
             &+li{
-              margin-top:vw(60px);
+              margin-top:vw(30px);
             }
           }
           &+ul{
-            margin-top: vw(80px);
-            padding-top: vw(80px);
-            border-top: vw(4px) solid $CText;
+            margin-top: vw(40px);
+            padding-top: vw(40px);
+            border-top: vw(2px) solid $CText;
           }
         }
       }
@@ -173,35 +173,33 @@
 
 .footer-wrap {
   position: relative;
-  padding: vw(120px 60px);
+  padding: vw(60px 30px);
   background-color: #000;
   .info-box {
-    margin-top: vw(120px);
-    font-size: vw(24px);
+    margin-top: vw(60px);
     color: $CTsub3;
-    line-height: vw(36px);
     .info-item {
       dl {
         dt {
-          font-size: vw(28px);
+          font-size: vw(14px);
           font-weight: 700;
           color: #fff;
         }
         dd {
-          margin-top: vw(20px);
+          margin-top: vw(10px);
           p{
             &+p{
-              margin-top: vw(16px);
+              margin-top: vw(8px);
             }
           }
         }
         & + dl {
-          margin-top: vw(80px);
+          margin-top: vw(40px);
         }
       }
     }
     .copy {
-      margin-top: vw(120px);
+      margin-top: vw(60px);
       color:rgba($color: #999, $alpha: 0.5)
     }
   }
@@ -209,8 +207,8 @@
 
 #btn-top{
   position: fixed;
-  bottom: vw(60px);
-  right: vw(60px);
+  bottom: vw(30px);
+  right: vw(30px);
   &.up{
     opacity: 0;
   }

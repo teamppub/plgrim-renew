@@ -14,8 +14,8 @@
 
 //background 처리
 .ico-logo {
-    width: vw(66px);
-    height: vw(60px);
+    width: vw(33px);
+    height: vw(30px);
     background-image: url(../images/common/logo.svg);
 
     &.white {
@@ -23,8 +23,8 @@
     }
 }
 .ico-recruit{
-    width: vw(52px);
-    height: vw(52px);
+    width: vw(26px);
+    height: vw(26px);
     background-image: url(../images/icon/recruit.svg);
 }
 
@@ -43,8 +43,8 @@
 
 .ico-arr {
     position: relative;
-    width: vw(24px);
-    height: vw(18px);
+    width: vw(12px);
+    height: vw(9px);
     background-image: svgIcon(arrow, '000000');
     &.lft {
         transform: rotate(-180deg);
@@ -59,30 +59,30 @@
         background-image: svgIcon(arrow, 'ffffff');
     }
     &.plus{
-        width: vw(56px);
-        height: vw(44px);
+        width: vw(28px);
+        height: vw(22px);
     }
     &.small{
-        width: vw(18px);
-        height: vw(12px);
+        width: vw(9px);
+        height: vw(6px);
     }
 }
 .ico-arr2 {
     position: relative;
-    width: vw(10px);
-    height: vw(18px);
+    width: vw(5px);
+    height: vw(9px);
     background-image: svgIcon(arrow2, '000000');
     &.right {
         transform: rotate(-180deg);
     }
 }
 .ico-plus{
-    width: vw(26px);
-    height: vw(26px);
+    width: vw(13px);
+    height: vw(13px);
     background-image: svgIcon(plus, '000000');
 }
 .ico-close{
-    width: vw(19px);
-    height: vw(20px);
+    width: vw(9px);
+    height: vw(10px);
     background-image: svgIcon(close, '000000');
 }

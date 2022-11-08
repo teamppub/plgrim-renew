@@ -9,6 +9,8 @@
     box-sizing: border-box;
     word-break: break-all;
     font-family: $font;
+    font-size: vw(12px);
+    // line-height: vw(16px);
 }
 
 ::before,

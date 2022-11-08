@@ -10,14 +10,14 @@
 .swiper-paging{
 	display: flex;
 	align-items: center;
-	font-size: vw(28px);
+	font-size: vw(14px);
 	color: $CText;
 	span{
 		font-size: 0;
 		display: block;
-		margin: vw(0 20px);
-		width: vw(4px);
-		height: vw(20px);
+		margin: vw(0 10px);
+		width: vw(2px);
+		height: vw(10px);
 		background-color: $CText;
 		transform: rotate(27deg);
 	}
@@ -34,9 +34,9 @@
 .swiper-pagination{
 	position: relative;
 	.swiper-pagination-bullet{
-		margin-left: vw(30px);
+		margin-left: vw(15px);
 		background-color: #fff;
-		border: vw(4px) solid #000;
+		border: vw(2px) solid #000;
 		opacity: 1;
 		&.swiper-pagination-bullet-active{
 			background-color: #000;
