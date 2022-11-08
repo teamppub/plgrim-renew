@@ -457,6 +457,7 @@ input::-webkit-search-results-decoration {
   position: fixed;
   bottom: 8.3333333333vw;
   right: 8.3333333333vw;
+  background-color: #fff;
 }
 #btn-top.up {
   opacity: 0;
