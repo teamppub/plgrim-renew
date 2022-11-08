@@ -2,33 +2,33 @@
 @import '../common/variable', '../common/mixin';
 
 .work-item-list {
-  padding-top: vw(40px);
+  padding-top: vw(80px);
   .work-item {
     position: relative;
     .item-img {
-      margin-top: vw(-15px);
+      margin-top: vw(-30px);
     }
 
     .item-title {
       position: relative;
-      font-size: vw(24px);
+      font-size: vw(48px);
       font-weight: 700;
-      line-height: vw(32px);
+      line-height: vw(64px);
     }
     .item-sub {
-      margin: vw(20px 0 0 10px);
-      font-size: vw(12px);
+      margin: vw(40px 0 0 20px);
+      font-size: vw(24px);
       color: $CTsub;
-      line-height: vw(16px);
+      line-height: vw(32px);
     }
     &+.work-item{
-      margin-top: vw(60px);
+      margin-top: vw(120px);
     }
   }
 }
 
 .culture-item-list {
-  padding: vw(55px 30px);
+  padding: vw(110px 60px);
   background: $CBg2;
 
   .page-guide-box & {
@@ -36,7 +36,7 @@
   }
 
   .culture-item {
-    margin-bottom: vw(60px);
+    margin-bottom: vw(12px);
 
     &:nth-last-child(1) {
       margin-bottom: 0px;
@@ -51,21 +51,21 @@
     }
 
     .item-info {
-      padding-top: vw(20px);
+      padding-top: vw(40px);
       .item-title {
-        margin-bottom: vw(10px);
-        font-size: vw(18px);
+        margin-bottom: vw(20px);
+        font-size: vw(36px);
         font-weight: 700;
-        line-height: vw(25px);
+        line-height: vw(50px);
       }
       .item-sub {
-        @include text-hidden(2, 16);
-        margin-bottom: vw(10px);
+        @include text-hidden(2, 32);
+        margin-bottom: vw(20px);
         color: $CTsub;
-        font-size: vw(12px);
+        font-size: vw(24px);
       }
       .item-date {
-        font-size: vw(12px);
+        font-size: vw(24px);
         font-weight: 600;
       }
     }

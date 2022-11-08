@@ -18,66 +18,66 @@
 
 .title-wrap {
   display: flex;
-  margin-bottom: vw(60px);
+  margin-bottom: vw(120px);
   text-align: center;
 }
 
 .title-wrap2 {
   .en {
-    margin-top: vw(15px);
-    font-size: vw(12px);
-    letter-spacing: 0.3px;
+    margin-top: vw(30px);
+    font-size: vw(24px);
+    letter-spacing: vw(0.6px);
     font-weight: 600;
   }
   .ko {
-    font-size: vw(24px);
-    line-height: vw(32px);
-    letter-spacing: 0.6px;
+    font-size: vw(48px);
+    line-height: vw(64px);
+    letter-spacing: vw(1.2px);
   }
 }
 .title-type {
   position: relative;
   display: inline-flex;
   align-items: center;
-  font-size: vw(28px);
+  font-size: vw(56px);
   font-weight: 800;
   &.v2 {
-    font-size: vw(38px);
+    font-size: vw(76px);
     text-transform: uppercase;
   }
   &.title-line {
-    font-size: vw(24px);
+    font-size: vw(48px);
     &:after {
       content: '';
       position: absolute;
       bottom: 0;
       left: 0;
       width: 100%;
-      height: vw(2px);
+      height: vw(4px);
       background-color: #000;
-      border-radius: vw(10px);
+      border-radius: vw(20px);
     }
   }
   span {
     display: block;
-    width: vw(2px);
-    height: vw(16px);
-    margin: vw(0 10px);
+    width: vw(4px);
+    height: vw(32px);
+    margin: vw(0 20px);
     background-color: #000;
     transform: rotate(27deg);
   }
   & + .title-type2 {
-    margin-top: vw(30px);
-    font-size: vw(12px);
-    line-height: vw(18px);
+    margin-top: vw(60px);
+    font-size: vw(24px);
+    line-height: vw(36px);
     font-weight: 400;
   }
 }
 
 .recruit-list {
   p{
-    margin-top: vw(25px);
-    font-size: vw(12px);
+    margin-top: vw(50px);
+    font-size: vw(24px);
   }
 }
 
@@ -86,58 +86,58 @@
     display: flex;
     position: relative;
     span {
-      letter-spacing: -0.3px;
+      letter-spacing: vw(-0.6px);
       // max-width: 795px;
-      font-size: vw(12px);
-      line-height: vw(18px);
+      font-size: vw(24px);
+      line-height: vw(36px);
     }
     .part {
-      min-width: 80px;
+      min-width: vw(160px);
       font-weight: 700;
-      letter-spacing: -0.6px;
+      letter-spacing: vw(-1.2px);
     }
   }
   li ~ li {
-    margin-top: vw(25px);
+    margin-top: vw(50px);
   }
 }
 
 .common-list {
   align-self: center;
   li {
-    font-size: vw(20px);
-    line-height: vw(32px);
+    font-size: vw(40px);
+    line-height: vw(64px);
   }
   li + li {
-    margin-top: vw(15px);
+    margin-top: vw(30px);
   }
 }
 
 .list-info {
   dl {
     dt {
-      margin-bottom: vw(15px);
-      font-size: vw(18px);
+      margin-bottom: vw(30px);
+      font-size: vw(39px);
       font-weight: 700;
     }
     dd {
       font-weight: 500;
-      font-size: vw(12px);
-      line-height: vw(18px);
+      font-size: vw(24px);
+      line-height: vw(36px);
       p{
         &+p{
-          margin-top: vw(10px);
+          margin-top: vw(20px);
         }
       }
       dl{
         display: flex;
       }
       & + dd {
-        margin-left: vw(30px);
+        margin-left: vw(60px);
       }
     }
     & + dl {
-      margin-top: vw(40px);
+      margin-top: vw(80px);
     }
   }
 }

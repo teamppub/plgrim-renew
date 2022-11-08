@@ -5,25 +5,24 @@
 	text-align: center;
 	[class^='btn-type'] {
 		&:nth-child(n+2) {
-			margin-left: vw(16px);
+			margin-left: vw(32px);
 		}
 	}
 	.more{
-		margin-top: vw(10px);
-		font-size: vw(12px);
+		margin-top: vw(20px);
+		font-size: vw(24px);
 	}
 	&.v2{
 		text-align: left;
 		h3{
-			margin-bottom: vw(13px);
+			margin-bottom: vw(26px);
 			&+[class^='btn-type'] {
 				margin-left: 0;
 			}
 		}
 	}
 	&.btn-wrap{
-		// margin-top: 40px;
-		margin-top: vw(40px);
+		margin-top: vw(80px);
 	}
 }
 
@@ -35,36 +34,36 @@
 }
 
 .btn-type {
-	width: vw(32px);
-	height: vw(32px);
+	width: vw(64px);
+	height: vw(64px);
 	background-color: #fff;
-	border: vw(2px) solid $CLine;
-	border-radius: vw(12px);
+	border: vw(4px) solid $CLine;
+	border-radius: vw(24px);
 	font-size: 0;
-	line-height: vw(32px);
+	line-height: vw(64px);
 	text-align:center;
 	&.btn-up{
-		width: vw(34px);
-		height: vw(34px);
-		border-radius: vw(4px);
+		width: vw(68px);
+		height: vw(68px);
+		border-radius: vw(8px);
 	}
 	&.v2{
-		width: vw(34px);
-		height: vw(34px);
-		border-radius: vw(4px);
-		border: vw(2px) solid $CText;
+		width: vw(68px);
+		height: vw(68px);
+		border-radius: vw(8px);
+		border: vw(4px) solid $CText;
 	}
 }
 
 .btn-type2 {
-	border-bottom: vw(1px) solid $CText;
+	border-bottom: vw(2px) solid $CText;
 	text-align:center;
 	p{
-		font-size: vw(12px);
+		font-size: vw(24px);
 	}
 	&.v2{
 		p{
-			font-size: vw(12px);
+			font-size: vw(24px);
 			font-weight: 700;
 		}
 	}
@@ -72,21 +71,21 @@
 
 .btn-type3 {
 	display: block;
-	font-size: vw(12px);
+	font-size: vw(24px);
 	font-weight: 700;
 	.ico-arr{
-		margin-left: vw(8px);
+		margin-left: vw(16px);
 	}
 	&.v2{
 		width: 100%;
-		height: vw(42px);
+		height: vw(84px);
 		background: $CText;
-		border-radius: vw(40px);
-		font-size: vw(12px);
+		border-radius: vw(80px);
+		font-size: vw(24px);
 		font-weight: 500;
 		color:#fff;
 		text-align:center;
-		line-height: vw(42px);
+		line-height: vw(84px);
 	}
 }
 
@@ -94,13 +93,13 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: vw(60px);
+	margin-top: vw(120px);
 	button {
 		display: flex;
 		align-items: center;		
 		span{
-			margin: 0 10px;
-			font-size: vw(13px);
+			margin: vw(0 20px);
+			font-size: vw(26px);
 		}
 	}
 }
