@@ -265,7 +265,7 @@ input::-webkit-search-results-decoration {
  * $value - 더해질 값(생략가능)
  */
 .main article {
-  margin: 8.3333333333vw 0 0;
+  margin: 16.6666666667vw 0 0;
 }
 .main article:first-child {
   margin-top: 0;
@@ -277,7 +277,7 @@ input::-webkit-search-results-decoration {
   position: relative;
 }
 .main .visual-wrap .visual-swiper .swiper-slide {
-  padding-top: 13.8888888889vw;
+  padding-top: 27.7777777778vw;
 }
 .main .visual-wrap .visual-swiper .swiper-slide .visual-title {
   position: absolute;
@@ -285,60 +285,60 @@ input::-webkit-search-results-decoration {
   left: 0;
 }
 .main .visual-wrap .visual-swiper .swiper-slide .visual-content {
-  margin-top: 5.5555555556vw;
+  margin-top: 11.1111111111vw;
 }
 .main .visual-wrap .visual-swiper .swiper-slide .visual-content .title-sub {
-  margin-bottom: 2.7777777778vw;
-  font-size: 3.3333333333vw;
-  line-height: 5vw;
+  margin-bottom: 5.5555555556vw;
+  font-size: 6.6666666667vw;
+  line-height: 10vw;
 }
 .main .visual-wrap .visual-swiper .swiper-navigation {
   position: absolute;
-  top: 114.5833333333vw;
-  left: 5.5555555556vw;
+  top: 229.1666666667vw;
+  left: 11.1111111111vw;
   z-index: 20;
 }
 .main .intro-wrap {
-  margin-left: 1.3888888889vw;
-  padding: 16.6666666667vw 0 16.6666666667vw 2.7777777778vw;
+  margin-left: 2.7777777778vw;
+  padding: 33.3333333333vw 0 33.3333333333vw 5.5555555556vw;
   background-color: #F8F8F8;
 }
 .main .intro-wrap .title-wrap2 .ko {
-  font-size: 6.1111111111vw;
-  line-height: 9.4444444444vw;
+  font-size: 12.2222222222vw;
+  line-height: 18.8888888889vw;
 }
 .main .intro-wrap .intro-cont {
-  margin-top: 8.3333333333vw;
+  margin-top: 16.6666666667vw;
 }
 .main .intro-wrap .intro-cont p {
-  font-size: 3.3333333333vw;
-  line-height: 5vw;
+  font-size: 6.6666666667vw;
+  line-height: 10vw;
 }
 .main .intro-wrap .intro-cont p + p {
-  margin-top: 8.3333333333vw;
+  margin-top: 16.6666666667vw;
 }
 .main .business-wrap {
-  margin-left: 1.3888888889vw;
-  padding: 16.6666666667vw 0 16.6666666667vw 5.5555555556vw;
+  margin-left: 2.7777777778vw;
+  padding: 33.3333333333vw 0 33.3333333333vw 11.1111111111vw;
   background-color: #F8F8F8;
 }
 .main .business-wrap .title-wrap {
-  margin-right: 8.3333333333vw;
+  margin-right: 16.6666666667vw;
 }
 .main .business-wrap .business-graph {
-  padding-right: 8.3333333333vw;
+  padding-right: 16.6666666667vw;
 }
 .main .business-wrap .business-box {
-  margin-top: 11.1111111111vw;
+  margin-top: 22.2222222222vw;
 }
 .main .business-wrap .business-box li strong {
   display: block;
-  font-size: 4.4444444444vw;
-  line-height: 6.6666666667vw;
+  font-size: 8.8888888889vw;
+  line-height: 13.3333333333vw;
 }
 .main .business-wrap .business-box li p {
-  margin-top: 2.7777777778vw;
-  font-size: 3.3333333333vw;
-  line-height: 4.4444444444vw;
+  margin-top: 5.5555555556vw;
+  font-size: 6.6666666667vw;
+  line-height: 8.8888888889vw;
   color: #666;
 }/*# sourceMappingURL=main.css.map */

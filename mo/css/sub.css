@@ -6,13 +6,13 @@
  * $value - 더해질 값(생략가능)
  */
 .contact .map-wrap .map {
-  height: 50vw;
+  height: 100vw;
   background-color: #eee;
 }
 .contact .list-info {
-  padding: 8.3333333333vw 0;
-  margin-bottom: 13.8888888889vw;
-  border-bottom: 0.1388888889vw solid #ccc;
+  padding: 16.6666666667vw 0;
+  margin-bottom: 27.7777777778vw;
+  border-bottom: 0.2777777778vw solid #ccc;
 }
 
 /*
@@ -31,12 +31,12 @@
   margin-bottom: 0;
 }
 .work .title-wrap2 .ko {
-  margin-bottom: 4.1666666667vw;
+  margin-bottom: 8.3333333333vw;
 }
 .work .title-wrap2 .ko.v2 {
   margin-bottom: 0px;
-  font-size: 3.3333333333vw;
-  line-height: 5vw;
+  font-size: 6.6666666667vw;
+  line-height: 10vw;
 }
 
 /*

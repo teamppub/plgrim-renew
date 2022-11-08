@@ -129,7 +129,7 @@ $vw-px-only: false !default;
 		@if type-of($value) == "number" and unit($value) == "vw" and $to == "px" {
 			$result: append($result, ($value / ($viewport *2 )) * 100 * 1vw, $separator);
 		} @else if type-of($value) == "number" and unit($value) == "px" and $to == "vw" {
-			$result: append($result, ($value / ($viewport *2 )) * 100 * 1vw, $separator);
+			$result: append($result, ($value / ($viewport *2 )) * 100 * 2vw, $separator); // 2배수로 변경
 		} @else if type-of($value) == "list" {
 			$value-separator: vw-separator($value);
 			$value: vw-convert($to, $value...);
