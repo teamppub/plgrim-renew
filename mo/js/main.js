@@ -29,4 +29,11 @@ $(document).ready(function () {
 	$('.visual-swiper .swiper-slide').on('mouseleave', function(e){
 		visualSwiper.autoplay.start();
 	})
+
+	var businessSwiper = new Swiper('.business-swiper', {
+
+		// slidesPerView: 1.3,
+
+		slidesPerView : 'auto',
+	});
 });
