@@ -33,7 +33,7 @@
             }
             .swiper-navigation{
                 position: absolute;
-                bottom: vw(230px);
+                top: vw(825px);
                 left: vw(40px);
                 z-index: 20;
             }
@@ -71,7 +71,20 @@
             padding-right: vw(60px);
         }
         .business-box{
-
+            margin-top: vw(80px);
+            li{
+                strong{
+                    display: block;
+                    font-size: vw(32px);
+                    line-height: vw(48px);
+                }
+                p{
+                    margin-top: vw(20px);
+                    font-size: vw(24px);
+                    line-height: vw(32px);
+                    color:$CTsub;
+                }
+            }
         }
     }
 }

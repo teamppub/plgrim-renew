@@ -6,7 +6,7 @@ $(document).ready(function () {
 		},
 		loop: true,
 		loopAdditionalSlides: 100,
-        autoHeight : true,
+        // autoHeight : true,
 		slidesPerView: 1,
 		on: {
 			slideChange: function() {

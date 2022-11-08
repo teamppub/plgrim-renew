@@ -294,7 +294,7 @@ input::-webkit-search-results-decoration {
 }
 .main .visual-wrap .visual-swiper .swiper-navigation {
   position: absolute;
-  bottom: 31.9444444444vw;
+  top: 114.5833333333vw;
   left: 5.5555555556vw;
   z-index: 20;
 }
@@ -327,4 +327,18 @@ input::-webkit-search-results-decoration {
 }
 .main .business-wrap .business-graph {
   padding-right: 8.3333333333vw;
+}
+.main .business-wrap .business-box {
+  margin-top: 11.1111111111vw;
+}
+.main .business-wrap .business-box li strong {
+  display: block;
+  font-size: 4.4444444444vw;
+  line-height: 6.6666666667vw;
+}
+.main .business-wrap .business-box li p {
+  margin-top: 2.7777777778vw;
+  font-size: 3.3333333333vw;
+  line-height: 4.4444444444vw;
+  color: #666;
 }/*# sourceMappingURL=main.css.map */
