@@ -21,6 +21,51 @@
  * $direction - 방향(top, right, bottom, left)
  * $value - 더해질 값(생략가능)
  */
+.company .company-info {
+  margin: 16.6666666667vw 0vw 33.3333333333vw;
+}
+.company .company-info .info-title {
+  margin-bottom: 11.1111111111vw;
+  font-size: 6.6666666667vw;
+  font-weight: 700;
+}
+.company .company-info .swiper-slide {
+  min-height: 61.1111111111vw;
+}
+.company .company-info .swiper-slide .title {
+  margin-bottom: 5.5555555556vw;
+  font-size: 5vw;
+  font-weight: 700;
+  line-height: 7.2222222222vw;
+}
+.company .company-info .swiper-slide p {
+  font-size: 3.3333333333vw;
+  line-height: 5vw;
+}
+.company .history {
+  margin-top: 33.3333333333vw;
+  padding-right: 8.3333333333vw;
+}
+.company .history .title-type {
+  margin-bottom: 8.3333333333vw;
+}
+.company .partner {
+  margin-top: 33.3333333333vw;
+  padding-right: 8.3333333333vw;
+}
+.company .partner .title-type {
+  margin-bottom: 11.1111111111vw;
+}
+.company .partner ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.company .partner ul li {
+  margin-bottom: 13.8888888889vw;
+  padding: 0vw 4.1666666667vw 0vw 3.3333333333vw;
+  width: 50%;
+}
+
 /*
  * safe-area-inset 처리
  * $key - 넣을곳(padding-top, marin-bottom, ...)
