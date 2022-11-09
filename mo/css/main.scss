@@ -10,6 +10,9 @@
         &:first-child{
             margin-top: 0;
         }
+        .title-wrap{
+            margin: vw(0 30px 30px 0);
+        }
     }
     .visual-wrap{
         position: relative;
@@ -64,13 +67,12 @@
         padding: vw(60px 0);
         background-color: $CBg;
         .title-wrap{
-            margin: vw(0 30px 0 20px);
+            margin-left: vw(20px);
         }
         .business-graph{
             padding: vw(0 30px 0 20px);
         }
         .business-swiper{
-            display: none;
             margin-top: vw(40px);
             padding: vw(0 20px);
             margin-left: vw(-16px);
@@ -78,7 +80,7 @@
                 width: vw(250px);
                 margin-left: vw(16px);
                 &:last-child{
-                    padding-right: vw(36px);
+                    margin-right: vw(16px);
                 }
                 strong{
                     display: block;

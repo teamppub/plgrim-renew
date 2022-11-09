@@ -15,8 +15,6 @@ $(document).ready(function () {
 		}
   	});
 	function visualChange(slide){
-		// console.log('slide가 바뀐 후 실행');
-		// console.log("0" + (slide.realIndex + 1));
 		var currentCount = "0" + (slide.realIndex + 1)
 		var totalCount = "0" + (slide.loopedSlides);
 		$(".swiper-paging .current-count").text(currentCount)
@@ -31,9 +29,6 @@ $(document).ready(function () {
 	})
 
 	var businessSwiper = new Swiper('.business-swiper', {
-
-		// slidesPerView: 1.3,
-
 		slidesPerView : 'auto',
 	});
 });

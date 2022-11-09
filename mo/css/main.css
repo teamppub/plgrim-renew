@@ -271,6 +271,9 @@ input::-webkit-search-results-decoration {
 .main article:first-child {
   margin-top: 0;
 }
+.main article .title-wrap {
+  margin: 0 8.3333333333vw 8.3333333333vw 0;
+}
 .main .visual-wrap {
   position: relative;
 }
@@ -323,13 +326,12 @@ input::-webkit-search-results-decoration {
   background-color: #F8F8F8;
 }
 .main .business-wrap .title-wrap {
-  margin: 0 8.3333333333vw 0 5.5555555556vw;
+  margin-left: 5.5555555556vw;
 }
 .main .business-wrap .business-graph {
   padding: 0 8.3333333333vw 0 5.5555555556vw;
 }
 .main .business-wrap .business-swiper {
-  display: none;
   margin-top: 11.1111111111vw;
   padding: 0 5.5555555556vw;
   margin-left: -4.4444444444vw;
@@ -339,7 +341,7 @@ input::-webkit-search-results-decoration {
   margin-left: 4.4444444444vw;
 }
 .main .business-wrap .business-swiper .swiper-slide:last-child {
-  padding-right: 10vw;
+  margin-right: 4.4444444444vw;
 }
 .main .business-wrap .business-swiper .swiper-slide strong {
   display: block;
