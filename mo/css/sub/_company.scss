@@ -1,2 +1,49 @@
 @charset "UTF-8";
 @import '../common/variable', '../common/mixin';
+
+.company{
+  .company-info{
+    margin: vw(60px 0px 120px);
+    .info-title{
+      margin-bottom: vw(40px);
+      font-size: vw(24px);
+      font-weight: 700;
+    }
+    .swiper-slide{
+      min-height: vw(220px);
+      .title{
+        margin-bottom: vw(20px);
+        font-size: vw(18px);
+        font-weight: 700;
+        line-height: vw(26px);
+      }
+      p{
+        font-size: vw(12px);
+        line-height: vw(18px);
+      }
+    }
+  }
+  .history {
+    margin-top: vw(120px);
+    padding-right: vw(30px);
+    .title-type {
+      margin-bottom: vw(30px);
+    }
+  }
+  .partner{
+    margin-top: vw(120px);
+    padding-right: vw(30px);
+    .title-type {
+      margin-bottom: vw(40px);
+    }
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        margin-bottom: vw(50px);
+        padding: vw(0px 15px 0px 12px);
+        width: 50%;
+      }
+    }
+  }
+}
