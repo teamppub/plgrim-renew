@@ -84,6 +84,9 @@
   font-size: 3.3333333333vw;
   line-height: 5vw;
 }
+.work .btn-wrap {
+  margin: 16.6666666667vw 0vw 0vw -8.3333333333vw;
+}
 
 /*
  * safe-area-inset 처리
@@ -134,4 +137,11 @@
 }
 .product .commerce-box + .commerce-box {
   margin-top: 27.7777777778vw;
+}
+
+.culture .title-wrap {
+  margin-bottom: -6.9444444444vw;
+}
+.culture .btn-wrap {
+  margin: 16.6666666667vw 0vw 0vw -8.3333333333vw;
 }/*# sourceMappingURL=sub.css.map */

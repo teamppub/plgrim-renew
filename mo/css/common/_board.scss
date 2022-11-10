@@ -27,7 +27,7 @@
 }
 
 .culture-item-list {
-  padding: vw(55px 30px);
+  padding: vw(60px 30px);
   background: $CBg2;
 
   .page-guide-box & {
@@ -35,7 +35,7 @@
   }
 
   .culture-item {
-    margin-bottom: vw(6px);
+    margin-bottom: vw(60px);
 
     &:nth-last-child(1) {
       margin-bottom: 0px;
@@ -46,7 +46,7 @@
     }
 
     .item-info {
-      padding-top: vw(10px);
+      padding-top: vw(20px);
       .item-title {
         margin-bottom: vw(10px);
         font-size: vw(18px);
