@@ -1,2 +1,51 @@
 @charset "UTF-8";
 @import '../common/variable', '../common/mixin';
+
+.product{
+	.business-wrap{
+		margin: vw(0px 0px 100px 10px);
+		padding: vw(60px 0px 50px 20px);
+		background: #F8F8F8;
+	.business-graph{
+		margin-bottom: vw(40px);
+		padding-right: vw(30px);
+	}
+    .business-swiper{
+		.swiper-wrapper{
+			margin: vw(0px -8px);
+			.swiper-slide{
+				padding: vw(0px 8px);
+				img{
+					margin-bottom: vw(10px);
+					}
+				strong{
+					font-size: vw(16px);
+					line-height: vw(24px);
+					word-break: keep-all;
+					}
+				p{
+					margin-top: vw(10px);
+					color: $CTsub;
+					}
+				}
+			}
+		}
+    }
+	.commerce-box{
+		padding: vw(0px 30px);
+		h5{
+			margin-bottom: vw(30px);
+			font-size: vw(28px);
+			font-weight: 800;
+			line-height: vw(38px);
+		}
+		p{
+			margin-bottom: vw(30px);
+			font-weight: 500;
+			line-height: vw(18px);
+		}
+		& + .commerce-box{
+			margin-top: vw(100px);
+		}
+	} 
+}

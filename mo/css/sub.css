@@ -28,6 +28,8 @@
   margin-bottom: 11.1111111111vw;
   font-size: 6.6666666667vw;
   font-weight: 700;
+  line-height: 8.8888888889vw;
+  letter-spacing: 0.6666666667vw;
 }
 .company .company-info .swiper-slide {
   min-height: 61.1111111111vw;
@@ -64,9 +66,7 @@
   margin-bottom: 13.8888888889vw;
   padding: 0vw 4.1666666667vw 0vw 3.3333333333vw;
   width: 50%;
-}
-
-/*
+} /*
  * safe-area-inset 처리
  * $key - 넣을곳(padding-top, marin-bottom, ...)
  * $direction - 방향(top, right, bottom, left)
@@ -90,4 +90,48 @@
  * $key - 넣을곳(padding-top, marin-bottom, ...)
  * $direction - 방향(top, right, bottom, left)
  * $value - 더해질 값(생략가능)
- *//*# sourceMappingURL=sub.css.map */
+ */
+.product .business-wrap {
+  margin: 0vw 0vw 27.7777777778vw 2.7777777778vw;
+  padding: 16.6666666667vw 0vw 13.8888888889vw 5.5555555556vw;
+  background: #F8F8F8;
+}
+.product .business-wrap .business-graph {
+  margin-bottom: 11.1111111111vw;
+  padding-right: 8.3333333333vw;
+}
+.product .business-wrap .business-swiper .swiper-wrapper {
+  margin: 0vw -2.2222222222vw;
+}
+.product .business-wrap .business-swiper .swiper-wrapper .swiper-slide {
+  padding: 0vw 2.2222222222vw;
+}
+.product .business-wrap .business-swiper .swiper-wrapper .swiper-slide img {
+  margin-bottom: 2.7777777778vw;
+}
+.product .business-wrap .business-swiper .swiper-wrapper .swiper-slide strong {
+  font-size: 4.4444444444vw;
+  line-height: 6.6666666667vw;
+  word-break: keep-all;
+}
+.product .business-wrap .business-swiper .swiper-wrapper .swiper-slide p {
+  margin-top: 2.7777777778vw;
+  color: #666;
+}
+.product .commerce-box {
+  padding: 0vw 8.3333333333vw;
+}
+.product .commerce-box h5 {
+  margin-bottom: 8.3333333333vw;
+  font-size: 7.7777777778vw;
+  font-weight: 800;
+  line-height: 10.5555555556vw;
+}
+.product .commerce-box p {
+  margin-bottom: 8.3333333333vw;
+  font-weight: 500;
+  line-height: 5vw;
+}
+.product .commerce-box + .commerce-box {
+  margin-top: 27.7777777778vw;
+}/*# sourceMappingURL=sub.css.map */
