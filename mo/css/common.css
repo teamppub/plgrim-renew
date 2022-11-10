@@ -809,8 +809,11 @@ input::-webkit-search-results-decoration {
 
 .swiper-pagination {
   position: relative;
+  margin-top: 11.1111111111vw;
 }
 .swiper-pagination .swiper-pagination-bullet {
+  width: 2.2222222222vw;
+  height: 2.2222222222vw;
   margin-left: 4.1666666667vw;
   background-color: #fff;
   border: 0.5555555556vw solid #000;
@@ -917,6 +920,7 @@ input::-webkit-search-results-decoration {
  */
 .table-wrap {
   border-top: 0.5555555556vw solid #000000;
+  border-bottom: 2px solid #eee;
 }
 .table-wrap th {
   padding: 5.5555555556vw 0;
