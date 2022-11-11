@@ -68,7 +68,7 @@
             <i class="ico-arr2"><span class="hidden">이전</span></i>
             <span>prev</span>
           </button>
-          <a href="/plgrim-renew/pc/html/work/list.html" class="btn-type2 v2">
+          <a href="javascript:history.back(-1)" class="btn-type2 v2">
             <p>목록으로 돌아가기</p>
           </a>
           <button type="button" class="btn-next">
@@ -80,7 +80,67 @@
 
     </section>
     <!--//content-->
+    <script>
+      var dataURL = "../../html/json/detail.json";
+      $.ajax ({
+        type : 'get',
+        url: dataURL,
+        datatype : 'json',
+        success : function(data){ 
+          var number =  localStorage.getItem('name')-1;
+          if( number == -1){
+            number == 1;
+          }
+          var str = "";
+          /* 상단 비주얼 영역*/
+          str += '<div class="detail-visual">',
+          str += '<img src="'+ data.detailList[number].itemImgSrc+'" alt="'+data.detailList[number].itemImgArt+'">',
+          str += '<div class="title-wrap">',
+          str += '<h3 class="title-type">'+data.detailList[number].itemTitle+'</h3>',
+          str += '</div>',
+          str += ' <div class="info">',
+          str += '<dl>',
+          str += '<dt>CLIENT</dt>',
+          str += '<dd>',
+          str += data.detailList[number].itemClent,
+          str += '</dd>',
+          str += '</dl>',
+          str += '<dl>',
+          str += '<dt>SERVICE</dt>',
+          str += '<dd>',
+          str += data.detailList[number].itemService,
+          str += '</dd>',
+          str += '</dl>',
+          str += '<dl>',
+          str += '<dt>DATE</dt>',
+          str += '<dd>',
+          str += data.detailList[number].itemDate,
+          str += '</dd>',
+          str += '</dl>',
+          str += '<dl>',
+          str += '<dt>URL</dt>',
+          str += '<dd>',
+          str += '<a href="'+data.detailList[number].itemUrl+'">'+data.detailList[number].itemUrl+'</a>',
+          str += '</dd>',
+          str += '</dl>',
+          str += '</div>',
+          str += '</div>',
+          str += '<div class="detail-info">',
+          str += '<h4>OVERVIEW</h4>',
+          str += '<div class="text">'+data.detailList[number].itemOverview+'</div>',
+          str += '</div>'
+          str += '</div>'
+          str += '<div class="detail-img">'
+          str += '<img src="'+data.detailList[number].itemDetailImg+'" alt="상세 정보 이미지">'
+          str += '</div>'
+          $( ".work-detail-wrap" ).append( str );
+        },
+        error : function(err){
+          console.log('err : ',err)
+        }
+      })
 
+    </script>
     <!-- footer -->
     <?php include '../layout/footer.html'?>
     <!-- //footer -->
