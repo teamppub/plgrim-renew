@@ -10,7 +10,6 @@
 	}
 	.more{
 		margin-top: vw(10px);
-		font-size: vw(12px);
 	}
 	&.v2{
 		text-align: left;
@@ -22,7 +21,6 @@
 		}
 	}
 	&.btn-wrap{
-		// margin-top: 40px;
 		margin-top: vw(40px);
 	}
 }
@@ -37,7 +35,7 @@
 .btn-type {
 	width: vw(32px);
 	height: vw(32px);
-	background-color: #fff;
+	// background-color: #fff;
 	border: vw(2px) solid $CLine;
 	border-radius: vw(12px);
 	font-size: 0;
@@ -51,6 +49,7 @@
 	&.v2{
 		width: vw(34px);
 		height: vw(34px);
+		background-color: #fff;
 		border-radius: vw(4px);
 		border: vw(2px) solid $CText;
 	}
@@ -60,11 +59,9 @@
 	border-bottom: vw(1px) solid $CText;
 	text-align:center;
 	p{
-		font-size: vw(12px);
 	}
 	&.v2{
 		p{
-			font-size: vw(12px);
 			font-weight: 700;
 		}
 	}
@@ -72,7 +69,6 @@
 
 .btn-type3 {
 	display: block;
-	font-size: vw(12px);
 	font-weight: 700;
 	.ico-arr{
 		margin-left: vw(8px);
@@ -82,7 +78,6 @@
 		height: vw(42px);
 		background: $CText;
 		border-radius: vw(40px);
-		font-size: vw(12px);
 		font-weight: 500;
 		color:#fff;
 		text-align:center;
@@ -99,7 +94,7 @@
 		display: flex;
 		align-items: center;		
 		span{
-			margin: 0 10px;
+			margin: vw(0 10px);
 			font-size: vw(13px);
 		}
 	}

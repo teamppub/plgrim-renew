@@ -18,21 +18,20 @@
 
 .title-wrap {
   display: flex;
-  margin-bottom: vw(60px);
+  margin-bottom: vw(30px);
   text-align: center;
 }
 
 .title-wrap2 {
   .en {
     margin-top: vw(15px);
-    font-size: vw(12px);
-    letter-spacing: 0.3px;
+    letter-spacing: vw(0.3px);
     font-weight: 600;
   }
   .ko {
     font-size: vw(24px);
     line-height: vw(32px);
-    letter-spacing: 0.6px;
+    letter-spacing: vw(0.6px);
   }
 }
 .title-type {
@@ -68,7 +67,6 @@
   }
   & + .title-type2 {
     margin-top: vw(30px);
-    font-size: vw(12px);
     line-height: vw(18px);
     font-weight: 400;
   }
@@ -77,7 +75,7 @@
 .recruit-list {
   p{
     margin-top: vw(25px);
-    font-size: vw(12px);
+    font-size: vw(10px);
   }
 }
 
@@ -86,15 +84,14 @@
     display: flex;
     position: relative;
     span {
-      letter-spacing: -0.3px;
+      letter-spacing: vw(-0.3px);
       // max-width: 795px;
-      font-size: vw(12px);
       line-height: vw(18px);
     }
     .part {
-      min-width: 80px;
+      min-width: vw(80px);
       font-weight: 700;
-      letter-spacing: -0.6px;
+      letter-spacing: vw(-0.6px);
     }
   }
   li ~ li {
@@ -121,10 +118,9 @@
       font-weight: 700;
     }
     dd {
+      font-weight: 500;
+      line-height: vw(18px);
       p{
-        font-weight: 500;
-        font-size: vw(12px);
-        line-height: vw(18px);
         &+p{
           margin-top: vw(10px);
         }

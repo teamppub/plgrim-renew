@@ -2,11 +2,11 @@
 @import '../common/variable', '../common/mixin';
 
 .work-item-list {
-  padding-top: vw(40px);
   .work-item {
     position: relative;
-    .item-img {
-      margin-top: vw(-15px);
+
+    & ~ .work-item {
+      margin-top: vw(74px);
     }
 
     .item-title {
@@ -15,20 +15,19 @@
       font-weight: 700;
       line-height: vw(32px);
     }
+    .item-img {
+      margin-top: vw(-15px);
+    }
+
     .item-sub {
       margin: vw(20px 0 0 10px);
-      font-size: vw(12px);
       color: $CTsub;
-      line-height: vw(16px);
-    }
-    &+.work-item{
-      margin-top: vw(60px);
     }
   }
 }
 
 .culture-item-list {
-  padding: vw(55px 30px);
+  padding: vw(60px 30px);
   background: $CBg2;
 
   .page-guide-box & {
@@ -44,10 +43,6 @@
 
     a {
       display: block;
-    }
-
-    .item-img {
-      // flex: 0 0 415px;
     }
 
     .item-info {

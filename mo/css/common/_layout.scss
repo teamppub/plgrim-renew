@@ -32,7 +32,7 @@
       margin-bottom: vw(40px);
       & + .title-wrap {
         position: relative;
-        margin-bottom: vw(-25px);
+        margin-bottom: vw(-21px);
         z-index: 10; 
       }
     }
@@ -145,13 +145,13 @@
               display: flex;
               align-items: center;
               width: 100%;
-              font-size: vw(30px);
-              font-weight: 800;
+              span{
+                font-size: vw(30px);
+                font-weight: 800;
+              }
               .ico-recruit{
                 margin-left: vw(12px);
               }
-            }
-            &.active{
             }
             &+li{
               margin-top:vw(30px);
@@ -159,7 +159,7 @@
           }
           &+ul{
             margin-top: vw(40px);
-            padding-top: vw(40px);
+            padding-top: vw(60px);
             border-top: vw(2px) solid $CText;
           }
         }
@@ -177,9 +177,7 @@
   background-color: #000;
   .info-box {
     margin-top: vw(60px);
-    font-size: vw(12px);
     color: $CTsub3;
-    line-height: vw(18px);
     .info-item {
       dl {
         dt {
@@ -211,6 +209,7 @@
   position: fixed;
   bottom: vw(30px);
   right: vw(30px);
+  background-color: #fff;
   &.up{
     opacity: 0;
   }

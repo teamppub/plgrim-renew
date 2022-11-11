@@ -3,14 +3,13 @@
 
 .table-wrap {
   border-top: vw(2px) solid #000000;
-  // border-bottom: 2px solid $CLine;
+  border-bottom: 2px solid $CLine2;
   th {
     padding: vw(20px 0);
-    font-size: vw(12px);
     font-weight: 500;
     text-align: left;
     border-bottom: vw(2px) solid $CLine2;
-    letter-spacing: -0.3px;
+    letter-spacing: vw(-0.3px);
   }
   th:first-child {
     padding-left: vw(10px);
@@ -19,14 +18,13 @@
     td {
       padding:vw(0 10px 50px 0);
       line-height: vw(22px);
-      font-size: vw(12px);
       font-weight: 400;
-      letter-spacing: -0.6px;
+      letter-spacing: vw(-0.6px);
     }
     td:first-child {
       padding: vw(0 0 0 10px);
       font-weight: 600;
-      letter-spacing: -0.3px;
+      letter-spacing: vw(-0.3px);
     }
   }
   tr:first-child td {

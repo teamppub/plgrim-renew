@@ -25,11 +25,18 @@
 		&.swiper-pagination-current{
 			font-weight: 900;
 		}
+		&.current-count{
+			// color: $CText;
+			font-weight: 900;
+		}
 	}
 }
 .swiper-pagination{
 	position: relative;
+	margin-top: vw(40px);
 	.swiper-pagination-bullet{
+		width: vw(8px);
+		height: vw(8px);
 		margin-left: vw(15px);
 		background-color: #fff;
 		border: vw(2px) solid #000;

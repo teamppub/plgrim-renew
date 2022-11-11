@@ -2,3 +2,121 @@
 @import 'common/variable',
 'common/base',
 'common/mixin';
+
+
+.main{  
+    article{
+        margin: vw(60px 0 0);
+        &:first-child{
+            margin-top: 0;
+        }
+        .title-wrap{
+            margin: vw(0 30px 30px 0);   
+            opacity: 0;
+            transition: .5s;
+            &.started {
+                opacity: 1;
+            }
+        }
+    }
+    .visual-wrap{
+        position: relative;
+       .visual-swiper{
+            position: relative;
+            .swiper-slide{
+                padding-top: vw(50px);
+                .visual-title{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                    transition: 1s 0.5s;
+                    transform: translateY(30px);
+                }
+                .visual-content{
+                    margin-top: vw(20px);
+                    // transform: translateY(30px);
+                    // opacity: 0;
+                    // transition: 1s 1.2s;
+                    .title-sub{
+                        margin-bottom: vw(10px);
+                        line-height: vw(18px);
+                    }
+                }
+                &.swiper-slide-active {
+                    
+                    .visual-title{
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                    .visual-content{
+                        // opacity: 1;
+                        // transform: translateY(0);
+                    }
+                }
+            }
+            .swiper-navigation{
+                position: absolute;
+                top: vw(415px);
+                left: vw(20px);
+                z-index: 20;
+            }
+       }
+    }
+    .intro-wrap{
+        margin-left: vw(10px);
+        padding: vw(60px 0 60px 20px);
+        background-color: $CBg;
+        .title-wrap2{
+            .ko{
+                font-size: vw(22px);
+                line-height: vw(34px)
+            }
+        }
+        .intro-cont{
+            margin-top: vw(30px);
+            p{
+                font-size: vw(12px);
+                line-height: vw(18px);
+                &+p{
+                    margin-top: vw(30px);
+                }
+            }
+        }
+    }
+    .business-wrap{
+        margin-left: vw(10px);
+        padding: vw(60px 0);
+        background-color: $CBg;
+        .title-wrap{
+            margin-left: vw(20px);
+        }
+        .business-graph{
+            padding: vw(0 30px 0 20px);
+        }
+        .business-swiper{
+            margin-top: vw(40px);
+            padding: vw(0 20px);
+            margin-left: vw(-16px);
+            .swiper-slide{
+                width: vw(250px);
+                margin-left: vw(16px);
+                &:last-child{
+                    margin-right: vw(16px);
+                }
+                strong{
+                    display: block;
+                    margin-top: vw(10px);
+                    font-size: vw(16px);
+                    line-height: vw(24px);
+                }
+                p{
+                    margin-top: vw(10px);
+                    font-size: vw(12px);
+                    line-height: vw(16px);
+                    color:$CTsub;
+                }
+            }
+        }
+    }
+}

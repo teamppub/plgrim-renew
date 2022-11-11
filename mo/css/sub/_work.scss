@@ -1,2 +1,32 @@
 @charset "UTF-8";
 @import '../common/variable', '../common/mixin';
+
+.work {
+  //work list
+  &.sub {
+    .inner-box2 {
+      & > .title-wrap2 {
+        & + .title-wrap {
+          margin-bottom: vw(0);
+          padding-bottom: vw(40px);
+        }
+      }
+    }
+  }
+
+  .title-wrap2 {
+    .ko {
+      margin-bottom: vw(15px);
+
+      &.v2 {
+        margin-bottom: 0px;
+        font-size: vw(12px);
+        line-height: vw(18px);
+      }
+    }
+  }
+
+  .btn-wrap {
+    margin: vw(60px 0px 0px -30px);
+  }
+}
