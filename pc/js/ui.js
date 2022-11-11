@@ -1,8 +1,20 @@
+/* 페이징 처리 */
+var sOriginImgUrl =  window.location.pathname;
+var arSplitUrl   = sOriginImgUrl.split("/");    
+var nArLength     = arSplitUrl.length;
+var arFileName   = arSplitUrl[nArLength-1];   
+var arSplitFileName     = arFileName.split(".")[0];  
+
+
 var UI = (function () {
   return {
     init: function () {
       this.event();
       this.workList();
+      if( arSplitFileName == "detail" ){
+        this.detail();
+      }
+
     },
     element: {
       header: '.header-wrap',
@@ -109,15 +121,7 @@ var UI = (function () {
       });
     },
     workList: function () {
-
-
       //페이지 url값 찾기
-      var sOriginImgUrl =  window.location.pathname;
-      var arSplitUrl   = sOriginImgUrl.split("/");    
-      var nArLength     = arSplitUrl.length;
-      var arFileName   = arSplitUrl[nArLength-1];   
-      var arSplitFileName     = arFileName.split(".")[0];  
-
       var dataURL = "../../html/json/work.json";
       $.ajax ({
         type : 'get',
@@ -136,7 +140,7 @@ var UI = (function () {
             if( i%2==0){
               var str = '';
                   str += '<div class="work-item">',
-                  str += '<a href="'+ data.worksListItem[i].itemLink +'">',
+                  str += '<a href="javascript:;" data-id="'+data.worksListItem[i].id+'" data-link="'+data.worksListItem[i].itemLink+'" class="btn_work_link">',
                   str += '<div class="item-img"><img src="'+data.worksListItem[i].itemImgSrc+'" alt="'+data.worksListItem[i].itemImgArt+'"></div>',
                   str += '<div class="item-info">',
                   str += '<div class="item-title">'+data.worksListItem[i].itemTitle+'</div>',
@@ -151,7 +155,7 @@ var UI = (function () {
             }else{
                  var str = '';
                   str += '<div class="work-item">',
-                  str += '<a href="'+ data.worksListItem[i].itemLink +'">',
+                  str += '<a href="javascript:;" data-id="'+data.worksListItem[i].id+'" data-link="'+data.worksListItem[i].itemLink+'" class="btn_work_link">',
                   str += '<div class="item-img"><img src="'+data.worksListItem[i].itemImgSrc+'" alt="'+data.worksListItem[i].itemImgArt+'"></div>',
                   str += '<div class="item-info">',
                   str += '<div class="item-title">'+data.worksListItem[i].itemTitle+'</div>',
@@ -179,7 +183,7 @@ var UI = (function () {
               if( i%2==0){
                 var str = '';
                     str += '<div class="work-item">',
-                    str += '<a href="'+ data.worksListItem[i].itemLink +'">',
+                    str += '<a href="javascript:;" data-id="'+data.worksListItem[i].id+'" data-link="'+data.worksListItem[i].itemLink+'" class="btn_work_link">',
                     str += '<div class="item-img"><img src="'+data.worksListItem[i].itemImgSrc+'" alt="'+data.worksListItem[i].itemImgArt+'"></div>',
                     str += '<div class="item-info">',
                     str += '<div class="item-title">'+data.worksListItem[i].itemTitle+'</div>',
@@ -194,7 +198,7 @@ var UI = (function () {
               }else{
                    var str = '';
                     str += '<div class="work-item">',
-                    str += '<a href="'+ data.worksListItem[i].itemLink +'">',
+                    str += '<a href="javascript:;" data-id="'+data.worksListItem[i].id+'" data-link="'+data.worksListItem[i].itemLink+'" class="btn_work_link">',
                     str += '<div class="item-img"><img src="'+data.worksListItem[i].itemImgSrc+'" alt="'+data.worksListItem[i].itemImgArt+'"></div>',
                     str += '<div class="item-info">',
                     str += '<div class="item-title">'+data.worksListItem[i].itemTitle+'</div>',
@@ -209,12 +213,80 @@ var UI = (function () {
               }
             }
           });
+
+          $( ".btn_work_link" ).on( "click", function(){
+            var link = $( this )[0].dataset.link;
+            var itemId = $( this )[0].dataset.id;
+            location.href = link;
+            localStorage.setItem('name', itemId);
+            
+          })
         },
         error : function(err){
           console.log('err : ',err)
         }
       })
     },
+
+    detail: function(){
+      var dataURL = "../../html/json/detail.json";
+      $.ajax ({
+        type : 'get',
+        url: dataURL,
+        datatype : 'json',
+        success : function(data){   
+          var number =  localStorage.getItem('name')-1;
+          var str = "";
+          /* 상단 비주얼 영역*/
+          str += '<div class="detail-visual">',
+          str += '<img src="'+ data.detailList[number].itemImgSrc+'" alt="'+data.detailList[number].itemImgArt+'">',
+          str += '<div class="title-wrap">',
+          str += '<h3 class="title-type">'+data.detailList[number].itemTitle+'</h3>',
+          str += '</div>',
+          str += ' <div class="info">',
+          str += '<dl>',
+          str += '<dt>CLIENT</dt>',
+          str += '<dd>',
+          str += data.detailList[number].itemClent,
+          str += '</dd>',
+          str += '</dl>',
+          str += '<dl>',
+          str += '<dt>SERVICE</dt>',
+          str += '<dd>',
+          str += data.detailList[number].itemService,
+          str += '</dd>',
+          str += '</dl>',
+          str += '<dl>',
+          str += '<dt>DATE</dt>',
+          str += '<dd>',
+          str += data.detailList[number].itemDate,
+          str += '</dd>',
+          str += '</dl>',
+          str += '<dl>',
+          str += '<dt>URL</dt>',
+          str += '<dd>',
+          str += '<a href="'+data.detailList[number].itemUrl+'">'+data.detailList[number].itemUrl+'</a>',
+          str += '</dd>',
+          str += '</dl>',
+          str += '</div>',
+          str += '</div>',
+          str += '<div class="detail-info">',
+          str += '<h4>OVERVIEW</h4>',
+          str += '<div class="text">'+data.detailList[number].itemOverview+'</div>',
+          str += '</div>'
+          str += '</div>'
+          str += '<div class="detail-img">'
+          str += '<img src="'+data.detailList[number].itemDetailImg+'" alt="상세 정보 이미지">'
+          str += '</div>'
+          $( ".work-detail-wrap" ).append( str );
+        },
+        error : function(err){
+          console.log('err : ',err)
+        }
+      })
+
+    }
+
     
   };
 })();

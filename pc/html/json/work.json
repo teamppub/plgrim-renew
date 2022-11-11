@@ -3,7 +3,7 @@
     "worksListItem": [
         {
             "id" : 1,
-            "itemLink" : "#",
+            "itemLink" : "/plgrim-renew/pc/html/work/detail.html",
             "itemImgSrc" : "../../images/temp/@temp_work01.png",
             "itemImgArt" : "이미지1",
             "itemTitle" : "ssfshop.comM<br />온라인 플랫폼 개발/운영",
@@ -11,7 +11,7 @@
         },
         {
             "id" : 2,
-            "itemLink" : "#",
+            "itemLink" : "/plgrim-renew/pc/html/work/detail.html",
             "itemImgSrc" : "../../images/temp/@temp_work02.png",
             "itemImgArt" : "이미지2",
             "itemTitle" : "롯데쇼핑 롯데 온라인몰 통합<br />'Lotte On'구축",
@@ -19,7 +19,7 @@
         },
         {
             "id" : 3,
-            "itemLink" : "#",
+            "itemLink" : "/plgrim-renew/pc/html/work/detail.html",
             "itemImgSrc" : "../../images/temp/@temp_work04.png",
             "itemImgArt" : "이미지3",
             "itemTitle" : "글라이드(GLYDE) <br /> 온라인 플랫폼 구축",
@@ -27,7 +27,7 @@
         },
         {
             "id" : 4,
-            "itemLink" : "#",
+            "itemLink" : "/plgrim-renew/pc/html/work/detail.html",
             "itemImgSrc" : "../../images/temp/@temp_work03.png",
             "itemImgArt" : "이미지4",
             "itemTitle" : "현대한섬 H패션몰 구축",
@@ -35,7 +35,7 @@
         },
         {
             "id" : 5,
-            "itemLink" : "#",
+            "itemLink" : "/plgrim-renew/pc/html/work/detail.html",
             "itemImgSrc" : "../../images/temp/@temp_work06.png",
             "itemImgArt" : "이미지5",
             "itemTitle" : "현대한섬 EQL <br /> 온라인 편집샵 구축/운영",
@@ -43,7 +43,7 @@
         }, 
         {
             "id" : 6,
-            "itemLink" : "#",
+            "itemLink" : "/plgrim-renew/pc/html/work/detail.html",
             "itemImgSrc" : "../../images/temp/@temp_work05.png",
             "itemImgArt" : "이미지6",
             "itemTitle" : "DISCOVERY EXPEDI- <br />TION 온라인 스토어 구축",
@@ -51,7 +51,7 @@
         },
         {
             "id" : 7,
-            "itemLink" : "#",
+            "itemLink" : "/plgrim-renew/pc/html/work/detail.html",
             "itemImgSrc" : "../../images/temp/@temp_work07.png",
             "itemImgArt" : "이미지5",
             "itemTitle" : "서울아산병원 의료정보 고도화사업",
@@ -59,14 +59,13 @@
         }, 
         {
             "id" : 8,
-            "itemLink" : "#",
+            "itemLink" : "/plgrim-renew/pc/html/work/detail.html",
             "itemImgSrc" : "../../images/temp/@temp_work08.png",
             "itemImgArt" : "이미지6",
             "itemTitle" : "롯데시네마 VOD 사이트 구축",
             "itemSubText" : "플그림 Solution 기반으로 밀레니얼 세대 소비자들을 겨냥한 온라인 편집샵 구축"
           
         }
-        
       
     ]
 }
