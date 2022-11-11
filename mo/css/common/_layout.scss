@@ -145,13 +145,13 @@
               display: flex;
               align-items: center;
               width: 100%;
-              font-size: vw(30px);
-              font-weight: 800;
+              span{
+                font-size: vw(30px);
+                font-weight: 800;
+              }
               .ico-recruit{
                 margin-left: vw(12px);
               }
-            }
-            &.active{
             }
             &+li{
               margin-top:vw(30px);
@@ -159,7 +159,7 @@
           }
           &+ul{
             margin-top: vw(40px);
-            padding-top: vw(40px);
+            padding-top: vw(60px);
             border-top: vw(2px) solid $CText;
           }
         }

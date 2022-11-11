@@ -407,6 +407,8 @@ input::-webkit-search-results-decoration {
   display: flex;
   align-items: center;
   width: 100%;
+}
+.header-wrap .gnb-wrap .gnb-inner .gnb-list ul li a span {
   font-size: 8.3333333333vw;
   font-weight: 800;
 }
@@ -418,7 +420,7 @@ input::-webkit-search-results-decoration {
 }
 .header-wrap .gnb-wrap .gnb-inner .gnb-list ul + ul {
   margin-top: 11.1111111111vw;
-  padding-top: 11.1111111111vw;
+  padding-top: 16.6666666667vw;
   border-top: 0.5555555556vw solid #000;
 }
 .header-wrap .gnb-wrap.active {
