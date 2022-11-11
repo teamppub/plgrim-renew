@@ -273,6 +273,11 @@ input::-webkit-search-results-decoration {
 }
 .main article .title-wrap {
   margin: 0 8.3333333333vw 8.3333333333vw 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+.main article .title-wrap.started {
+  opacity: 1;
 }
 .main .visual-wrap {
   position: relative;
@@ -287,6 +292,9 @@ input::-webkit-search-results-decoration {
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0;
+  transition: 1s 0.5s;
+  transform: translateY(30px);
 }
 .main .visual-wrap .visual-swiper .swiper-slide .visual-content {
   margin-top: 5.5555555556vw;
@@ -294,6 +302,10 @@ input::-webkit-search-results-decoration {
 .main .visual-wrap .visual-swiper .swiper-slide .visual-content .title-sub {
   margin-bottom: 2.7777777778vw;
   line-height: 5vw;
+}
+.main .visual-wrap .visual-swiper .swiper-slide.swiper-slide-active .visual-title {
+  opacity: 1;
+  transform: translateY(0);
 }
 .main .visual-wrap .visual-swiper .swiper-navigation {
   position: absolute;

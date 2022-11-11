@@ -11,7 +11,12 @@
             margin-top: 0;
         }
         .title-wrap{
-            margin: vw(0 30px 30px 0);
+            margin: vw(0 30px 30px 0);   
+            opacity: 0;
+            transition: .5s;
+            &.started {
+                opacity: 1;
+            }
         }
     }
     .visual-wrap{
@@ -24,12 +29,29 @@
                     position: absolute;
                     top: 0;
                     left: 0;
+                    opacity: 0;
+                    transition: 1s 0.5s;
+                    transform: translateY(30px);
                 }
                 .visual-content{
                     margin-top: vw(20px);
+                    // transform: translateY(30px);
+                    // opacity: 0;
+                    // transition: 1s 1.2s;
                     .title-sub{
                         margin-bottom: vw(10px);
                         line-height: vw(18px);
+                    }
+                }
+                &.swiper-slide-active {
+                    
+                    .visual-title{
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                    .visual-content{
+                        // opacity: 1;
+                        // transform: translateY(0);
                     }
                 }
             }
