@@ -2,10 +2,7 @@ var UI = (function () {
   return {
     init: function () {
       this.event();
-      setTimeout( function(){
-        UI.workList();
-        document.querySelector( ".work-item-list " ).style.opacity = 1;
-      },100) 
+      this.workList();
     },
     element: {
       header: '.header-wrap',
@@ -50,6 +47,8 @@ var UI = (function () {
           // $(this).removeClass('active');
         }
       });
+
+      $(lThiz.workListMoreEle).on( "click", this.worklistMore );
     },
     layerPopUp: function (pOption) {
       /*   pOption
@@ -110,31 +109,113 @@ var UI = (function () {
       });
     },
     workList: function () {
-     
-      if (matchMedia('screen and (min-width: 1640px)').matches) {
-        //   1640보다 크면
-        document.querySelectorAll('.work-item').forEach(item => {
-          var elem = document.querySelectorAll('.work-item');
-          item.style.gridRowEnd = `span ${item.clientHeight + 140}`;
-        });
-        const wrap = document.querySelector('.work-item-list');
-        wrap.style.display = 'grid';
-        wrap.style.gridTemplateColumns = 'repeat(2, 670px)';
-        wrap.style.gap = '0px 60px';
-        wrap.style.gridAutoRows = '1px';
-      } else {
-        document.querySelectorAll('.work-item').forEach(item => {
-          item.style.gridRowEnd = `span ${item.clientHeight + 70}`;
-        });
-        const wrap = document.querySelector('.work-item-list');
-        wrap.style.display = 'grid';
-        wrap.style.gridTemplateColumns = 'repeat(2, 570px)';
-        wrap.style.gap = '0px 60px';
-        wrap.style.gridAutoRows = '1px';
-      }
 
 
+      //페이지 url값 찾기
+      var sOriginImgUrl =  window.location.pathname;
+      var arSplitUrl   = sOriginImgUrl.split("/");    
+      var nArLength     = arSplitUrl.length;
+      var arFileName   = arSplitUrl[nArLength-1];   
+      var arSplitFileName     = arFileName.split(".")[0];  
+
+      var dataURL = "../../html/json/work.json";
+      $.ajax ({
+        type : 'get',
+        url: dataURL,
+        datatype : 'json',
+        success : function(data){   
+          var max = 6;
+          var start = 0;
+          //처음 데이터가 없을경우 화살표 제거
+          if( data.worksListItem.length == max ){
+            $( ".btn-wrap" ).css( "display", "none"  );
+          }else{
+            $( ".btn-wrap" ).css( "display", "block"  );
+          }
+          for( let i = start; i < max; i++){
+            if( i%2==0){
+              var str = '';
+                  str += '<div class="work-item">',
+                  str += '<a href="'+ data.worksListItem[i].itemLink +'">',
+                  str += '<div class="item-img"><img src="'+data.worksListItem[i].itemImgSrc+'" alt="'+data.worksListItem[i].itemImgArt+'"></div>',
+                  str += '<div class="item-info">',
+                  str += '<div class="item-title">'+data.worksListItem[i].itemTitle+'</div>',
+                  str += '<div class="item-sub">'+data.worksListItem[i].itemSubText+'</div>',
+                  str += '</div>',
+                  str += '</a>',
+                  str += ' </div>'
+                  if( arSplitFileName == "main" ){
+                    $( ".item-sub").remove();
+                  };
+                  $( ".work-item-list.left" ).append( str );
+            }else{
+                 var str = '';
+                  str += '<div class="work-item">',
+                  str += '<a href="'+ data.worksListItem[i].itemLink +'">',
+                  str += '<div class="item-img"><img src="'+data.worksListItem[i].itemImgSrc+'" alt="'+data.worksListItem[i].itemImgArt+'"></div>',
+                  str += '<div class="item-info">',
+                  str += '<div class="item-title">'+data.worksListItem[i].itemTitle+'</div>',
+                  str += '<div class="item-sub">'+data.worksListItem[i].itemSubText+'</div>',
+                  str += '</div>',
+                  str += '</a>',
+                  str += ' </div>'
+                  if( arSplitFileName == "main" ){
+                    $( ".item-sub").remove();
+                  };
+                  $( ".work-item-list.right" ).append( str );
+            }
+          }
+          var _cnt = 1;
+          //더보기 클릭 시
+          $( ".btn-type" ).on( "click", function(e){
+            _cnt++;
+            //더보기 클릭 이후 갯수 체크 이후 버튼 삭제
+            if( data.worksListItem.length == data.worksListItem.length ){
+              $( ".btn-wrap" ).css( "display", "none"  );
+            }
+
+            //더보기 아이템 출력
+            for( let i=max*(_cnt-1);i<  data.worksListItem.length; i++){
+              if( i%2==0){
+                var str = '';
+                    str += '<div class="work-item">',
+                    str += '<a href="'+ data.worksListItem[i].itemLink +'">',
+                    str += '<div class="item-img"><img src="'+data.worksListItem[i].itemImgSrc+'" alt="'+data.worksListItem[i].itemImgArt+'"></div>',
+                    str += '<div class="item-info">',
+                    str += '<div class="item-title">'+data.worksListItem[i].itemTitle+'</div>',
+                    str += '<div class="item-sub">'+data.worksListItem[i].itemSubText+'</div>',
+                    str += '</div>',
+                    str += '</a>',
+                    str += ' </div>'
+                    if( arSplitFileName == "main" ){
+                      $( ".item-sub").remove();
+                    };
+                    $( ".work-item-list.left" ).append( str );
+              }else{
+                   var str = '';
+                    str += '<div class="work-item">',
+                    str += '<a href="'+ data.worksListItem[i].itemLink +'">',
+                    str += '<div class="item-img"><img src="'+data.worksListItem[i].itemImgSrc+'" alt="'+data.worksListItem[i].itemImgArt+'"></div>',
+                    str += '<div class="item-info">',
+                    str += '<div class="item-title">'+data.worksListItem[i].itemTitle+'</div>',
+                    str += '<div class="item-sub">'+data.worksListItem[i].itemSubText+'</div>',
+                    str += '</div>',
+                    str += '</a>',
+                    str += ' </div>'
+                    if( arSplitFileName == "main" ){
+                      $( ".item-sub").remove();
+                    };
+                    $( ".work-item-list.right" ).append( str );
+              }
+            }
+          });
+        },
+        error : function(err){
+          console.log('err : ',err)
+        }
+      })
     },
+    
   };
 })();
 

@@ -187,7 +187,12 @@ input[readonly] {
   pointer-events: none;
 }
 
-::-webkit-input-placeholder {
+::-moz-placeholder {
+  font-size: inherit;
+  color: #bcbcbc;
+}
+
+:-ms-input-placeholder {
   font-size: inherit;
   color: #bcbcbc;
 }
@@ -425,9 +430,6 @@ input::-webkit-search-results-decoration {
 }
 .main-wrap .main .business-wrap .business-box li:first-child {
   margin-left: 0;
-}
-.main-wrap .main .work-wrap .work-item-list {
-  margin-bottom: -140px;
 }
 .main-wrap .main .culture-wrap .culture-list {
   display: flex;
