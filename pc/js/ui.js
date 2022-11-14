@@ -115,6 +115,7 @@ var UI = (function () {
         lLayer.removeClass('active').fadeOut(300);
         dim.hide();
         $('body').css({ overflow: '' });
+        $( ".btn-wrap" ).css( "display", "block" );
       });
     },
     workList: function () {
