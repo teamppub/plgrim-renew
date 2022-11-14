@@ -130,11 +130,14 @@ var UI = (function () {
         success : function(data){   
           var max = 6;
           var start = 0;
+          //리스트 페이지만 실행
           //처음 데이터가 없을경우 화살표 제거
-          if( data.worksListItem.length == max ){
-            $(lThiz.btnViewArea).css( "display", "none");
-          }else{
-            $(lThiz.btnViewArea).css( "display", "block");
+          if( arSplitFileName == "list"){
+            if( data.worksListItem.length == max ){
+              $(lThiz.btnViewArea).css( "display", "none");
+            }else{
+              $(lThiz.btnViewArea).css( "display", "block");
+            }
           }
           //json data 
           for( let i = start; i < max; i++){
