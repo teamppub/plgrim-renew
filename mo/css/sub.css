@@ -118,6 +118,9 @@
   width: 19.4444444444vw;
   font-weight: 700;
 }
+.work .inner-box .work-detail-wrap .detail-visual .info dl dd a {
+  text-decoration: underline;
+}
 .work .inner-box .work-detail-wrap .detail-info {
   margin-bottom: 5.5555555556vw;
 }

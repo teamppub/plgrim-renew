@@ -63,6 +63,11 @@
               width: vw(70px);
               font-weight: 700;
             }
+            dd {
+              a {
+                text-decoration: underline;
+              }
+            }
           }
         }
       }
