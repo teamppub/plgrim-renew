@@ -125,5 +125,7 @@ var UI = (function () {
 })();
 
 $(document).ready(function () {
-    UI.init();
+    UI.init(); 
+    console.log( gsap );
 });
+ 

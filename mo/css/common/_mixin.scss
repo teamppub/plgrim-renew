@@ -112,7 +112,7 @@ $vw-px-only: false !default;
 	}
 
 	$test-list: ();
-	@each $item in $list {
+	@each $item in $list { 
 		
 		$test-list: append($test-list, $item, space); 
 	}
@@ -122,14 +122,14 @@ $vw-px-only: false !default;
  
 @function vw-convert($to, $values...) {
 	
-	$result: ();
+	$result: (); 
 	$separator: vw-separator($values);
 
 	@each $value in $values {
 		@if type-of($value) == "number" and unit($value) == "vw" and $to == "px" {
-			$result: append($result, ( ($value*2) / $viewport ) * 100 * 1vw, $separator);
+			$result: append($result, ($value / ($viewport *2 )) * 100 * 1vw, $separator);
 		} @else if type-of($value) == "number" and unit($value) == "px" and $to == "vw" {
-			$result: append($result, ( ($value*2) / $viewport ) * 100 * 1vw, $separator);
+			$result: append($result, ($value / ($viewport *2 )) * 100 * 2vw, $separator); // 2배수로 변경
 		} @else if type-of($value) == "list" {
 			$value-separator: vw-separator($value);
 			$value: vw-convert($to, $value...);
@@ -148,7 +148,7 @@ $vw-px-only: false !default;
 	@if $vw-px-only {
 		@return vw-convert(px, $values...);
 	} @else {
-		@return vw-convert(vw, $values...);
+		@return vw-convert(vw, $values...); 
 	}
 }
 
