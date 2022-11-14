@@ -87,6 +87,57 @@
 .work .btn-wrap {
   margin: 16.6666666667vw 0vw 0vw -8.3333333333vw;
 }
+.work .inner-box {
+  padding: 0px;
+}
+.work .inner-box .work-detail-wrap {
+  padding-left: 8.3333333333vw;
+}
+.work .inner-box .work-detail-wrap .detail-visual {
+  margin-bottom: 22.2222222222vw;
+}
+.work .inner-box .work-detail-wrap .detail-visual .title-wrap {
+  text-align: left;
+  margin-bottom: 0px;
+}
+.work .inner-box .work-detail-wrap .detail-visual .title-wrap .title-type {
+  font-size: 6.6666666667vw;
+}
+.work .inner-box .work-detail-wrap .detail-visual .title-wrap + img {
+  margin: -4.1666666667vw 0vw 6.3888888889vw 0vw;
+}
+.work .inner-box .work-detail-wrap .detail-visual .info dl {
+  display: flex;
+  font-size: 3.3333333333vw;
+  line-height: 3.8888888889vw;
+}
+.work .inner-box .work-detail-wrap .detail-visual .info dl ~ dl {
+  margin-top: 2.7777777778vw;
+}
+.work .inner-box .work-detail-wrap .detail-visual .info dl dt {
+  width: 19.4444444444vw;
+  font-weight: 700;
+}
+.work .inner-box .work-detail-wrap .detail-info {
+  margin-bottom: 5.5555555556vw;
+}
+.work .inner-box .work-detail-wrap .detail-info h4 {
+  margin-bottom: 2.7777777778vw;
+  font-size: 3.6111111111vw;
+  line-height: 4.1666666667vw;
+  font-weight: 700;
+}
+.work .inner-box .work-detail-wrap .detail-info .text {
+  font-size: 3.3333333333vw;
+  line-height: 4.4444444444vw;
+}
+.work .inner-box .work-detail-wrap .detail-img {
+  margin-left: -8.3333333333vw;
+}
+.work .inner-box .paging-wrap {
+  padding: 0vw 8.3333333333vw;
+  justify-content: center;
+}
 
 /*
  * safe-area-inset 처리
