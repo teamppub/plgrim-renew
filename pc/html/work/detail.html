@@ -99,10 +99,8 @@
               datatype : 'json',
               success : function(data){ 
                 var number =  localStorage.getItem('pageId')-1;
-                
-                console.log( "현재 클릭한 number==>", number );
                 if( number == undefined  || number == -1 ){
-                  number == 0;
+                  number = 0;
                   DETAIL.detailView(data, number);
                 }else{
                   DETAIL.detailView(data, number);
