@@ -203,11 +203,10 @@ var UI = (function () {
       
       //아이템 클릭시 페이지 이동
       $( ".btn_work_link" ).on( "click", function(){
-        console.log( "click" );
         var link = $( this )[0].dataset.link;
         var itemId = $( this )[0].dataset.id;
         location.href = link;
-        localStorage.setItem('name', itemId);
+        localStorage.setItem('pageId', itemId);
       })
     },
   };
