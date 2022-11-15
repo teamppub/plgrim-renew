@@ -102,6 +102,7 @@
                             font-weight: 500;
                             border: 2px solid #000000;
                             border-radius: 40px;
+                            background: #fff;
                         }
                         &:nth-child( n + 4 ){
                             margin-top: vw(20px);
@@ -114,6 +115,7 @@
                             top: vw(42px);
                             left: vw(94px);
                             border: 2px dashed #000000;
+                            z-index: -1;
                         }
                         &:nth-child(3)::after {
                             display: none;

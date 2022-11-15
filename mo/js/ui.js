@@ -42,7 +42,6 @@ var UI = (function () {
                     $(lThiz.header).removeClass('top');
                 }
 
-
                 if( (st + $(window).height()) >=  Math.floor($( "footer" ).offset().top )){
                     $(lThiz.wrap).css( "position", "relative" );
                     $(lThiz.top).addClass( "sticky" );
@@ -50,9 +49,6 @@ var UI = (function () {
                     $(lThiz.wrap).css( "position", "" );
                     $(lThiz.top).removeClass( "sticky" );
                 }
-      
-
-
                 pos = st;
             }, false);
 
@@ -153,6 +149,7 @@ var UI = (function () {
                 lLayer.removeClass('active').fadeOut(300);
                 dim.hide();
                 $("body").css({ overflow: "" });
+                $( ".btn-wrap" ).css( "display", "block" );
             });
         },
 
