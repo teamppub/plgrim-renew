@@ -14,7 +14,7 @@ var UI = (function () {
     },
     element: {
       header: '.header-wrap',
-      btnViewArea : '.btn-wrap'  
+      btnViewArea : '.btn-more'  
     },
     event: function () {
       var lThiz = this.element;
@@ -115,7 +115,6 @@ var UI = (function () {
         lLayer.removeClass('active').fadeOut(300);
         dim.hide();
         $('body').css({ overflow: '' });
-        $( ".btn-wrap" ).css( "display", "block" );
       });
     },
     workList: function () {
@@ -151,7 +150,7 @@ var UI = (function () {
           //버튼 더보기
           var btnView = '';
           btnView += '<div class="btn-wrap">',
-          btnView += '<a href="javascript:;" class="btn-type">',
+          btnView += '<a href="javascript:;" class="btn-type btn-more">',
           btnView += '<i class="ico-arr down"><span class="hidden">더보기</span></i>',
           btnView += '</a>'
           btnView += '<p class="more">MORE</p>',
@@ -160,11 +159,11 @@ var UI = (function () {
 
           var _cnt = 1;
           //더보기 클릭 시
-          $( ".btn-type" ).on( "click", function(e){
+          $( ".btn-more" ).on( "click", function(e){
             _cnt++;
             //더보기 클릭 이후 갯수 체크 이후 버튼 삭제
             if( data.worksListItem.length == data.worksListItem.length ){
-              $(lThiz.btnViewArea).css( "display", "none");
+              $(lThiz.btnViewArea).parents( '.btn-wrap').css( "display", "none");
             }
             //더보기 아이템 출력
             for( let i=max*(_cnt-1);i<  data.worksListItem.length; i++){
