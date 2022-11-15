@@ -59,7 +59,7 @@ var UI = (function () {
             
 			$(lThiz.gnbBtn).on('click', function() {
 				var navItem = $( ".gnb-list" ).find( "li" );
-                var itemDelay =  0.05;
+                var itemDelay =  0.03;
                 var itemSpeed = 0.55;
                 if( !$(this).find(".icon-menu").hasClass( "open" )){
                     navItem.each( function( index, item ){

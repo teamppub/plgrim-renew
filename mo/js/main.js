@@ -15,10 +15,10 @@ $(document).ready(function () {
 		}
   	});
 	function visualChange(slide){
-		var currentCount = "0" + (slide.realIndex + 1)
+		var currentCount = "0" + (slide.realIndex + 1);
 		var totalCount = "0" + (slide.loopedSlides);
-		$(".swiper-paging .current-count").text(currentCount)
-		$(".swiper-paging .total-count").text(totalCount)
+		$(".swiper-paging .current-count").text(currentCount);
+		$(".swiper-paging .total-count").text(totalCount);
 	}
 
 	$('.visual-swiper .swiper-slide').on('mouseenter', function(e){

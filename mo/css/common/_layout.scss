@@ -187,9 +187,15 @@
         }
         dd {
           margin-top: vw(10px);
+          address{
+            p{
+              a{ display: block; }
+            }
+          }
           p{
             &+p{
               margin-top: vw(8px);
+              a{ display: inline-block;}
             }
           }
         }

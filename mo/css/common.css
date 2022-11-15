@@ -449,8 +449,14 @@ input::-webkit-search-results-decoration {
 .footer-wrap .info-box .info-item dl dd {
   margin-top: 2.7777777778vw;
 }
+.footer-wrap .info-box .info-item dl dd address p a {
+  display: block;
+}
 .footer-wrap .info-box .info-item dl dd p + p {
   margin-top: 2.2222222222vw;
+}
+.footer-wrap .info-box .info-item dl dd p + p a {
+  display: inline-block;
 }
 .footer-wrap .info-box .info-item dl + dl {
   margin-top: 11.1111111111vw;
