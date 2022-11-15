@@ -12,6 +12,7 @@ var UI = (function () {
             this.workList();
         },
         element: {
+            wrap : '#wrap',
             header: '.header-wrap',
             gnbBtn: '.btn-gnb',
             gnbWrap: '.gnb-wrap',
@@ -40,6 +41,17 @@ var UI = (function () {
                 } else {
                     $(lThiz.header).removeClass('top');
                 }
+
+
+                if( (st + $(window).height()) >=  Math.floor($( "footer" ).offset().top )){
+                    $(lThiz.wrap).css( "position", "relative" );
+                    $(lThiz.top).addClass( "sticky" );
+                }else{
+                    $(lThiz.wrap).css( "position", "" );
+                    $(lThiz.top).removeClass( "sticky" );
+                }
+      
+
 
                 pos = st;
             }, false);
@@ -190,7 +202,6 @@ var UI = (function () {
                         UI.workView(data, i);
                         if( arSplitFileName == "main" ){
                             $( ".btn-wrap").remove();
-                            console.log( "메인?" );
                         };
                     }
                   });

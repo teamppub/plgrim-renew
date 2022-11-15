@@ -210,7 +210,14 @@
   bottom: vw(30px);
   right: vw(30px);
   background-color: #fff;
+  transition: none;
+  z-index: 10;
   &.up{
     opacity: 0;
   }
+  &.sticky{ 
+
+		position: absolute; 
+    bottom: vw(510px);
+	}
 }

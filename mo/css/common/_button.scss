@@ -53,13 +53,12 @@
 		border-radius: vw(4px);
 		border: vw(2px) solid $CText;
 	}
+	
 }
 
 .btn-type2 {
 	border-bottom: vw(1px) solid $CText;
 	text-align:center;
-	p{
-	}
 	&.v2{
 		p{
 			font-weight: 700;

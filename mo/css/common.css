@@ -465,9 +465,15 @@ input::-webkit-search-results-decoration {
   bottom: 8.3333333333vw;
   right: 8.3333333333vw;
   background-color: #fff;
+  transition: none;
+  z-index: 10;
 }
 #btn-top.up {
   opacity: 0;
+}
+#btn-top.sticky {
+  position: absolute;
+  bottom: 141.6666666667vw;
 }
 
 /*
