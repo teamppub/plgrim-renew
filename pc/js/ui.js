@@ -212,7 +212,7 @@ var UI = (function () {
         var strChage = "build/mo";
         
         if( urlCheck.indexOf( "teamppub" ) != -1){
-            location.href = link.replace(/mo/, strChage );
+            location.href = link.replace(/pc/, strChage );
             localStorage.setItem('pageId', itemId);
         }else{
             location.href = link; 
