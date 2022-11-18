@@ -1,14 +1,20 @@
+/* 페이징 처리 */
+var sOriginImgUrl =  window.location.pathname;
+var arSplitUrl   = sOriginImgUrl.split("/");    
+var nArLength     = arSplitUrl.length;
+var arFileName   = arSplitUrl[nArLength-1];   
+var arSplitFileName     = arFileName.split(".")[0];  
+
+
 var UI = (function () {
   return {
     init: function () {
       this.event();
-      setTimeout( function(){
-        UI.workList();
-        document.querySelector( ".work-item-list " ).style.opacity = 1;
-      },100) 
+      this.workList();
     },
     element: {
       header: '.header-wrap',
+      btnViewArea : '.btn-more'  
     },
     event: function () {
       var lThiz = this.element;
@@ -50,6 +56,8 @@ var UI = (function () {
           // $(this).removeClass('active');
         }
       });
+
+      $(lThiz.workListMoreEle).on( "click", this.worklistMore );
     },
     layerPopUp: function (pOption) {
       /*   pOption
@@ -110,34 +118,104 @@ var UI = (function () {
       });
     },
     workList: function () {
-     
-      if (matchMedia('screen and (min-width: 1640px)').matches) {
-        //   1640보다 크면
-        document.querySelectorAll('.work-item').forEach(item => {
-          var elem = document.querySelectorAll('.work-item');
-          item.style.gridRowEnd = `span ${item.clientHeight + 140}`;
-        });
-        const wrap = document.querySelector('.work-item-list');
-        wrap.style.display = 'grid';
-        wrap.style.gridTemplateColumns = 'repeat(2, 670px)';
-        wrap.style.gap = '0px 60px';
-        wrap.style.gridAutoRows = '1px';
-      } else {
-        document.querySelectorAll('.work-item').forEach(item => {
-          item.style.gridRowEnd = `span ${item.clientHeight + 70}`;
-        });
-        const wrap = document.querySelector('.work-item-list');
-        wrap.style.display = 'grid';
-        wrap.style.gridTemplateColumns = 'repeat(2, 570px)';
-        wrap.style.gap = '0px 60px';
-        wrap.style.gridAutoRows = '1px';
+      //페이지 url값 찾기
+      var dataURL = "../../html/json/work.json";
+      var lThiz = this.element;
+
+      $.ajax ({
+        type : 'get',
+        url: dataURL,
+        datatype : 'json',
+        success : function(data){   
+          var max = 6;
+          var start = 0;
+          //리스트 페이지만 실행
+          //처음 데이터가 없을경우 화살표 제거
+          if( arSplitFileName == "list"){
+            if( data.worksListItem.length == max ){
+              $(lThiz.btnViewArea).css( "display", "none");
+            }else{
+              $(lThiz.btnViewArea).css( "display", "block");
+            }
+          }
+          //json data 
+          for( let i = start; i < max; i++){
+            if( i%2==0){
+                UI.workView(data, i);
+            }else{
+                UI.workView(data, i);
+            }
+          }
+
+          //버튼 더보기
+          var btnView = '';
+          btnView += '<div class="btn-wrap">',
+          btnView += '<a href="javascript:;" class="btn-type btn-more">',
+          btnView += '<i class="ico-arr down"><span class="hidden">더보기</span></i>',
+          btnView += '</a>'
+          btnView += '<p class="more">MORE</p>',
+          btnView += '</div>'
+          $( ".work-item-wrap" ).append( btnView ) ;
+
+          var _cnt = 1;
+          //더보기 클릭 시
+          $( ".btn-more" ).on( "click", function(e){
+            _cnt++;
+            //더보기 클릭 이후 갯수 체크 이후 버튼 삭제
+            if( data.worksListItem.length == data.worksListItem.length ){
+              $(lThiz.btnViewArea).parents( '.btn-wrap').css( "display", "none");
+            }
+            //더보기 아이템 출력
+            for( let i=max*(_cnt-1);i<  data.worksListItem.length; i++){
+              if( i%2==0){
+                UI.workView(data, i);
+                 
+              }else{
+                UI.workView(data, i);
+              }
+              if( arSplitFileName == "main" ){
+                $( ".item-sub").remove();
+              };
+            }
+          });
+        },
+        error : function(err){
+          console.log('err : ',err)
+        }
+      });
+    },
+    workView: function(data, i){
+      var str = '';
+      str += '<div class="work-item">',
+      str += '<a href="javascript:;" data-id="'+data.worksListItem[i].id+'" data-link="'+data.worksListItem[i].itemLink+'" class="btn_work_link">',
+      str += '<div class="item-img"><img src="'+data.worksListItem[i].itemImgSrc+'" alt="'+data.worksListItem[i].itemImgArt+'"></div>',
+      str += '<div class="item-info">',
+      str += '<div class="item-title">'+data.worksListItem[i].itemTitle+'</div>',
+      str += '<div class="item-sub">'+data.worksListItem[i].itemSubText+'</div>',
+      str += '</div>',
+      str += '</a>',
+      str += ' </div>'
+      if( i%2==0){
+        $( ".work-item-list.left" ).append( str );
+      }else{
+        $( ".work-item-list.right" ).append( str );
       }
-
-
+      if( arSplitFileName == "main" ){
+        $( ".item-sub").remove();
+      };
+      
+      //아이템 클릭시 페이지 이동
+      $( ".btn_work_link" ).on( "click", function(){
+        var link = $( this )[0].dataset.link;
+        var itemId = $( this )[0].dataset.id;
+        location.href = link;
+        localStorage.setItem('pageId', itemId);
+      })
     },
   };
 })();
 
 $(document).ready(function () {
   UI.init();
+  
 });
