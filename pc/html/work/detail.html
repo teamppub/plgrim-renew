@@ -18,8 +18,7 @@
 
         <!-- 에디터 영영 -->
         <div class="work-detail-wrap">
-          <!-- 상단 비주얼 영역 -->
-          <div class="detail-visual">
+          <!-- <div class="detail-visual">
             <img src="../../images/temp/@temp_work_detail01.png" alt="상세 비주얼 이미지">
             <div class="title-wrap">
               <h3 class="title-type">SSFSHOP.COM<br /> 온라인 플랫폼 개발/운영</h3>
@@ -51,20 +50,15 @@
               </dl>
             </div>
           </div>
-          <!-- //상단 비주얼 영역 -->
 
-          <!-- OVERVIEW -->
           <div class="detail-info">
             <h4>OVERVIEW</h4>
             <div class="text">사용자의 편리한 쇼핑몰 이용을 위한 UI/UX 개선 프로젝트</div>
           </div>
-          <!-- //OVERVIEW -->
 
-          <!-- 상세 이미지 -->
           <div class="detail-img">
             <img src="../../images/temp/@temp_work_detail02.png" alt="상세 정보 이미지">
-          </div>
-          <!-- //상세 이미지 -->
+          </div> -->
         </div>
         <!-- 에디터 영역 -->
 
@@ -74,7 +68,7 @@
             <i class="ico-arr2"><span class="hidden">이전</span></i>
             <span>prev</span>
           </button>
-          <a href="#" class="btn-type2 v2">
+          <a href="../work/list.html" class="btn-type2 v2">
             <p>목록으로 돌아가기</p>
           </a>
           <button type="button" class="btn-next">
@@ -86,7 +80,90 @@
 
     </section>
     <!--//content-->
+    <script>
+      var DETAIL = (function () {
+        return {
+          init: function () {
+            this.workDetail();
+          },
+          element: {
+          },
+          event: function () {
+            console.log( "event" );
+          },
+          workDetail: function(){
+            var dataURL = "../../html/json/detail.json";
+            $.ajax ({
+              type : 'get',
+              url: dataURL,
+              datatype : 'json',
+              success : function(data){ 
+                var number =  localStorage.getItem('pageId')-1;
+                if( number == undefined  || number == -1 ){
+                  number = 0;
+                  DETAIL.detailView(data, number);
+                }else{
+                  DETAIL.detailView(data, number);
+                }
+              },
+              error : function(err){
+                console.log('err : ',err)
+              }
+            })
+          },
+          detailView: function(data, number){
+            var str = "";
+            /* 상단 비주얼 영역*/
+            str += '<div class="detail-visual">',
+            str += '<img src="'+ data.detailList[number].itemImgSrc+'" alt="'+data.detailList[number].itemImgArt+'">',
+            str += '<div class="title-wrap">',
+            str += '<h3 class="title-type">'+data.detailList[number].itemTitle+'</h3>',
+            str += '</div>',
+            str += ' <div class="info">',
+            str += '<dl>',
+            str += '<dt>CLIENT</dt>',
+            str += '<dd>',
+            str += data.detailList[number].itemClent,
+            str += '</dd>',
+            str += '</dl>',
+            str += '<dl>',
+            str += '<dt>SERVICE</dt>',
+            str += '<dd>',
+            str += data.detailList[number].itemService,
+            str += '</dd>',
+            str += '</dl>',
+            str += '<dl>',
+            str += '<dt>DATE</dt>',
+            str += '<dd>',
+            str += data.detailList[number].itemDate,
+            str += '</dd>',
+            str += '</dl>',
+            str += '<dl>',
+            str += '<dt>URL</dt>',
+            str += '<dd>',
+            str += '<a href="'+data.detailList[number].itemUrl+'" target="_blank">'+data.detailList[number].itemUrl+'</a>',
+            str += '</dd>',
+            str += '</dl>',
+            str += '</div>',
+            str += '</div>',
+            str += '<div class="detail-info">',
+            str += '<h4>OVERVIEW</h4>',
+            str += '<div class="text">'+data.detailList[number].itemOverview+'</div>',
+            str += '</div>'
+            str += '</div>'
+            str += '<div class="detail-img">'
+            str += '<img src="'+data.detailList[number].itemDetailImg+'" alt="상세 정보 이미지">'
+            str += '</div>'
+            $( ".work-detail-wrap" ).append( str );
+          }
+        };
+      })();
 
+      $(document).ready(function () {
+        DETAIL.init();
+      });
+
+    </script>
     <!-- footer -->
     <?php include '../layout/footer.html'?>
     <!-- //footer -->

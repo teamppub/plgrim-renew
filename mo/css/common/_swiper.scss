@@ -10,14 +10,14 @@
 .swiper-paging{
 	display: flex;
 	align-items: center;
-	font-size: 14px;
+	font-size: vw(14px);
 	color: $CText;
 	span{
 		font-size: 0;
 		display: block;
-		margin: 0 10px;
-		width: 2px;
-		height: 10px;
+		margin: vw(0 10px);
+		width: vw(2px);
+		height: vw(10px);
 		background-color: $CText;
 		transform: rotate(27deg);
 	}
@@ -25,14 +25,21 @@
 		&.swiper-pagination-current{
 			font-weight: 900;
 		}
+		&.current-count{
+			// color: $CText;
+			font-weight: 900;
+		}
 	}
 }
 .swiper-pagination{
 	position: relative;
+	margin-top: vw(40px);
 	.swiper-pagination-bullet{
-		margin-left: 15px;
+		width: vw(8px);
+		height: vw(8px);
+		margin-left: vw(15px);
 		background-color: #fff;
-		border: 2px solid #000;
+		border: vw(2px) solid #000;
 		opacity: 1;
 		&.swiper-pagination-bullet-active{
 			background-color: #000;

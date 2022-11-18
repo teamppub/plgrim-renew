@@ -45,8 +45,8 @@
       & + .title-wrap {
         position: relative;
         margin-bottom: -62px;
-        transform: translateY(100px);
-        transition: .5s .4s;
+        // transform: translateY(100px);
+        transition: .7s .4s;
         opacity: 0;
         z-index: 10; 
         &.started {

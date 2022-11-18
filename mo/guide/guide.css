@@ -15,7 +15,6 @@ body {
   background: #FFF;
   box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
 }
-
 .page-guide-nav .nav-title {
   background: #F7FAFC;
   padding: 20px 25px;
@@ -25,17 +24,14 @@ body {
   letter-spacing: -1px;
   font-weight: bold;
 }
-
 .page-guide-nav .nav-title a {
   display: flex;
   align-items: baseline;
 }
-
 .page-guide-nav .nav-title a img {
   display: inline-block;
   width: 70px;
 }
-
 .page-guide-nav .nav-title span {
   margin-left: 10px;
   font-size: 12px;
@@ -43,11 +39,9 @@ body {
   font-weight: 400;
   letter-spacing: 0;
 }
-
 .page-guide-nav .nav li {
   border-bottom: 1px solid #EDEFF0;
 }
-
 .page-guide-nav .nav li a {
   position: relative;
   font-size: 18px;
@@ -55,9 +49,8 @@ body {
   display: block;
   padding: 15px 35px 15px 25px;
 }
-
 .page-guide-nav .nav li a::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   right: 20px;
@@ -69,39 +62,31 @@ body {
   border-color: #999 #999 transparent transparent;
   transform: rotate(45deg);
 }
-
 .page-guide-nav .nav li li {
   padding-left: 20px;
 }
-
 .page-guide-nav .nav li li a:after {
   display: none;
 }
-
 .page-guide-nav .nav li li a:hover {
   color: #000;
   text-decoration: underline;
 }
-
 .page-guide-nav .nav li li.on a {
   font-weight: bold;
   padding: 10px 35px 10px 20px;
 }
-
 .page-guide-nav .nav li li.on a:hover {
   color: #000;
 }
-
 .page-guide-nav .nav > li.on ul {
   margin-left: 10px;
   display: block;
   border-left: 1px dashed #ccc;
 }
-
 .page-guide-nav .nav > li.on ul li {
   border: 0;
 }
-
 .page-guide-nav .nav > li.on ul li a {
   padding: 7px 0;
   border: 0;
@@ -109,7 +94,6 @@ body {
   font-weight: normal;
   color: #666;
 }
-
 .page-guide-nav .nav > li.on ul li a::before {
   content: "- -";
   color: #ccc;
@@ -118,7 +102,6 @@ body {
   top: 10px;
   font-size: 11px;
 }
-
 .page-guide-nav .nav > li.on > a, .page-guide-nav .nav > li.on > a:hover {
   padding-left: 20px;
   color: #000;
@@ -140,7 +123,6 @@ body {
   color: #111;
   font-weight: 700;
 }
-
 .page-guide-title:nth-of-type(n+2) {
   margin-top: 80px;
 }
@@ -153,7 +135,6 @@ body {
   color: #111;
   font-weight: 700;
 }
-
 .page-guide-title2:nth-of-type(n+2) {
   margin-top: 40px;
 }
@@ -161,35 +142,28 @@ body {
 .page-guide-box {
   margin-bottom: 50px;
 }
-
 .page-guide-box p.text {
   font-size: 13px;
   color: #ff0000;
 }
-
 .page-guide-box > p a {
   text-decoration: underline;
   color: #042253;
 }
-
 .page-guide-box .btn-wrap + .btn-wrap {
   margin-top: 40px;
 }
-
 .page-guide-box.font p {
   font-size: 25px;
   line-height: 1.7em;
 }
-
 .page-guide-box.font p.text {
   font-size: 13px;
   color: #ff0000;
 }
-
 .page-guide-box.icon i {
   margin: 5px;
 }
-
 .page-guide-box.color > span {
   display: inline-flex;
   align-items: center;
@@ -204,48 +178,38 @@ body {
   color: #fff;
   line-height: 1.25;
 }
-
 .page-guide-box.color > span.CBrand {
   background: #01A0E9;
 }
-
 .page-guide-box.color > span.CLine {
   background: #ccc;
   color: #000;
 }
-
 .page-guide-box.color > span.CLine2 {
   background: #eee;
   color: #000;
 }
-
 .page-guide-box.color > span.CText {
   background: #000;
 }
-
 .page-guide-box.color > span.CTsub {
   background: #666;
 }
-
 .page-guide-box.color > span.CTsub2 {
   background: #999;
 }
-
 .page-guide-box.color > span.CTsub3 {
   background: #aaa;
 }
-
 .page-guide-box.color > span.CBg {
   background: #F8F8F8;
   color: #000;
 }
-
 .page-guide-box.color > span.CBg2 {
   background: rgba(1, 160, 233, 0.08);
   color: #000;
 }
-
-.page-guide-box.font [class^='guide-font-box'] {
+.page-guide-box.font [class^=guide-font-box] {
   margin-bottom: 30px;
   font-size: 15px;
 }
@@ -282,7 +246,7 @@ body {
 }
 
 .guide-table tr.focus td {
-  background: #ed969e17;
+  background: rgba(237, 150, 158, 0.0901960784);
 }
 
 @media (max-width: 960px) {
@@ -306,5 +270,4 @@ body {
   .guide-table table {
     min-width: 990px;
   }
-}
-/*# sourceMappingURL=guide.css.map */
+}/*# sourceMappingURL=guide.css.map */

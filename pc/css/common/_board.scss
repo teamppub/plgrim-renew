@@ -1,37 +1,43 @@
 @charset "UTF-8";
 @import '../common/variable', '../common/mixin';
 
-.work-item-list {
-  .work-item {
-    width: 670px;
-    .item-img {
-      overflow: hidden;
-      margin-bottom: 30px;
-      border-radius: 18px;
-      img {
-        transition: all 0.5s;
-        &:hover {
-          transform: scale(1.1);
+.work-item-contents{
+  .work-item-list {
+    margin-bottom: -140px;
+    .work-item {
+      width: 670px;
+      margin-bottom: 140px;
+      .item-img {
+        overflow: hidden;
+        margin-bottom: 30px;
+        border-radius: 18px;
+        img {
+          transition: all 0.5s;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+
+      .item-info {
+        .item-title {
+          margin-bottom: 20px;
+          font-size: 36px;
+          font-weight: 700;
+          line-height: 44px;
+        } 
+        .item-sub {
+          color: #666666;
+          font-size: 24px;
+          line-height: 36px;
         }
       }
     }
-
-    .item-info {
-      .item-title {
-        margin-bottom: 20px;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 44px;
-      }
-      .item-sub {
-        color: #666666;
-        font-size: 24px;
-        line-height: 36px;
-      }
-    }
+    &.left{float: left;}
+    &.right{ float: right;}
   }
+  &:after{ content: ''; display: block; clear: both;}
 }
-
 .culture-item-list {
   margin: -130px 0px 0px;
   padding: 200px 120px 70px;
@@ -86,9 +92,11 @@
 }
 
 @include pc-inner {
-  .work-item-list {
-    .work-item {
-      width: 570px;
+  .work-item-contents{ 
+    .work-item-list {
+      .work-item {
+        width: 570px !important;
+      }
     }
   }
 }
