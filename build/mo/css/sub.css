@@ -31,9 +31,6 @@
   line-height: 8.8888888889vw;
   letter-spacing: 0.6666666667vw;
 }
-.company .company-info .swiper-slide {
-  min-height: 61.1111111111vw;
-}
 .company .company-info .swiper-slide .title {
   margin-bottom: 5.5555555556vw;
   font-size: 5vw;
@@ -66,7 +63,9 @@
   margin-bottom: 13.8888888889vw;
   padding: 0vw 4.1666666667vw 0vw 3.3333333333vw;
   width: 50%;
-} /*
+}
+
+/*
  * safe-area-inset 처리
  * $key - 넣을곳(padding-top, marin-bottom, ...)
  * $direction - 방향(top, right, bottom, left)

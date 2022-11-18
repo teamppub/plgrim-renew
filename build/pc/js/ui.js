@@ -208,11 +208,16 @@ var UI = (function () {
       $( ".btn_work_link" ).on( "click", function(){
         var link = $( this )[0].dataset.link;
         var itemId = $( this )[0].dataset.id;
-        var urlLocationCheck = window.location.origin;
-        location.href = urlLocationCheck+link;
-        location.href = link;
-
-        localStorage.setItem('pageId', itemId);
+        var urlCheck = window.location.origin;
+        var strChage = "build/mo";
+        
+        if( urlCheck.indexOf( "teamppub" ) != -1){
+            location.href = link.replace(/pc/, strChage );
+            localStorage.setItem('pageId', itemId);
+        }else{
+            location.href = link; 
+            localStorage.setItem('pageId', itemId);
+        }
       })
     },
   };
