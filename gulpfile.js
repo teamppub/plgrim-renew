@@ -57,45 +57,48 @@ gulp.task('pcimage', function (cb) {
 gulp.task('pcjs', function (cb) {
   pump([gulp.src('pc/js/*.js'), gulp.dest('build/pc/js')], cb);
 });
+gulp.task('pcjson', function (cb) {
+  pump([gulp.src('pc/json/*.json'), gulp.dest('build/pc/json')], cb);
+});
 
 //mo
-// gulp.task('pchtml', function (cb) {
-//   pump(
-//     [
-//       gulp.src(setFilesPC),
-//       replace('../layout/', '' + __dirname + '/pc/html/layout/'),
-//       phpinc({ verbose: true }),
-//       gulp.dest('build/pc/html'),
-//     ],
-//     cb
-//   );
-// });
-// gulp.task('pcguide', function (cb) {
-//   pump(
-//     [
-//       gulp.src(setFilesGuide),
-//       replace('./', '' + __dirname + '/pc/guide/'),
-//       phpinc({ verbose: true }),
-//       gulp.dest('build/pc/guide'),
-//     ],
-//     cb
-//   );
-// });
-// gulp.task('pccss', function (cb) {
-//   pump([gulp.src('pc/css/*.css'), gulp.dest('build/pc/css')], cb);
-// });
-// gulp.task('pcguidecss', function (cb) {
-//   pump([gulp.src('pc/guide/*.css'), gulp.dest('build/pc/guide')], cb);
-// });
-// gulp.task('assets', function (cb) {
-//   pump([gulp.src('assets/**'), gulp.dest('build/assets')], cb);
-// });
-// gulp.task('pcimage', function (cb) {
-//   pump([gulp.src('pc/images/**'), gulp.dest('build/pc/images')], cb);
-// });
-// gulp.task('pcjs', function (cb) {
-//   pump([gulp.src('pc/js/*.js'), gulp.dest('build/pc/js')], cb);
-// });
+gulp.task('mohtml', function (cb) {
+  pump(
+    [
+      gulp.src(setFilesPC),
+      replace('../layout/', '' + __dirname + '/mo/html/layout/'),
+      phpinc({ verbose: true }),
+      gulp.dest('build/mo/html'),
+    ],
+    cb
+  );
+});
+gulp.task('moguide', function (cb) {
+  pump(
+    [
+      gulp.src(setFilesGuide),
+      replace('./', '' + __dirname + '/mo/guide/'),
+      phpinc({ verbose: true }),
+      gulp.dest('build/mo/guide'),
+    ],
+    cb
+  );
+});
+gulp.task('mocss', function (cb) {
+  pump([gulp.src('mo/css/*.css'), gulp.dest('build/mo/css')], cb);
+});
+gulp.task('moguidecss', function (cb) {
+  pump([gulp.src('mo/guide/*.css'), gulp.dest('build/mo/guide')], cb);
+});
+gulp.task('moimage', function (cb) {
+  pump([gulp.src('mo/images/**'), gulp.dest('build/mo/images')], cb);
+});
+gulp.task('mojs', function (cb) {
+  pump([gulp.src('mo/js/*.js'), gulp.dest('build/mo/js')], cb);
+});
+gulp.task('mojson', function (cb) {
+  pump([gulp.src('mo/json/*.json'), gulp.dest('build/mo/json')], cb);
+});
 
 //걸프 자동화
 gulp.task(
@@ -109,6 +112,14 @@ gulp.task(
     'assets',
     'pcimage',
     'pcjs',
+    'pcjson',
+    'mohtml',
+    'moguide',
+    'mocss',
+    'moguidecss',
+    'moimage',
+    'mojs',
+    'mojson',
   ]),
   () => {
     gutil.log('Gulp is running');

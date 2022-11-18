@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height, viewport-fit=cover">
+
+<title>플그림</title>
+<link rel="icon" href="../../assets/favicon.ico">
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="../../assets/css/font.css">
+<link rel="stylesheet" type="text/css" href="../../assets/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+
+<!-- JS -->
+<script src="../../assets/js/jquery-3.1.1.min.js"></script>
+<script src="../../assets/js/swiper.min.js"></script>
+<script src="../js/ui.js"></script>
+
+
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="./guide.css">
+<h6 class="hidden">guide</h6>
+<div class="page-guide-nav">
+	<h1 class="nav-title"><a href="index.html"><img src="../images/common/logo.svg"> <span>2022.10</span></a></h1>
+	<ul class="nav">
+		<li><a href="color.html">color</a></li>
+		<li><a href="font.html">font</a></li>
+		<li><a href="text.html">text</a></li>
+		<li><a href="button.html">button</a></li>
+		<li><a href="icon.html">icon</a></li>
+		<li><a href="table.html">table</a></li>
+		<li><a href="board.html">board</a></li>
+		<li><a href="swiper.html">swiper</a></li>
+		<li><a href="layerpop.html">popup</a></li>
+	</ul>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		var url = window.location.pathname;
+		url = url.split("/");
+		url = url[url.length - 1];
+		url = url.split("-");
+		if (url.length === 0) {
+			$(".nav li a").each(function () {
+				if (url == $(this).attr("href")) {
+					$(this).parent("li").siblings().removeClass("on");
+					$(this).parent("li").addClass("on");
+				}
+			});
+		} else {
+			url = url[0];
+			$(".nav li a").each(function () {
+				if (url == $(this).attr("href")) {
+					$(this).parent("li").siblings().removeClass("on");
+					$(this).parent("li").addClass("on");
+				}
+			});
+		}
+	});
+</script>
+
+    <div class="page-guide-content">
+		<h2 class="page-guide-title">Font</h2>
+		<h3 class="page-guide-title2">국문 & 영문 Pretendard</h3>
+
+		<div class="page-guide-box font">
+			<div class="guide-font-box">
+				<p class="text">* css에서 font-weight:300 처럼 스타일 적용</p>
+				<br/>
+				<p style="font-weight:300">Pretendard-Thin font-weight 100</p>
+				<p style="font-weight:300">Pretendard-ExtraLight font-weight 200</p>
+				<p style="font-weight:300">Pretendard-Light font-weight 300</p>
+				<p style="font-weight:400">Pretendard-Regular font-weight 400</p>
+				<p style="font-weight:500">Pretendard-Medium font-weight 500</p>
+				<p style="font-weight:600">Pretendard-SemiBold font-weight 600</p>
+				<p style="font-weight:600">Pretendard-Bold font-weight 700</p>
+				<p style="font-weight:600">Pretendard-ExtraBold font-weight 800</p>
+				<p style="font-weight:600">Pretendard-Black font-weight 900</p>
+			</div>
+		</div>
+		<!-- 		
+		<h3 class="page-guide-title2 en">영문 NunitoSans</h3>
+		<div class="page-guide-box font">
+			<div class="guide-font-box en">
+				<p class="text">* css에서 font-weight:300 처럼 스타일 적용</p>
+				<p style="font-weight:300">NunitoSans-Light font-weight 300</p>
+				<p style="font-weight:400">NunitoSans-Regular font-weight 400</p>
+				<p style="font-weight:600">NunitoSans-SemiBold font-weight 600</p>
+				<p style="font-weight:700">NunitoSans-Bold font-weight 700</p>
+				<p style="font-weight:800">NunitoSans-ExtraBold font-weight 800</p>
+			</div>
+		</div> -->
+	</div>
+
+</body>
+</html>
+
