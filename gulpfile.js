@@ -58,7 +58,7 @@ gulp.task('pcjs', function (cb) {
   pump([gulp.src('pc/js/*.js'), gulp.dest('build/pc/js')], cb);
 });
 gulp.task('pcjson', function (cb) {
-  pump([gulp.src('pc/json/*.json'), gulp.dest('build/pc/json')], cb);
+  pump([gulp.src('pc/html/json/*.json'), gulp.dest('build/pc/html/json')], cb);
 });
 
 //mo
@@ -97,7 +97,7 @@ gulp.task('mojs', function (cb) {
   pump([gulp.src('mo/js/*.js'), gulp.dest('build/mo/js')], cb);
 });
 gulp.task('mojson', function (cb) {
-  pump([gulp.src('mo/json/*.json'), gulp.dest('build/mo/json')], cb);
+  pump([gulp.src('mo/html/json/*.json'), gulp.dest('build/mo/html/json')], cb);
 });
 
 //걸프 자동화

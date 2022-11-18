@@ -1,0 +1,64 @@
+{
+  "detailList": [
+    {
+      "id": 1,
+      "itemImgSrc": "../../images/temp/@temp_work_detail01.png",
+      "itemImgArt": "SSFSHOP.COM 이미지",
+      "itemTitle": "SSFSHOP.COM<br />온라인 플랫폼 개발/운영",
+      "itemClent": "삼성물산",
+      "itemService": "온라인 스토어 구축",
+      "itemDate": "2017",
+      "itemUrl": "https://www.ssfshop.com",
+      "itemOverview": "사용자의 편리한 쇼핑몰 이용을 위한 UI/UX<br/> 개선 프로젝트",
+      "itemDetailImg": "../../images/temp/@temp_work_detail02.png"
+    },
+    {
+      "id": 1,
+      "itemImgSrc": "../../images/temp/@temp_work_detail01.png",
+      "itemImgArt": "SSFSHOP.COM 이미지",
+      "itemTitle": "SSFSHOP.COM<br />온라인 플랫폼 개발/운영",
+      "itemClent": "삼성물산",
+      "itemService": "온라인 스토어 구축",
+      "itemDate": "2017",
+      "itemUrl": "https://www.ssfshop.com",
+      "itemOverview": "사용자의 편리한 쇼핑몰 이용을 위한 UI/UX 개선 프로젝트",
+      "itemDetailImg": "../../images/temp/@temp_work_detail02.png"
+    },
+    {
+      "id": 3,
+      "itemImgSrc": "../../images/temp/@temp_work_detail05.png",
+      "itemImgArt": "GLYDE 이미지",
+      "itemTitle": "글라이드(GLYDE)<br />온라인 플랫폼 구축",
+      "itemClent": "글라이드",
+      "itemService": "온라인 스토어 구축",
+      "itemDate": "2019",
+      "itemUrl": "https://www.glyde.com",
+      "itemOverview": "플그림 Solution 기반으로 “Factory to Home”을 실현하는 Direct Mobile Platform 구축.<br /> 당신의 식탁까지 바로 글라이드, 신선한 자연 식재료만으로 최고의 맛.<br />도매, 대리점과 같은 중간 유통 과정을 뺀 정직한 가격으로 집까지 바로 전합니다.<br />- 맛에 대한 자신감 ‘맛 없으면 100% 환불’<br />- 처음이라 망설여지는 분을 위해, 미리 맛볼 수 있는 ‘상품 체험단 운영’<br />- 소비자 목소리가 곧 아이디어와 상품이 되는 ‘Idea&Share’<br />- 편리하고 간편한 원터치 ‘빠른 결제’<br />- 글라이드 요리로 마음을 전하는 ‘선물하기’<br />- 원하는 상품만 모아 확인할 수 있는 ‘칼로리 계산’",
+      "itemDetailImg": "../../images/temp/@temp_work_detail06.png"
+    },
+    {
+      "id": 4,
+      "itemImgSrc": "../../images/temp/@temp_work_detail07.png",
+      "itemImgArt": "H패션몰 이미지",
+      "itemTitle": "현대한섬<br/> H패션몰 한섬<br/> 패션종합몰 구축",
+      "itemClent": "한섬",
+      "itemService": "온라인 스토어 구축",
+      "itemDate": "2020",
+      "itemUrl": "https://www.hfashionmall.com",
+      "itemOverview": "H패션몰은 Formal한 오피스 룩에서부터 자유분방한 Casual룩까지 고객의 일상에 필요한 다양한 상품과 양질의 서비스를 제공하는 라이프 스타일 전반의 온라인 플랫폼을 지향합니다.<br/><br/> 우리는 고객이 H패션몰을 어떻게 좋은 인상으로 기억하도록 할지 지속적으로 H패션몰에 방문하여 다양한 상품과 라이프 스타일까지 효과적으로 경험할 수 있도록 할 방법은 무엇일지에 대해 고민해 본 결과 아래와 같은 방향을 정할 수 있었습니다.<br/> - 아이덴티티가 분명해야 한다. - 콘텐츠 중심의 비주얼 커머스이다.<br/> - 다양한 콘텐츠를 끊임없이 둘러볼 수 있어야 한다.<br/> - 브랜드 상품을 판매하는 믿음직한 플랫폼이다.<br/> - 더 나은 쇼핑경험과 가치를 제공해야 한다.",
+      "itemDetailImg": "../../images/temp/@temp_work_detail08.png"
+    },
+    {
+      "id": 5,
+      "itemImgSrc": "../../images/temp/@temp_work_detail09.png",
+      "itemImgArt": "EQL 이미지",
+      "itemTitle": "현대한섬<br/> EQL 온라인 편집샵<br/> 구축/운영",
+      "itemClent": "한섬",
+      "itemService": "온라인 스토어 구축",
+      "itemDate": "2019",
+      "itemUrl": "https://www.eqlstore.com/main",
+      "itemOverview": "EQL은 지금 가장 쿨한 패션 아이템과 스타일 컨텐츠를 엄선하여 소개하는 온라인 편집숍입니다. 고객은 온라인 웹사이트와 모바일 애플리케이션을 비롯하여 광고, SNS, 오프라인 매장 등에서 EQL을 만날 수 있습니다.<br/><br/> EQL은 EQUAL의 철자를 축약한 신조어로, 어떠한 편견이나 선입견 없이 자유롭게 표현할 수 있는 패션을 지지하는 편집숍입니다.<br/><br/> 나를 규정짓기보다는 각자의 개성을 중심으로 한 자신만의 고유한 스타일로 재해석하는 우리를 기대합니다.",
+      "itemDetailImg": "../../images/temp/@temp_work_detail10.png"
+    }
+  ]
+}
