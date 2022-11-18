@@ -208,7 +208,10 @@ var UI = (function () {
       $( ".btn_work_link" ).on( "click", function(){
         var link = $( this )[0].dataset.link;
         var itemId = $( this )[0].dataset.id;
+        var urlLocationCheck = window.location.origin;
+        location.href = urlLocationCheck+link;
         location.href = link;
+
         localStorage.setItem('pageId', itemId);
       })
     },
