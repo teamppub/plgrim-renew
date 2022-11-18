@@ -220,13 +220,21 @@ var UI = (function () {
                 if( arSplitFileName == "main" ){
                     // $( ".btn-wrap").remove();
                 };
-                //아이템 클릭시 페이지 이동
+                //아이템 클릭시 페이지 이동 
                 $( ".btn_work_link" ).on( "click", function(){
                     var link = $( this )[0].dataset.link;
                     var itemId = $( this )[0].dataset.id;
-                    var urlLocationCheck = window.location.origin;
-                    location.href = urlLocationCheck+link;
-                    localStorage.setItem('pageId', itemId);
+                    var urlCheck = window.location.origin;
+                    var strChage = "build/mo";
+
+                    if( urlCheck.indexOf( "teamppub" ) != -1){
+                        location.href = link.replace(/mo/, strChage );
+                        localStorage.setItem('pageId', itemId);
+                    }else{
+                        location.href = link; 
+                        localStorage.setItem('pageId', itemId);
+                    }
+                    
                 })
         },
     };
