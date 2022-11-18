@@ -209,7 +209,7 @@ var UI = (function () {
         var link = $( this )[0].dataset.link;
         var itemId = $( this )[0].dataset.id;
         var urlCheck = window.location.origin;
-        var strChage = "build/mo";
+        var strChage = "build/pc";
         
         if( urlCheck.indexOf( "teamppub" ) != -1){
             location.href = link.replace(/pc/, strChage );
