@@ -1,0 +1,374 @@
+@charset "UTF-8";
+/*
+ * safe-area-inset 처리
+ * $key - 넣을곳(padding-top, marin-bottom, ...)
+ * $direction - 방향(top, right, bottom, left)
+ * $value - 더해질 값(생략가능)
+ */
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  word-break: break-all;
+  font-family: Pretendard, sans-serif;
+  font-size: 3.3333333333vw;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.25;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+}
+
+/* 테이블 스타일 초기화 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+}
+
+td {
+  word-wrap: break-word;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend,
+caption {
+  visibility: hidden;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+address,
+caption,
+em,
+var {
+  font-style: normal;
+  font-weight: inherit;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* 링크 */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+pre {
+  font-family: inherit;
+  white-space: pre-wrap;
+}
+
+/* 이미지, 폼관련 요소 */
+img {
+  border: 0;
+  vertical-align: top;
+  width: 100%;
+}
+
+select,
+input,
+textarea {
+  width: 100%;
+  vertical-align: middle;
+  box-shadow: none;
+  border-radius: 0;
+  outline: none;
+  border: 0;
+  background: #fff;
+  color: #000;
+}
+
+input[type=text],
+input[type=submit],
+input[type=password],
+input[type=search],
+input[type=number],
+input[type=reset],
+input[type=email],
+input[type=tel],
+input[type=search],
+input[type=file],
+input[type=email],
+input[type=tel] {
+  padding: 0 22px;
+  height: 59px;
+  line-height: 59px;
+  border: 1px solid #aaa;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+input[type=radio],
+input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=tel]:focus,
+input[type=email]:focus,
+input[type=search]:focus,
+textarea:focus {
+  border-color: #000;
+  background-color: #fff;
+  outline: none;
+}
+
+input[readonly] {
+  pointer-events: none;
+}
+
+::-moz-placeholder {
+  font-size: inherit;
+  color: #bcbcbc;
+}
+
+:-ms-input-placeholder {
+  font-size: inherit;
+  color: #bcbcbc;
+}
+
+::placeholder {
+  font-size: inherit;
+  color: #bcbcbc;
+}
+
+textarea {
+  overflow: auto;
+  padding: 22px;
+  resize: none;
+  font-size: 18px;
+  border: 1px solid #aaa;
+}
+
+button {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
+button:disabled {
+  cursor: default;
+}
+
+.hidden {
+  position: absolute;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* 크롬의 경우 */
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
+
+::-moz-selection {
+  background: #01A0E9;
+  color: #fff;
+}
+
+::selection {
+  background: #01A0E9;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e7e7e7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #303030;
+}
+
+/*
+ * safe-area-inset 처리
+ * $key - 넣을곳(padding-top, marin-bottom, ...)
+ * $direction - 방향(top, right, bottom, left)
+ * $value - 더해질 값(생략가능)
+ */
+.main article {
+  margin: 16.6666666667vw 0 0;
+}
+.main article:first-child {
+  margin-top: 0;
+}
+.main article .title-wrap {
+  margin: 0 8.3333333333vw 8.3333333333vw 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+.main article .title-wrap.started {
+  opacity: 1;
+}
+.main .visual-wrap {
+  position: relative;
+}
+.main .visual-wrap .visual-swiper {
+  position: relative;
+}
+.main .visual-wrap .visual-swiper .swiper-slide {
+  padding-top: 13.8888888889vw;
+}
+.main .visual-wrap .visual-swiper .swiper-slide .visual-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 1s 0.5s;
+  transform: translateY(30px);
+}
+.main .visual-wrap .visual-swiper .swiper-slide .visual-content {
+  margin-top: 5.5555555556vw;
+}
+.main .visual-wrap .visual-swiper .swiper-slide .visual-content .title-sub {
+  margin-bottom: 2.7777777778vw;
+  line-height: 5vw;
+}
+.main .visual-wrap .visual-swiper .swiper-slide.swiper-slide-active .visual-title {
+  opacity: 1;
+  transform: translateY(0);
+}
+.main .visual-wrap .visual-swiper .swiper-navigation {
+  position: absolute;
+  top: 115.2777777778vw;
+  left: 5.5555555556vw;
+  z-index: 20;
+}
+.main .intro-wrap {
+  margin-left: 2.7777777778vw;
+  padding: 16.6666666667vw 0 16.6666666667vw 5.5555555556vw;
+  background-color: #F8F8F8;
+}
+.main .intro-wrap .title-wrap2 .ko {
+  font-size: 6.1111111111vw;
+  line-height: 9.4444444444vw;
+}
+.main .intro-wrap .intro-cont {
+  margin-top: 8.3333333333vw;
+}
+.main .intro-wrap .intro-cont p {
+  font-size: 3.3333333333vw;
+  line-height: 5vw;
+}
+.main .intro-wrap .intro-cont p + p {
+  margin-top: 8.3333333333vw;
+}
+.main .business-wrap {
+  margin-left: 2.7777777778vw;
+  padding: 16.6666666667vw 0;
+  background-color: #F8F8F8;
+}
+.main .business-wrap .title-wrap {
+  margin-left: 5.5555555556vw;
+}
+.main .business-wrap .business-graph {
+  padding: 0 8.3333333333vw 0 5.5555555556vw;
+}
+.main .business-wrap .business-swiper {
+  margin-top: 11.1111111111vw;
+  padding: 0 5.5555555556vw;
+  margin-left: -4.4444444444vw;
+}
+.main .business-wrap .business-swiper .swiper-slide {
+  width: 69.4444444444vw;
+  margin-left: 4.4444444444vw;
+}
+.main .business-wrap .business-swiper .swiper-slide:last-child {
+  margin-right: 4.4444444444vw;
+}
+.main .business-wrap .business-swiper .swiper-slide strong {
+  display: block;
+  margin-top: 2.7777777778vw;
+  font-size: 4.4444444444vw;
+  line-height: 6.6666666667vw;
+}
+.main .business-wrap .business-swiper .swiper-slide p {
+  margin-top: 2.7777777778vw;
+  font-size: 3.3333333333vw;
+  line-height: 4.4444444444vw;
+  color: #666;
+}/*# sourceMappingURL=main.css.map */

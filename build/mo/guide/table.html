@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height, viewport-fit=cover">
+
+<title>플그림</title>
+<link rel="icon" href="../../assets/favicon.ico">
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="../../assets/css/font.css">
+<link rel="stylesheet" type="text/css" href="../../assets/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+
+<!-- JS -->
+<script src="../../assets/js/jquery-3.1.1.min.js"></script>
+<script src="../../assets/js/swiper.min.js"></script>
+<script src="../js/ui.js"></script>
+
+
+</head>
+
+<body>
+	<link rel="stylesheet" type="text/css" href="./guide.css">
+<h6 class="hidden">guide</h6>
+<div class="page-guide-nav">
+	<h1 class="nav-title"><a href="index.html"><img src="../images/common/logo.svg"> <span>2022.10</span></a></h1>
+	<ul class="nav">
+		<li><a href="color.html">color</a></li>
+		<li><a href="font.html">font</a></li>
+		<li><a href="text.html">text</a></li>
+		<li><a href="button.html">button</a></li>
+		<li><a href="icon.html">icon</a></li>
+		<li><a href="table.html">table</a></li>
+		<li><a href="board.html">board</a></li>
+		<li><a href="swiper.html">swiper</a></li>
+		<li><a href="layerpop.html">popup</a></li>
+	</ul>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		var url = window.location.pathname;
+		url = url.split("/");
+		url = url[url.length - 1];
+		url = url.split("-");
+		if (url.length === 0) {
+			$(".nav li a").each(function () {
+				if (url == $(this).attr("href")) {
+					$(this).parent("li").siblings().removeClass("on");
+					$(this).parent("li").addClass("on");
+				}
+			});
+		} else {
+			url = url[0];
+			$(".nav li a").each(function () {
+				if (url == $(this).attr("href")) {
+					$(this).parent("li").siblings().removeClass("on");
+					$(this).parent("li").addClass("on");
+				}
+			});
+		}
+	});
+</script>
+
+	<div class="page-guide-content">
+		<h2 class="page-guide-title">Table</h2>
+
+		<h3 class="page-guide-title2">table-type</h3>
+
+		<div class="page-guide-box">
+			<div class="table-wrap">
+				<table>
+					<thead>
+						<tr>
+							<th width="28%">수행년도</th>
+							<th width="72%">플그림의 주요 커머스 사업실적</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>2022</td>
+							<td>
+								삼성물산 패션부문 SSFSHOP 개발/운영<br /> 글라이드 E플랫폼 운영<br /> 한섬 EQL스토어 디자인 운영<br /> 코리아세븐 모바일앱
+								운영<br /> 롯데홈쇼핑 NDP 운영<br /> WIZWID 온라인 재구축 신세계 까사
+								굳닷컴 운영
+							</td>
+						</tr>
+						<tr>
+							<td>2021</td>
+							<td>
+								삼성물산 패션부문 SSFSHOP 개발/운영<br /> 글라이드 E플랫폼 운영<br /> 한섬 H패션몰 운영 한섬 EQL스토어 디자인 운영<br /> 롯데
+								하이마트 PO 구축<br /> 코리아세븐 모바일 앱 고도화 구축<br /> 롯데홈쇼핑 WYD / ITOO 개선 및 개발<br /> 스타벅스 클라우드 신규플랫폼
+								구축<br /> 롯데마트 백오피스 인프라 재구축
+							</td>
+						</tr>
+						<tr>
+							<td>2020</td>
+							<td>
+								삼성물산 패션부문 SSFSHOP 개발/운영<br /> LOTTE ON (롯데 온라인 통합몰) 구축/운영<br /> 한섬 H패션몰 스토어 구축/운영<br />
+								롯데시네마 VOD 월정액 서비스 구축<br /> 한섬 EQL (모바일 편집샵) 스토어 구축/운영
+							</td>
+						</tr>
+						<tr>
+							<td>2019</td>
+							<td>
+								삼성물산 패션부문 SSFSHOP 개발/운영<br /> 롯데 컬처웍스 씨츄 월정액 서비스 구축<br /> 롯데통합EC 구축프로젝트<br /> 커머스플랫폼 온라인
+								클라우드 이관 개발<br /> F&F 커머스 플랫폼 운영<br /> GLYDE 온라인 플랫폼 구축
+							</td>
+						</tr>
+						<tr>
+							<td>2018</td>
+							<td>
+								삼성물산 패션부문 SSFSHOP 개발/운영<br /> GS홈쇼핑 NIKE.COM CTM(O2O) 구축<br /> ILM(INDONESIA LOTTE
+								MAKMUR) 온라인몰 운영<br /> 쇼핑앤티 제휴 및 셀러툴 연계 개발<br /> DISCOVERY EXPEDITION 온라인 PLATFORM
+								구축<br /> MLB, STRETCH ANGELS 온라인몰 구축<br /> 서울아산병원 의료정보고도화 APP. 개발
+							</td>
+						</tr>
+						<tr>
+							<td>2017</td>
+							<td>
+								삼성물산 패션부문 SSFSHOP 개발/운영<br /> 삼성물산 패션부문 SSFSHOP 서비스 개선<br /> 삼성물산 패션부문 SSFSHOP 플랫폼
+								고도화<br /> GS홈쇼핑 BREEZE
+								NIKE.COM 온라인샵 구축<br /> GS홈쇼핑 BREEZE NORTHFACE 온라인샵 구축<br /> GS홈쇼핑 BREEZE 영원아웃도어 온라인샵
+								구축<br />
+								ILM(INDONESIA LOTTE MAKMUR) EC PLATFORM 운영
+							</td>
+						</tr>
+						<tr>
+							<td>2016</td>
+							<td>
+								삼성물산 패션부문 SSFSHOP 운영<br /> 삼성물산 패션부문 SSFSHOP.COM GLOBAL 구축<br /> 삼성물산 패션부문 SSFSHOP 강화
+								프로젝트<br /> 삼성물산
+								SSFSHOP.COM UI/UX 개선<br /> 삼성물산 추천엔진 구축<br /> 프로젝트 삼성물산 패션부문 토리버치/톰브라운 모바일 구축<br /> 삼성물산
+								패션부분 SSFSHOP
+								TMALL GLOBAL 구축<br /> 삼성물산 패션부문 온라인 시스템 개선 과제(다수)<br /> 롯데-인도네시아(IND◎LOTTE) ECM 플랫폼
+								구축<br /> 11번가 리테일 서비스
+								고도화 프로젝트
+							</td>
+						</tr>
+						<tr>
+							<td>2015</td>
+							<td>
+								제일모직 온라인 시스템 운영<br /> 제일모직 신온라인 시스템(차세대) 구축<br /> 제일모직 신온라인 시스템 커머스 솔루션 도입<br /> 삼성물산
+								패션부문 TMALL 글로벌 제휴연동
+								개발<br /> 제일모직 중국 유학생 멤버십 사이트 구축<br /> 제일모직 온라인 커머스 플랫폼 개선 및 추가 개발<br /> 제일모직 BEAKER 스토어
+								통합 정산 개발<br /> 제일모직 임직원
+								할인 적용 개발
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>`

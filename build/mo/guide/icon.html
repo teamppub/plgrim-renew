@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height, viewport-fit=cover">
+
+<title>플그림</title>
+<link rel="icon" href="../../assets/favicon.ico">
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="../../assets/css/font.css">
+<link rel="stylesheet" type="text/css" href="../../assets/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+
+<!-- JS -->
+<script src="../../assets/js/jquery-3.1.1.min.js"></script>
+<script src="../../assets/js/swiper.min.js"></script>
+<script src="../js/ui.js"></script>
+
+
+</head>
+
+<body>
+	<link rel="stylesheet" type="text/css" href="./guide.css">
+<h6 class="hidden">guide</h6>
+<div class="page-guide-nav">
+	<h1 class="nav-title"><a href="index.html"><img src="../images/common/logo.svg"> <span>2022.10</span></a></h1>
+	<ul class="nav">
+		<li><a href="color.html">color</a></li>
+		<li><a href="font.html">font</a></li>
+		<li><a href="text.html">text</a></li>
+		<li><a href="button.html">button</a></li>
+		<li><a href="icon.html">icon</a></li>
+		<li><a href="table.html">table</a></li>
+		<li><a href="board.html">board</a></li>
+		<li><a href="swiper.html">swiper</a></li>
+		<li><a href="layerpop.html">popup</a></li>
+	</ul>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		var url = window.location.pathname;
+		url = url.split("/");
+		url = url[url.length - 1];
+		url = url.split("-");
+		if (url.length === 0) {
+			$(".nav li a").each(function () {
+				if (url == $(this).attr("href")) {
+					$(this).parent("li").siblings().removeClass("on");
+					$(this).parent("li").addClass("on");
+				}
+			});
+		} else {
+			url = url[0];
+			$(".nav li a").each(function () {
+				if (url == $(this).attr("href")) {
+					$(this).parent("li").siblings().removeClass("on");
+					$(this).parent("li").addClass("on");
+				}
+			});
+		}
+	});
+</script>
+
+	<div class="page-guide-content">
+		<h2 class="page-guide-title">Icon</h2>
+		<h3 class="page-guide-title2">svg</h3>
+
+
+		<div class="page-guide-box icon" style="padding: 20px;background: #82c997;">
+			<p style="color:#fff">background 처리<br><br></p>
+
+			<i class="ico-logo"></i>
+			<i class="ico-logo white"></i>
+			<i class="ico-recruit"></i>
+		</div>
+
+		<div class="page-guide-box icon" style="padding: 20px;background: #82c997;">
+			<p style="color:#fff">data url 처리(색상, 크기 변경 가능토록) <a href="https://yoksel.github.io/url-encoder/" target="_blank" style="display: inline-block;margin-left:10px;;color:blue;">svg code 변경 ></a></p>
+
+			<br>
+			<i class="ico-arr"></i>
+			<i class="ico-arr lft"></i>
+			<i class="ico-arr down"></i>
+			<i class="ico-arr up"></i>
+			<i class="ico-arr white"></i>
+			<!-- <i class="ico-arr plus"></i> -->
+			<br>
+			<br>
+			<i class="ico-arr2"></i>
+			<i class="ico-arr2 right"></i>
+			<i class="ico-plus"></i>
+			<i class="ico-close"></i>
+		</div>
+	</div>
+
+</body>
+
+</html>
