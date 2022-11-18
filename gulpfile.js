@@ -5,6 +5,8 @@ var replace = require('gulp-replace');
 var setFilesGuidelist = ['list/*.html'];
 var setFilesGuide = ['pc/guide/*.html'];
 var setFilesPC = ['pc/html/**/*.html'];
+var setFilesMO = ['mo/html/**/*.html'];
+var setFilesGuideMO = ['mo/guide/*.html'];
 
 gulp.task('list', function (cb) {
   pump(
@@ -65,7 +67,7 @@ gulp.task('pcjson', function (cb) {
 gulp.task('mohtml', function (cb) {
   pump(
     [
-      gulp.src(setFilesPC),
+      gulp.src(setFilesMO),
       replace('../layout/', '' + __dirname + '/mo/html/layout/'),
       phpinc({ verbose: true }),
       gulp.dest('build/mo/html'),
@@ -76,7 +78,7 @@ gulp.task('mohtml', function (cb) {
 gulp.task('moguide', function (cb) {
   pump(
     [
-      gulp.src(setFilesGuide),
+      gulp.src(setFilesGuideMO),
       replace('./', '' + __dirname + '/mo/guide/'),
       phpinc({ verbose: true }),
       gulp.dest('build/mo/guide'),
