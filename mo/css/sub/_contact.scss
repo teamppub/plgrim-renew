@@ -5,7 +5,9 @@
     .map-wrap{
         .map{
             height: vw(360px);
-            background-color: $CLine2;
+            background-color: $CLine2;            
+            border-top-left-radius: vw(10px);
+            border-bottom-left-radius: vw(10px);
         }
     }
     .list-info{

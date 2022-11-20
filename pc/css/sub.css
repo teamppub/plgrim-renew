@@ -11,6 +11,8 @@
 .contact .map-wrap .map {
   height: 850px;
   background-color: #eee;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 .contact .list-info {
   padding: 200px 0;
