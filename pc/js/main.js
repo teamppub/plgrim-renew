@@ -20,6 +20,15 @@ $(document).ready(function () {
 			},
 		},
 		on: {
+			init: function( ){
+				var currentCount = this.realIndex+1;
+				var totalCount = this.loopedSlides;
+				var stNum = String("0" + currentCount).slice(-2);
+				var totalNum = String("0" + totalCount).slice(-2);
+		
+				$(".swiper-paging .current-count").text( stNum );
+				$(".swiper-paging .total-count").text( totalNum);
+			},
 			slideChange: function() {
 				visualChange(this);
 			},
@@ -28,10 +37,13 @@ $(document).ready(function () {
 	function visualChange(slide){
 		// console.log('slide가 바뀐 후 실행');
 		// console.log("0" + (slide.realIndex + 1));
-		var currentCount = "0" + (slide.realIndex + 1)
-		var totalCount = "0" + (slide.loopedSlides);
-		$(".swiper-paging .current-count").text(currentCount)
-		$(".swiper-paging .total-count").text(totalCount)
+		var currentCount = slide.realIndex + 1
+		var totalCount = slide.loopedSlides;
+		var stNum = String("0" + currentCount).slice(-2);
+		var totalNum = String("0" + totalCount).slice(-2);
+
+		$(".swiper-paging .current-count").text( stNum );
+		$(".swiper-paging .total-count").text( totalNum);
 	}
 
 	$('.visual-swiper .swiper-slide').on('mouseenter', function(e){
