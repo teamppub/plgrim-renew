@@ -42,7 +42,7 @@ var UI = (function () {
                     $(lThiz.header).removeClass('top');
                 }
 
-                if( (st + $(window).height()) >=  Math.floor($( "footer" ).offset().top )){
+                if( (st + $(window).height()) >=  (Math.floor($( "footer" ).offset().top - $( "#btn-top" ).height()) )){
                     $(lThiz.wrap).css( "position", "relative" );
                     $(lThiz.top).addClass( "sticky" );
                 }else{

@@ -8,6 +8,8 @@
 .contact .map-wrap .map {
   height: 100vw;
   background-color: #eee;
+  border-top-left-radius: 2.7777777778vw;
+  border-bottom-left-radius: 2.7777777778vw;
 }
 .contact .list-info {
   padding: 16.6666666667vw 0;

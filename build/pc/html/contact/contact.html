@@ -23,6 +23,7 @@
 <script src="../../../assets/js/delighters.js"></script>
 <script src="../../../assets/js/swiper.min.js"></script>
 <script src="../../js/ui.js"></script>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=3yi0nof4c7"></script>
 </head>
 
 <body>
@@ -73,8 +74,16 @@
 				</div>
 
 				<div class="map-wrap">
-					<div class="map">
+					<div class="map" id="map">
 					</div>
+					<script>
+						var mapOptions = {
+							center: new naver.maps.LatLng(14143183.7821717, 4514561.6433142),
+							zoom: 15
+						};
+						
+						var map = new naver.maps.Map('map', mapOptions);
+					</script>
 				</div>
 				
 				<div class="list-info inner-box2">
