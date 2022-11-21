@@ -27,12 +27,15 @@
 					<div class="map" id="map">
 					</div>
 					<script>
-						var mapOptions = {
+						var map = new naver.maps.Map('map', {
 							center: new naver.maps.LatLng(14143183.7821717, 4514561.6433142),
-							zoom: 15
-						};
-						
-						var map = new naver.maps.Map('map', mapOptions);
+							zoom: 17
+						});
+
+						var marker = new naver.maps.Marker({
+							position: new naver.maps.LatLng(14143183.7821717, 4514561.6433142),
+							map: map
+						});
 					</script>
 				</div>
 				
