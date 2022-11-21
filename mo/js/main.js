@@ -9,16 +9,29 @@ $(document).ready(function () {
         // autoHeight : true,
 		slidesPerView: 1,
 		on: {
+			init: function( ){
+				var currentCount = this.realIndex+1;
+				var totalCount = this.loopedSlides;
+				var stNum = String("0" + currentCount).slice(-2);
+				var totalNum = String("0" + totalCount).slice(-2);
+		
+				$(".swiper-paging .current-count").text( stNum );
+				$(".swiper-paging .total-count").text( totalNum);
+			},
+			
 			slideChange: function() {
 				visualChange(this);
 			},
 		}
   	});
 	function visualChange(slide){
-		var currentCount = "0" + (slide.realIndex + 1);
-		var totalCount = "0" + (slide.loopedSlides);
-		$(".swiper-paging .current-count").text(currentCount);
-		$(".swiper-paging .total-count").text(totalCount);
+		var currentCount = slide.realIndex + 1
+		var totalCount = slide.loopedSlides;
+		var stNum = String("0" + currentCount).slice(-2);
+		var totalNum = String("0" + totalCount).slice(-2);
+
+		$(".swiper-paging .current-count").text( stNum );
+		$(".swiper-paging .total-count").text( totalNum);
 	}
 
 	$('.visual-swiper .swiper-slide').on('mouseenter', function(e){
