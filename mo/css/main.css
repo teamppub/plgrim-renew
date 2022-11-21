@@ -188,12 +188,7 @@ input[readonly] {
   pointer-events: none;
 }
 
-::-moz-placeholder {
-  font-size: inherit;
-  color: #bcbcbc;
-}
-
-:-ms-input-placeholder {
+::-webkit-input-placeholder {
   font-size: inherit;
   color: #bcbcbc;
 }

@@ -3,6 +3,7 @@
 
 <head>
 	<?php include '../layout/meta.html'?>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=3yi0nof4c7"></script>
 </head>
 
 <body>
@@ -23,8 +24,16 @@
 				</div>
 
 				<div class="map-wrap">
-					<div class="map">
+					<div class="map" id="map">
 					</div>
+					<script>
+						var mapOptions = {
+							center: new naver.maps.LatLng(14143183.7821717, 4514561.6433142),
+							zoom: 15
+						};
+						
+						var map = new naver.maps.Map('map', mapOptions);
+					</script>
 				</div>
 				
 				<div class="list-info">
